@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kerala PSC — Physics (Part 7)</title>
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">🎯 Kerala PSC — Physics (Part 7)</div>
+  <nav class="tabs" id="tabs">
+    <button data-view="notes" class="active">📚 Study Notes</button>
+    <button data-view="test">📝 Mock Test</button>
+    <button data-view="revision">🔁 Revision</button>
+    <button data-view="bookmarks">⭐ Bookmarks</button>
+    <button data-view="result">📊 Result</button>
+    <button data-view="search">🔎 Search</button>
+  </nav>
+</header>
+
+<div class="scorebar" id="scorebar">
+  <div class="sbitem"><span>Score</span><b id="sbScore">0 / 0</b></div>
+  <div class="sbitem"><span>Attempted</span><b id="sbAtt">0</b></div>
+  <div class="sbitem"><span>Correct</span><b id="sbCor">0</b></div>
+  <div class="sbitem"><span>Wrong</span><b id="sbWr">0</b></div>
+  <div class="sbitem"><span>Remaining</span><b id="sbRem">0</b></div>
+  <div class="sbitem"><span>Accuracy</span><b id="sbAcc">0%</b></div>
+</div>
+<div class="progresswrap"><div class="progressbar" id="progressbar"></div></div>
+
+<main>
+
+<!-- ================= STUDY NOTES ================= -->
+<section id="view-notes" class="view active">
+
+  <div class="viewhead">
+    <h2>📚 PHYSICS — Part 7</h2>
+    <p class="hint">
+      <b>Marks: 5</b> &nbsp;|&nbsp; <span class="tag both">BOTH (573 &amp; 883)</span><br>
+      Newton's laws · Gravitation · Work &amp; Energy · Heat &amp; Light · Sound · Electronics [883]
+    </p>
+    <button class="btn primary" id="startMcqBtn">📝 Start MCQ Test (20 Questions)</button>
+  </div>
+
+  <div class="howto">
+    <h3>📖 How to use these notes</h3>
+    <ul>
+      <li><b>Diagrams</b> are inline SVG — work fully offline.</li>
+      <li><b>Trap boxes</b> ⚠️ highlight commonly confused facts.</li>
+      <li><b>Memory tricks</b> 🧠 appear at point of use.</li>
+      <li>Every topic has interactive MCQs in the <b>📝 Mock Test</b> tab.</li>
+    </ul>
+  </div>
+
+  <div class="toc">
+    <h3>🔖 Jump to a topic</h3>
+    <a href="#topic-7-1">7.1 ചലനവും ബലവും (Newton's Laws)</a>
+    <a href="#topic-7-2">7.2 ഗുരുത്വാകർഷണം</a>
+    <a href="#topic-7-3">7.3 പ്രവൃത്തിയും ഊർജ്ജവും</a>
+    <a href="#topic-7-4">7.4 താപം (Heat)</a>
+    <a href="#topic-7-5">7.5 പ്രകാശം (Light)</a>
+    <a href="#topic-7-6">7.6 ശബ്ദം (Sound)</a>
+    <a href="#topic-7-7">7.7 വൈദ്യുതി &amp; ഇലക്ട്രോണിക്സ്</a>
+    <a href="#topic-7-8">7.8 യൂണിറ്റുകളും അളവുകളും</a>
+  </div>
+
+  <details class="subject" open>
+    <summary>⚛️ PART 7 — PHYSICS <span class="tag both">BOTH</span></summary>
+
+    <!-- 7.1 Newton's Laws -->
+    <details class="note-block" id="topic-7-1" data-title="ചലനവും ബലവും">
+      <summary>7.1 ചലനവും ബലവും (Newton's Laws of Motion)</summary>
+      <div class="note-body">
+
+        <div class="svgwrap wide">
+          <div class="figtitle">🖼 Fig. 1 — ന്യൂട്ടന്റെ മൂന്ന് ചലന നിയമങ്ങൾ</div>
+          <svg viewBox="0 0 760 220" role="img" aria-label="Newton's three laws of motion">
+            <rect width="760" height="220" fill="#fbfdff"/>
+            <rect x="30" y="50" width="220" height="130" rx="10" fill="#e3f0ff" stroke="#0b4a8a" stroke-width="1.5"/>
+            <text x="140" y="80" font-size="13" font-weight="bold" fill="#0b4a8a" text-anchor="middle">1st Law — Inertia</text>
+            <text x="140" y="105" font-size="10" fill="#16223a" text-anchor="middle">"ജഡത്വ നിയമം"</text>
+            <text x="140" y="125" font-size="10" fill="#16223a" text-anchor="middle">ബാഹ്യബലം ഇല്ലെങ്കിൽ</text>
+            <text x="140" y="145" font-size="10" fill="#16223a" text-anchor="middle">ചലനം മാറില്ല</text>
+            <text x="140" y="165" font-size="9" fill="#5b6b85" text-anchor="middle">Ex: Bus നിർത്തുമ്പോൾ</text>
+
+            <rect x="270" y="50" width="220" height="130" rx="10" fill="#ffe9d6" stroke="#8a4a00" stroke-width="1.5"/>
+            <text x="380" y="80" font-size="13" font-weight="bold" fill="#8a4a00" text-anchor="middle">2nd Law — F = ma</text>
+            <text x="380" y="105" font-size="10" fill="#16223a" text-anchor="middle">ബലം = മാസ് × ത്വരണം</text>
+            <text x="380" y="125" font-size="10" fill="#16223a" text-anchor="middle">ആക്കം (Momentum) മാറ്റം</text>
+            <text x="380" y="145" font-size="10" fill="#16223a" text-anchor="middle">p = mv</text>
+            <text x="380" y="165" font-size="9" fill="#5b6b85" text-anchor="middle">Ex: ക്രിക്കറ്റ് ബാറ്റ്</text>
+
+            <rect x="510" y="50" width="220" height="130" rx="10" fill="#e6f6ec" stroke="#177a3d" stroke-width="1.5"/>
+            <text x="620" y="80" font-size="13" font-weight="bold" fill="#177a3d" text-anchor="middle">3rd Law — Action-Reaction</text>
+            <text x="620" y="105" font-size="10" fill="#16223a" text-anchor="middle">ഓരോ പ്രവർത്തനത്തിനും</text>
+            <text x="620" y="125" font-size="10" fill="#16223a" text-anchor="middle">തുല്യവും വിപരീതവുമായ</text>
+            <text x="620" y="145" font-size="10" fill="#16223a" text-anchor="middle">പ്രതിപ്രവർത്തനം</text>
+            <text x="620" y="165" font-size="9" fill="#5b6b85" text-anchor="middle">Ex: റോക്കറ്റ്</text>
+
+            <text x="380" y="25" font-size="13" font-weight="bold" fill="#1a4a6a" text-anchor="middle">ന്യൂട്ടന്റെ മൂന്ന് ചലന നിയമങ്ങൾ</text>
+            <text x="380" y="205" font-size="10" fill="#5b6b85" text-anchor="middle">സർ ഐസക് ന്യൂട്ടൻ — "Philosophiæ Naturalis Principia Mathematica" (1687)</text>
+          </svg>
+          <div class="svgcap">1st: Inertia · 2nd: F = ma · 3rd: Action = Reaction.</div>
+        </div>
+
+        <table>
+          <tr><th>നിയമം</th><th>പ്രസ്താവന</th><th>ഉദാഹരണം</th></tr>
+          <tr><td>ഒന്നാം നിയമം (Inertia)</td><td>ബാഹ്യബലം പ്രവർത്തിക്കാത്തപക്ഷം ഒരു വസ്തു അതിന്റെ നിശ്ചലാവസ്ഥയിലോ ഏകീകൃത ചലനത്തിലോ തുടരും</td><td>ബസ് പെട്ടെന്ന് നിർത്തുമ്പോൾ യാത്രക്കാർ മുന്നോട്ട് ചായുന്നു</td></tr>
+          <tr><td>രണ്ടാം നിയമം (F = ma)</td><td>ബലം = മാസ് × ത്വരണം; ആക്കത്തിന്റെ മാറ്റത്തിന്റെ നിരക്ക്</td><td>ക്രിക്കറ്റ് ബാറ്റ് കൊണ്ട് പന്ത് അടിക്കൽ</td></tr>
+          <tr><td>മൂന്നാം നിയമം (Action-Reaction)</td><td>ഓരോ പ്രവർത്തനത്തിനും തുല്യവും വിപരീതവുമായ പ്രതിപ്രവർത്തനം ഉണ്ട്</td><td>റോക്കറ്റ് വിക്ഷേപണം, തോക്ക് വെടിവയ്ക്കൽ</td></tr>
+        </table>
+
+        <h4>ജഡത്വം (Inertia) — 3 തരങ്ങൾ</h4>
+        <ul>
+          <li><b>നിശ്ചല ജഡത്വം:</b> നിശ്ചലാവസ്ഥയിൽ നിന്ന് ചലനത്തിലേക്ക് മാറ്റാൻ ബലം ആവശ്യം.</li>
+          <li><b>ചലന ജഡത്വം:</b> ചലിക്കുന്ന വസ്തുവിനെ നിർത്താൻ ബലം ആവശ്യം.</li>
+          <li><b>ദിശാ ജഡത്വം:</b> ഒരു ദിശയിലേക്ക് ചലിക്കുന്ന വസ്തുവിന്റെ ദിശ മാറ്റാൻ ബലം ആവശ്യം.</li>
+        </ul>
+
+        <div class="mnem"><b>🧠 "1-2-3 = Inertia-F=ma-Action"</b> — ക്രമത്തിൽ ഓർക്കുക: ജഡത്വം, ബലം, പ്രതിപ്രവർത്തനം.</div>
+      </div>
+    </details>
+
+    <!-- 7.2 Gravitation -->
+    <details class="note-block" id="topic-7-2" data-title="ഗുരുത്വാകർഷണം">
+      <summary>7.2 ഗുരുത്വാകർഷണം (Gravitation)</summary>
+      <div class="note-body">
+
+        <table>
+          <tr><th>വിഷയം</th><th>വിവരം</th></tr>
+          <tr><td>ന്യൂട്ടന്റെ ഗുരുത്വാകർഷണ നിയമം</td><td>F = G(m₁m₂)/r² — രണ്ട് വസ്തുക്കൾ തമ്മിലുള്ള ആകർഷണബലം</td></tr>
+          <tr><td>G (ഗുരുത്വാകർഷണ സ്ഥിരാങ്കം)</td><td>6.67 × 10⁻¹¹ N·m²/kg²</td></tr>
+          <tr><td>കണ്ടെത്തിയത്</td><td>ഹെൻറി കാവൻഡിഷ് (1798)</td></tr>
+          <tr><td>ഭൂമിയുടെ ഗുരുത്വ ത്വരണം (g)</td><td>9.8 m/s²</td></tr>
+          <tr><td>ചന്ദ്രനിലെ g</td><td>1.62 m/s² (ഭൂമിയുടെ 1/6)</td></tr>
+          <tr><td>ഭാരം (Weight)</td><td>W = mg (ന്യൂട്ടൺ)</td></tr>
+          <tr><td>പിണ്ഡം (Mass)</td><td>കിലോഗ്രാം — സ്ഥിരം</td></tr>
+        </table>
+
+        <h4>പ്രധാന വസ്തുതകൾ</h4>
+        <ul>
+          <li><b>ഭാരം:</b> ഗ്രഹത്തിന്റെ g-യെ ആശ്രയിച്ച് മാറും (ചന്ദ്രനിൽ ഭാരം കുറയും; പിണ്ഡം മാറില്ല).</li>
+          <li><b>പ്രവേഗം (Escape Velocity):</b> ഭൂമിയിൽ നിന്ന് 11.2 km/s.</li>
+          <li><b>ഭ്രമണ പഥ പ്രവേഗം (Orbital Velocity):</b> ~7.9 km/s (ഭൂമിക്ക് ചുറ്റും).</li>
+          <li><b>കൃത്രിമ ഉപഗ്രഹങ്ങൾ:</b> ഭൂസ്ഥിര ഉപഗ്രഹങ്ങൾ 35,786 km ഉയരത്തിൽ.</li>
+        </ul>
+
+        <div class="trap"><b>⚠️ PSC Trap</b><br>
+          <b>പിണ്ഡം (Mass):</b> സ്ഥിരം — എവിടെയും ഒരേപോലെ.<br>
+          <b>ഭാരം (Weight):</b> ഗ്രഹത്തിന്റെ g-യെ ആശ്രയിച്ച് മാറും.<br>
+          ചന്ദ്രനിൽ ഭാരം ഭൂമിയുടെ <b>1/6</b> മാത്രം.
+        </div>
+      </div>
+    </details>
+
+    <!-- 7.3 Work & Energy -->
+    <details class="note-block" id="topic-7-3" data-title="പ്രവൃത്തിയും ഊർജ്ജവും">
+      <summary>7.3 പ്രവൃത്തിയും ഊർജ്ജവും (Work &amp; Energy)</summary>
+      <div class="note-body">
+
+        <table>
+          <tr><th>ആശയം</th><th>ഫോർമുല</th><th>യൂണിറ്റ്</th></tr>
+          <tr><td>പ്രവൃത്തി (Work)</td><td>W = F × d</td><td>ജൂൾ (J)</td></tr>
+          <tr><td>ഊർജ്ജം (Energy)</td><td>—</td><td>ജൂൾ (J)</td></tr>
+          <tr><td>ഗതികോർജ്ജം (KE)</td><td>½ mv²</td><td>ജൂൾ</td></tr>
+          <tr><td>സ്ഥിതികോർജ്ജം (PE)</td><td>mgh</td><td>ജൂൾ</td></tr>
+          <tr><td>ശക്തി (Power)</td><td>W/t</td><td>വാട്ട് (W)</td></tr>
+          <tr><td>1 കുതിരശക്തി (HP)</td><td>746 വാട്ട്</td><td>—</td></tr>
+        </table>
+
+        <h4>ഊർജ്ജ സംരക്ഷണ നിയമം</h4>
+        <ul>
+          <li>ഊർജ്ജം സൃഷ്ടിക്കാനോ നശിപ്പിക്കാനോ കഴിയില്ല — ഒരു രൂപത്തിൽ നിന്ന് മറ്റൊന്നിലേക്ക് മാറ്റാം.</li>
+          <li><b>ഉദാഹരണം:</b> ജലവൈദ്യുത പദ്ധതിയിൽ സ്ഥിതികോർജ്ജം → ഗതികോർജ്ജം → വൈദ്യുതോർജ്ജം.</li>
+        </ul>
+
+        <h4>ഊർജ്ജത്തിന്റെ രൂപങ്ങൾ</h4>
+        <ul>
+          <li>യാന്ത്രികോർജ്ജം (Mechanical)</li>
+          <li>താപോർജ്ജം (Heat)</li>
+          <li>പ്രകാശോർജ്ജം (Light)</li>
+          <li>വൈദ്യുതോർജ്ജം (Electrical)</li>
+          <li>രാസോർജ്ജം (Chemical)</li>
+          <li>ആണവോർജ്ജം (Nuclear)</li>
+          <li>ശബ്ദോർജ്ജം (Sound)</li>
+        </ul>
+
+        <div class="mnem"><b>🧠 "MHTLVCRS"</b> — Mechanical, Heat, Light, Electrical, Chemical, Nuclear, Sound. "My Heart Truly Loves Very Clever Radiant Science."</div>
+      </div>
+    </details>
+
+    <!-- 7.4 Heat -->
+    <details class="note-block" id="topic-7-4" data-title="താപം">
+      <summary>7.4 താപം (Heat)</summary>
+      <div class="note-body">
+
+        <table>
+          <tr><th>വിഷയം</th><th>വിവരം</th></tr>
+          <tr><td>താപനിലയുടെ SI യൂണിറ്റ്</td><td>കെൽവിൻ (K)</td></tr>
+          <tr><td>സെൽഷ്യസ് → കെൽവിൻ</td><td>K = °C + 273.15</td></tr>
+          <tr><td>ഫാരൻഹീറ്റ് → സെൽഷ്യസ്</td><td>°C = (°F − 32) × 5/9</td></tr>
+          <tr><td>കേവല പൂജ്യം</td><td>−273.15 °C = 0 K</td></tr>
+          <tr><td>ജലത്തിന്റെ ദ്രവണാങ്കം</td><td>0 °C / 273 K</td></tr>
+          <tr><td>ജലത്തിന്റെ തിളനില</td><td>100 °C / 373 K</td></tr>
+          <tr><td>മനുഷ്യ ശരീര താപനില</td><td>37 °C / 98.6 °F</td></tr>
+        </table>
+
+        <h4>താപ കൈമാറ്റ രീതികൾ</h4>
+        <ul>
+          <li><b>ചാലനം (Conduction):</b> ഖരവസ്തുക്കളിലൂടെ താപ കൈമാറ്റം (ഉദാ: ലോഹ സ്പൂൺ ചൂടാകൽ).</li>
+          <li><b>സംവഹനം (Convection):</b> ദ്രാവകങ്ങളിലും വാതകങ്ങളിലും (ഉദാ: ജലം ചൂടാക്കൽ).</li>
+          <li><b>വികിരണം (Radiation):</b> മാധ്യമം ആവശ്യമില്ല (ഉദാ: സൂര്യപ്രകാശം ഭൂമിയിൽ എത്തൽ).</li>
+        </ul>
+
+        <h4>താപത്തിന്റെ യൂണിറ്റുകൾ</h4>
+        <ul>
+          <li><b>ജൂൾ (J):</b> SI യൂണിറ്റ്.</li>
+          <li><b>കലോറി (cal):</b> 1 cal = 4.186 J.</li>
+          <li><b>ബിടിയു (BTU):</b> British Thermal Unit.</li>
+        </ul>
+
+        <div class="trap"><b>⚠️ PSC Trap</b><br>
+          <b>താപനില:</b> കെൽവിൻ (K) — SI യൂണിറ്റ്.<br>
+          <b>താപം:</b> ജൂൾ (J) — SI യൂണിറ്റ്.<br>
+          ഇവ രണ്ടും കൂട്ടിക്കുഴയ്ക്കരുത്.
+        </div>
+      </div>
+    </details>
+
+    <!-- 7.5 Light -->
+    <details class="note-block" id="topic-7-5" data-title="പ്രകാശം">
+      <summary>7.5 പ്രകാശം (Light)</summary>
+      <div class="note-body">
+
+        <div class="svgwrap wide">
+          <div class="figtitle">🖼 Fig. 2 — പ്രകാശത്തിന്റെ പ്രതിപതനം</div>
+          <svg viewBox="0 0 600 260" role="img" aria-label="Reflection of light">
+            <rect width="600" height="260" fill="#fbfdff"/>
+            <!-- Mirror line -->
+            <line x1="80" y1="200" x2="520" y2="200" stroke="#0b4a8a" stroke-width="3"/>
+            <text x="530" y="205" font-size="11" font-weight="bold" fill="#0b4a8a">Mirror</text>
+            <!-- Normal -->
+            <line x1="300" y1="60" x2="300" y2="200" stroke="#8a4a00" stroke-width="1.5" stroke-dasharray="5,3"/>
+            <text x="305" y="80" font-size="10" fill="#8a4a00">Normal</text>
+            <!-- Incident ray -->
+            <line x1="160" y1="60" x2="300" y2="200" stroke="#c5221f" stroke-width="2"/>
+            <polygon points="300,200 290,190 295,185" fill="#c5221f"/>
+            <text x="140" y="55" font-size="11" font-weight="bold" fill="#c5221f">Incident ray</text>
+            <text x="200" y="140" font-size="11" fill="#c5221f">i</text>
+            <!-- Reflected ray -->
+            <line x1="300" y1="200" x2="440" y2="60" stroke="#17a06a" stroke-width="2"/>
+            <polygon points="440,60 430,70 435,75" fill="#17a06a"/>
+            <text x="450" y="55" font-size="11" font-weight="bold" fill="#17a06a">Reflected ray</text>
+            <text x="400" y="140" font-size="11" fill="#17a06a">r</text>
+
+            <text x="300" y="25" font-size="13" font-weight="bold" fill="#1a4a6a" text-anchor="middle">Reflection of Light</text>
+            <text x="300" y="240" font-size="11" fill="#16223a" text-anchor="middle">Angle of incidence (i) = Angle of reflection (r)</text>
+          </svg>
+          <div class="svgcap">Reflection: Angle of incidence = Angle of reflection.</div>
+        </div>
+
+        <table>
+          <tr><th>വിഷയം</th><th>വിവരം</th></tr>
+          <tr><td>പ്രകാശവേഗം (ശൂന്യതയിൽ)</td><td>3 × 10⁸ m/s (3,00,000 km/s)</td></tr>
+          <tr><td>പ്രകാശവേഗം കണ്ടെത്തിയത്</td><td>ഓലെ റോമർ (1676) — ഡാനിഷ് ജ്യോതിശാസ്ത്രജ്ഞൻ</td></tr>
+          <tr><td>ഭൂമിയിൽ നിന്ന് സൂര്യനിലേക്ക്</td><td>8 മിനിറ്റ് 20 സെക്കൻഡ്</td></tr>
+          <tr><td>ചന്ദ്രനിൽ നിന്ന് ഭൂമിയിലേക്ക്</td><td>1.3 സെക്കൻഡ്</td></tr>
+          <tr><td>പ്രകാശത്തിന്റെ സ്വഭാവം</td><td>ഇരട്ട സ്വഭാവം (Dual nature) — തരംഗവും കണികയും</td></tr>
+        </table>
+
+        <h4>പ്രകാശ പ്രതിഭാസങ്ങൾ</h4>
+        <ul>
+          <li><b>പ്രതിപതനം (Reflection):</b> കണ്ണാടിയിൽ നിന്ന് പ്രകാശം തിരിച്ചുവരൽ.</li>
+          <li><b>അപവർത്തനം (Refraction):</b> ഒരു മാധ്യമത്തിൽ നിന്ന് മറ്റൊന്നിലേക്ക് കടക്കുമ്പോൾ പ്രകാശം വളയൽ.</li>
+          <li><b>വിസരണം (Dispersion):</b> വെള്ള പ്രകാശം ഏഴ് വർണ്ണങ്ങളായി പിരിയൽ (മഴവില്ല്).</li>
+          <li><b>വിവർത്തനം (Diffraction):</b> പ്രകാശം വസ്തുവിന്റെ അരികിൽ വളയൽ.</li>
+          <li><b>ധ്രുവീകരണം (Polarisation):</b> പ്രകാശ തരംഗങ്ങളുടെ ദിശ നിയന്ത്രണം.</li>
+        </ul>
+
+        <h4>കണ്ണാടികളും ലെൻസുകളും</h4>
+        <table>
+          <tr><th>തരം</th><th>സ്വഭാവം</th><th>ഉപയോഗം</th></tr>
+          <tr><td>സമതല കണ്ണാടി (Plane)</td><td>നേരായ പ്രതിബിംബം</td><td>വീട്, വാഹനം</td></tr>
+          <tr><td>കോൺകേവ് കണ്ണാടി</td><td>വലുതാക്കിയ പ്രതിബിംബം</td><td>ദന്ത ഡോക്ടർ, ഷേവിംഗ്</td></tr>
+          <tr><td>കോൺവെക്സ് കണ്ണാടി</td><td>ചെറുതാക്കിയ പ്രതിബിംബം</td><td>വാഹന റിയർവ്യൂ</td></tr>
+          <tr><td>കോൺവെക്സ് ലെൻസ്</td><td>അഭിസാരി (Converging)</td><td>മാഗ്നിഫൈയിംഗ് ഗ്ലാസ്, കണ്ണട</td></tr>
+          <tr><td>കോൺകേവ് ലെൻസ്</td><td>അപസാരി (Diverging)</td><td>മയോപിയ കണ്ണട</td></tr>
+        </table>
+
+        <div class="trap"><b>⚠️ PSC Trap</b><br>
+          <b>മയോപിയ (Myopia / H്രസ്വദൃഷ്ടി):</b> അടുത്തുള്ള വസ്തു കാണാം, ദൂരെയുള്ളത് കാണില്ല → കോൺകേവ് ലെൻസ്.<br>
+          <b>ഹൈപ്പർമെട്രോപിയ (Hypermetropia):</b> ദൂരെ കാണാം, അടുത്തുള്ളത് കാണില്ല → കോൺവെക്സ് ലെൻസ്.
+        </div>
+      </div>
+    </details>
+
+    <!-- 7.6 Sound -->
+    <details class="note-block" id="topic-7-6" data-title="ശബ്ദം">
+      <summary>7.6 ശബ്ദം (Sound)</summary>
+      <div class="note-body">
+
+        <table>
+          <tr><th>വിഷയം</th><th>വിവരം</th></tr>
+          <tr><td>ശബ്ദത്തിന്റെ സ്വഭാവം</td><td>യാന്ത്രിക തരംഗം (Mechanical wave)</td></tr>
+          <tr><td>ശബ്ദത്തിന്റെ വേഗം (വായുവിൽ, 20°C)</td><td>343 m/s</td></tr>
+          <tr><td>ശബ്ദത്തിന്റെ വേഗം (ജലത്തിൽ)</td><td>1,484 m/s</td></tr>
+          <tr><td>ശബ്ദത്തിന്റെ വേഗം (ഉരുക്കിൽ)</td><td>5,960 m/s</td></tr>
+          <tr><td>ശ്രവണ പരിധി (മനുഷ്യൻ)</td><td>20 Hz – 20,000 Hz</td></tr>
+          <tr><td>അൾട്രാസൗണ്ട്</td><td>>20,000 Hz (വവ്വാൽ, ഡോൾഫിൻ)</td></tr>
+          <tr><td>ഇൻഫ്രാസൗണ്ട്</td><td><20 Hz (ആന, തിമിംഗലം)</td></tr>
+          <tr><td>ശബ്ദത്തിന്റെ യൂണിറ്റ്</td><td>ഡെസിബൽ (dB)</td></tr>
+          <tr><td>ശബ്ദ മലിനീകരണ പരിധി (പകൽ)</td><td>55 dB (വസതി പ്രദേശം)</td></tr>
+        </table>
+
+        <h4>ശബ്ദത്തിന്റെ സ്വഭാവങ്ങൾ</h4>
+        <ul>
+          <li><b>ആവൃത്തി (Frequency):</b> ശ്രുതി (Pitch) നിർണ്ണയിക്കുന്നു.</li>
+          <li><b>ആംപ്ലിറ്റ്യൂഡ് (Amplitude):</b> ഉച്ചത (Loudness) നിർണ്ണയിക്കുന്നു.</li>
+          <li><b>ടിംബ്രെ (Timbre):</b> ശബ്ദത്തിന്റെ ഗുണനിലവാരം.</li>
+        </ul>
+
+        <h4>ശബ്ദ പ്രതിഭാസങ്ങൾ</h4>
+        <ul>
+          <li><b>പ്രതിധ്വനി (Echo):</b> ശബ്ദ തരംഗങ്ങൾ തടസ്സത്തിൽ നിന്ന് പ്രതിഫലിച്ച് തിരിച്ചുവരൽ. കേൾക്കാൻ കുറഞ്ഞ ദൂരം 17.2 m.</li>
+          <li><b>അനുരണനം (Resonance):</b> ഒരു വസ്തു അതിന്റെ സ്വാഭാവിക ആവൃത്തിയിൽ കമ്പനം ചെയ്യുമ്പോൾ ശബ്ദം വർദ്ധിക്കൽ.</li>
+          <li><b>ഡോപ്ലർ പ്രഭാവം (Doppler Effect):</b> ശബ്ദ സ്രോതസ്സും ശ്രോതാവും തമ്മിലുള്ള ആപേക്ഷിക ചലനം മൂലം ആവൃത്തി മാറൽ.</li>
+        </ul>
+
+        <div class="trap"><b>⚠️ PSC Trap</b><br>
+          <b>ശബ്ദം ഖരത്തിൽ വേഗത്തിൽ സഞ്ചരിക്കും, വാതകത്തിൽ മന്ദഗതിയിൽ.</b><br>
+          ക്രമം: ഖരം > ദ്രാവകം > വാതകം.<br>
+          <b>ശബ്ദം ശൂന്യതയിൽ (Vacuum) സഞ്ചരിക്കില്ല</b> — കാരണം യാന്ത്രിക തരംഗമാണ്.
+        </div>
+      </div>
+    </details>
+
+    <!-- 7.7 Electricity & Electronics -->
+    <details class="note-block" id="topic-7-7" data-title="വൈദ്യുതി &amp; ഇലക്ട്രോണിക്സ്">
+      <summary>7.7 വൈദ്യുതി &amp; ഇലക്ട്രോണിക്സ് (Electricity &amp; Electronics) [883]</summary>
+      <div class="note-body">
+
+        <table>
+          <tr><th>ആശയം</th><th>ഫോർമുല</th><th>യൂണിറ്റ്</th></tr>
+          <tr><td>ഓം നിയമം</td><td>V = IR</td><td>—</td></tr>
+          <tr><td>വോൾട്ടേജ് (V)</td><td>—</td><td>വോൾട്ട് (V)</td></tr>
+          <tr><td>കറന്റ് (I)</td><td>—</td><td>ആമ്പിയർ (A)</td></tr>
+          <tr><td>പ്രതിരോധം (R)</td><td>—</td><td>ഓം (Ω)</td></tr>
+          <tr><td>വൈദ്യുത ശക്തി</td><td>P = VI = I²R</td><td>വാട്ട് (W)</td></tr>
+          <tr><td>വൈദ്യുത ഊർജ്ജം</td><td>P × t</td><td>kWh (യൂണിറ്റ്)</td></tr>
+        </table>
+
+        <h4>ഓം നിയമം (Ohm's Law)</h4>
+        <ul>
+          <li>സ്ഥിര താപനിലയിൽ, ഒരു ചാലകത്തിലൂടെ ഒഴുകുന്ന കറന്റ് അതിന്റെ അഗ്രങ്ങൾ തമ്മിലുള്ള പൊട്ടൻഷ്യൽ വ്യത്യാസത്തിന് നേരിട്ട് ആനുപാതികം.</li>
+          <li><b>V = IR</b> — കണ്ടെത്തിയത് ജോർജ് സൈമൺ ഓം (1827).</li>
+        </ul>
+
+        <h4>ഇലക്ട്രോണിക്സ് — പ്രധാന ഘടകങ്ങൾ</h4>
+        <table>
+          <tr><th>ഘടകം</th><th>പ്രവർത്തനം</th></tr>
+          <tr><td>ഡയോഡ് (Diode)</td><td>ഒരു ദിശയിൽ മാത്രം കറന്റ് കടത്തിവിടുന്നു; റെക്ടിഫയർ</td></tr>
+          <tr><td>ട്രാൻസിസ്റ്റർ (Transistor)</td><td>ആംപ്ലിഫിക്കേഷൻ, സ്വിച്ചിംഗ് — 1947-ൽ കണ്ടെത്തി (Bardeen, Brattain, Shockley)</td></tr>
+          <tr><td>IC (Integrated Circuit)</td><td>ആയിരക്കണക്കിന് ഘടകങ്ങൾ ഒരു ചിപ്പിൽ — 1958 (Jack Kilby)</td></tr>
+          <tr><td>LED</td><td>Light Emitting Diode — പ്രകാശം പുറപ്പെടുവിക്കുന്നു</td></tr>
+          <tr><td>സോളാർ സെൽ</td><td>സൂര്യപ്രകാശത്തെ വൈദ്യുതിയാക്കുന്നു (ഫോട്ടോവോൾട്ടായിക് പ്രഭാവം)</td></tr>
+          <tr><td>മൈക്രോചിപ്പ്</td><td>ആധുനിക കമ്പ്യൂട്ടറിന്റെ അടിസ്ഥാനം</td></tr>
+        </table>
+
+        <h4>ചാർജ് &amp; അടിസ്ഥാന കണികകൾ</h4>
+        <table>
+          <tr><th>കണിക</th><th>ചാർജ്</th><th>കണ്ടെത്തിയത്</th></tr>
+          <tr><td>ഇലക്ട്രോൺ</td><td>−1.6 × 10⁻¹⁹ C</td><td>ജെ.ജെ. തോംസൺ (1897)</td></tr>
+          <tr><td>പ്രോട്ടോൺ</td><td>+1.6 × 10⁻¹⁹ C</td><td>റഥർഫോർഡ് (1919)</td></tr>
+          <tr><td>ന്യൂട്രോൺ</td><td>ചാർജ് ഇല്ല</td><td>ജെയിംസ് ചാഡ്വിക്ക് (1932)</td></tr>
+        </table>
+
+        <h4>വൈദ്യുതോൽപാദനം</h4>
+        <ul>
+          <li><b>ജലവൈദ്യുത പദ്ധതികൾ:</b> ഇടുക്കി, ഷോളയാർ, പള്ളിവാസൽ.</li>
+          <li><b>താപ വൈദ്യുത നിലയങ്ങൾ:</b> കായംകുളം, ബ്രഹ്മപുരം, നെയ്യവേലി.</li>
+          <li><b>സൗരോർജ്ജം:</b> കേരളത്തിൽ വ്യാപകം.</li>
+          <li><b>കാറ്റാടി പദ്ധതികൾ:</b> പാലക്കാട്, ഇടുക്കി, കാസർകോട്.</li>
+        </ul>
+
+        <div class="mnem"><b>🧠 "V-IR"</b> — V = I × R (ഓം നിയമം). "Very Important Rule."</div>
+      </div>
+    </details>
+
+    <!-- 7.8 Units -->
+    <details class="note-block" id="topic-7-8" data-title="യൂണിറ്റുകളും അളവുകളും">
+      <summary>7.8 യൂണിറ്റുകളും അളവുകളും (Units &amp; Measurements)</summary>
+      <div class="note-body">
+
+        <table>
+          <tr><th>അളവ്</th><th>SI യൂണിറ്റ്</th><th>ചിഹ്നം</th></tr>
+          <tr><td>നീളം</td><td>മീറ്റർ</td><td>m</td></tr>
+          <tr><td>പിണ്ഡം</td><td>കിലോഗ്രാം</td><td>kg</td></tr>
+          <tr><td>സമയം</td><td>സെക്കൻഡ്</td><td>s</td></tr>
+          <tr><td>താപനില</td><td>കെൽവിൻ</td><td>K</td></tr>
+          <tr><td>വൈദ്യുത കറന്റ്</td><td>ആമ്പിയർ</td><td>A</td></tr>
+          <tr><td>പദാർത്ഥത്തിന്റെ അളവ്</td><td>മോൾ</td><td>mol</td></tr>
+          <tr><td>പ്രകാശ തീവ്രത</td><td>കാൻഡല</td><td>cd</td></tr>
+          <tr><td>ബലം</td><td>ന്യൂട്ടൺ</td><td>N</td></tr>
+          <tr><td>പ്രവൃത്തി / ഊർജ്ജം</td><td>ജൂൾ</td><td>J</td></tr>
+          <tr><td>ശക്തി</td><td>വാട്ട്</td><td>W</td></tr>
+          <tr><td>മർദ്ദം</td><td>പാസ്കൽ</td><td>Pa</td></tr>
+          <tr><td>ആവൃത്തി</td><td>ഹെർട്സ്</td><td>Hz</td></tr>
+          <tr><td>ചാർജ്</td><td>കൂളോം</td><td>C</td></tr>
+          <tr><td>പ്രതിരോധം</td><td>ഓം</td><td>Ω</td></tr>
+        </table>
+
+        <h4>പ്രധാന ഭൗതിക സ്ഥിരാങ്കങ്ങൾ</h4>
+        <ul>
+          <li><b>പ്രകാശവേഗം (c):</b> 3 × 10⁸ m/s.</li>
+          <li><b>ശബ്ദവേഗം (വായുവിൽ):</b> 343 m/s.</li>
+          <li><b>ഗുരുത്വ ത്വരണം (g):</b> 9.8 m/s².</li>
+          <li><b>പ്ലാങ്ക് സ്ഥിരാങ്കം (h):</b> 6.626 × 10⁻³⁴ J·s.</li>
+          <li><b>അവോഗാഡ്രോ സംഖ്യ (Nₐ):</b> 6.022 × 10²³.</li>
+        </ul>
+
+        <div class="mnem"><b>🧠 SI അടിസ്ഥാന യൂണിറ്റുകൾ = 7</b><br>
+          m (നീളം), kg (പിണ്ഡം), s (സമയം), K (താപനില), A (കറന്റ്), mol (പദാർത്ഥം), cd (പ്രകാശം).</div>
+      </div>
+    </details>
+  </details>
+
+  <!-- PSC TRAPS -->
+  <details class="subject">
+    <summary>⚠️ PSC TRAPS — Physics</summary>
+    <div class="note-body">
+      <table>
+        <tr><th>Trap</th><th>ശരിയായ വസ്തുത</th></tr>
+        <tr><td>പിണ്ഡം vs ഭാരം</td><td>പിണ്ഡം: സ്ഥിരം; ഭാരം: g-യെ ആശ്രയിച്ച് മാറും</td></tr>
+        <tr><td>ചന്ദ്രനിലെ ഭാരം</td><td>ഭൂമിയുടെ 1/6</td></tr>
+        <tr><td>പ്രകാശവേഗം (ശൂന്യതയിൽ)</td><td>3 × 10⁸ m/s</td></tr>
+        <tr><td>ശബ്ദവേഗം (വായുവിൽ)</td><td>343 m/s</td></tr>
+        <tr><td>ശബ്ദം ശൂന്യതയിൽ</td><td>സഞ്ചരിക്കില്ല</td></tr>
+        <tr><td>ശബ്ദ വേഗം ക്രമം</td><td>ഖരം > ദ്രാവകം > വാതകം</td></tr>
+        <tr><td>മയോപിയ</td><td>കോൺകേവ് ലെൻസ്</td></tr>
+        <tr><td>ഹൈപ്പർമെട്രോപിയ</td><td>കോൺവെക്സ് ലെൻസ്</td></tr>
+        <tr><td>താപനില vs താപം</td><td>താപനില: കെൽവിൻ; താപം: ജൂൾ</td></tr>
+        <tr><td>G കണ്ടെത്തിയത്</td><td>ഹെൻറി കാവൻഡിഷ് (1798)</td></tr>
+      </table>
+    </div>
+  </details>
+
+  <!-- 1-Minute Revision -->
+  <details class="subject">
+    <summary>⚡ 1-Minute Revision — Physics</summary>
+    <div class="note-body">
+      <table>
+        <tr><th>ചോദ്യം</th><th>ഉത്തരം</th></tr>
+        <tr><td>ന്യൂട്ടന്റെ ഒന്നാം നിയമം</td><td>ജഡത്വ നിയമം (Inertia)</td></tr>
+        <tr><td>F = ma</td><td>ന്യൂട്ടന്റെ രണ്ടാം നിയമം</td></tr>
+        <tr><td>ഗുരുത്വ ത്വരണം (g)</td><td>9.8 m/s²</td></tr>
+        <tr><td>G കണ്ടെത്തിയത്</td><td>കാവൻഡിഷ് (1798)</td></tr>
+        <tr><td>Escape Velocity</td><td>11.2 km/s</td></tr>
+        <tr><td>പ്രകാശവേഗം</td><td>3 × 10⁸ m/s</td></tr>
+        <tr><td>ശബ്ദവേഗം (വായുവിൽ)</td><td>343 m/s</td></tr>
+        <tr><td>ശ്രവണ പരിധി</td><td>20 Hz – 20,000 Hz</td></tr>
+        <tr><td>അൾട്രാസൗണ്ട്</td><td>>20,000 Hz</td></tr>
+        <tr><td>ഓം നിയമം</td><td>V = IR</td></tr>
+        <tr><td>വൈദ്യുത ശക്തിയുടെ യൂണിറ്റ്</td><td>വാട്ട് (W)</td></tr>
+        <tr><td>ഇലക്ട്രോൺ കണ്ടെത്തിയത്</td><td>ജെ.ജെ. തോംസൺ (1897)</td></tr>
+        <tr><td>പ്രോട്ടോൺ കണ്ടെത്തിയത്</td><td>റഥർഫോർഡ് (1919)</td></tr>
+        <tr><td>ന്യൂട്രോൺ കണ്ടെത്തിയത്</td><td>ചാഡ്വിക്ക് (1932)</td></tr>
+        <tr><td>ട്രാൻസിസ്റ്റർ കണ്ടെത്തിയത്</td><td>1947 (Bardeen, Brattain, Shockley)</td></tr>
+        <tr><td>SI അടിസ്ഥാന യൂണിറ്റുകൾ</td><td>7 (m, kg, s, K, A, mol, cd)</td></tr>
+      </table>
+    </div>
+  </details>
+
+  <p class="hint" style="margin-top:1rem">
+    <b>Coverage:</b> Part 7 (Physics) — 20 MCQs.
+  </p>
+</section>
+
+<!-- ================= MOCK TEST ================= -->
+<section id="view-test" class="view">
+  <div class="toolbar">
+    <div class="filters">
+      <span class="flabel">Exam:</span>
+      <button class="chip active" data-cat="ALL">ALL</button>
+      <button class="chip" data-cat="573">573</button>
+      <button class="chip" data-cat="883">883</button>
+      <button class="chip" data-cat="BOTH">BOTH</button>
+      <select id="topicFilter" aria-label="Filter by topic"><option value="ALL">All Topics</option></select>
+      <select id="diffFilter" aria-label="Filter by difficulty">
+        <option value="ALL">All Difficulty</option>
+        <option value="Easy">🟢 Easy</option>
+        <option value="Medium">🟡 Medium</option>
+        <option value="Hard">🟠 Hard</option>
+        <option value="Very Hard">🔴 Very Hard</option>
+      </select>
+    </div>
+    <div class="tools">
+      <label class="flabel">Negative:
+        <input type="number" id="negInput" value="0.33" step="0.01" min="0" style="width:74px" aria-label="Negative mark value">
+      </label>
+      <button class="btn ghost" id="resetBtn">Reset Progress</button>
+      <button class="btn primary" id="finishBtn">Finish Test</button>
+    </div>
+  </div>
+  <div id="setInfo" class="hint" style="margin-bottom:.6rem"></div>
+  <div class="navwrap">
+    <h4>Questions</h4>
+    <div class="navgrid" id="navgrid"></div>
+  </div>
+  <div class="qcard" id="qcard"></div>
+</section>
+
+<!-- ================= REVISION ================= -->
+<section id="view-revision" class="view">
+  <div class="viewhead">
+    <h2>🔁 REVISION MODE</h2>
+    <p class="hint">Practise only the questions you need. Choosing a set replaces the current test set.</p>
+  </div>
+  <div class="revpanel">
+    <div class="setgrid" id="setgrid"></div>
+    <div style="margin-top:.8rem; display:flex; gap:.5rem; flex-wrap:wrap">
+      <button class="btn primary" data-set="all">📚 Practise All Questions</button>
+      <button class="btn ghost" data-set="reset">↺ Clear Revision Filter</button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BOOKMARKS ================= -->
+<section id="view-bookmarks" class="view">
+  <div class="viewhead">
+    <h2>⭐ BOOKMARKS</h2>
+    <p class="hint">Bookmarks are stored in your browser and remain after you close or refresh the file.</p>
+  </div>
+  <div id="bookmarkList"></div>
+</section>
+
+<!-- ================= RESULT ================= -->
+<section id="view-result" class="view">
+  <div id="resultHost"></div>
+</section>
+
+<!-- ================= SEARCH ================= -->
+<section id="view-search" class="view">
+  <div class="viewhead">
+    <h2>🔎 SEARCH</h2>
+    <p class="hint">Search notes and questions — persons, places, articles, acts, sections, dates, terms.</p>
+  </div>
+  <div class="searchbox">
+    <input type="search" id="searchInput" placeholder="Type at least 2 characters…" aria-label="Search notes and questions">
+    <button class="btn ghost" id="clearSearch">Clear</button>
+  </div>
+  <div id="searchResults"></div>
+</section>
+
+</main>
+
+<!-- ================= PART 7 QUESTIONS + ENGINE ================= -->
+<script>
+window.PART_KEY   = 'physics';
+window.PART_TITLE = 'Physics';
+
+window.QUESTIONS = [
+{
+  id:1, subject:'Physics', topic:'ന്യൂട്ടന്റെ നിയമങ്ങൾ', category:'BOTH', difficulty:'Easy', type:'Concept',
+  question:'ന്യൂട്ടന്റെ ഒന്നാം ചലന നിയമം ഏത് പേരിലറിയപ്പെടുന്നു?',
+  options:['ബല നിയമം','ജഡത്വ നിയമം','പ്രവർത്തന നിയമം','ഗുരുത്വ നിയമം'], answer:1,
+  explanation:'ന്യൂട്ടന്റെ ഒന്നാം ചലന നിയമം "ജഡത്വ നിയമം" (Law of Inertia) എന്നറിയപ്പെടുന്നു.',
+  optionNotes:[
+    'ബല നിയമം — രണ്ടാം നിയമം.',
+    'ജഡത്വ നിയമം — ഒന്നാം നിയമം (ശരിയായ ഉത്തരം).',
+    'പ്രവർത്തന നിയമം — മൂന്നാം നിയമം.',
+    'ഗുരുത്വ നിയമം — ഗുരുത്വാകർഷണം.']
+},
+{
+  id:2, subject:'Physics', topic:'ന്യൂട്ടന്റെ നിയമങ്ങൾ', category:'BOTH', difficulty:'Medium', type:'Formula',
+  question:'ബലത്തിന്റെ ഫോർമുല ഏതാണ്?',
+  options:['F = mv','F = ma','F = m/a','F = a/m'], answer:1,
+  explanation:'ബലം = മാസ് × ത്വരണം (F = ma) — ന്യൂട്ടന്റെ രണ്ടാം ചലന നിയമം.',
+  optionNotes:[
+    'F = mv — ആക്കം (Momentum).',
+    'F = ma — ശരി (ശരിയായ ഉത്തരം).',
+    'F = m/a — തെറ്റ്.',
+    'F = a/m — തെറ്റ്.']
+},
+{
+  id:3, subject:'Physics', topic:'ന്യൂട്ടന്റെ നിയമങ്ങൾ', category:'BOTH', difficulty:'Medium', type:'Concept',
+  question:'റോക്കറ്റ് വിക്ഷേപണം ഏത് നിയമത്തെ അടിസ്ഥാനമാക്കിയാണ്?',
+  options:['ഒന്നാം നിയമം','രണ്ടാം നിയമം','മൂന്നാം നിയമം','ഗുരുത്വ നിയമം'], answer:2,
+  explanation:'റോക്കറ്റ് വിക്ഷേപണം ന്യൂട്ടന്റെ മൂന്നാം ചലന നിയമം (Action-Reaction) അടിസ്ഥാനമാക്കിയാണ്.',
+  optionNotes:[
+    'ഒന്നാം നിയമം — ജഡത്വം.',
+    'രണ്ടാം നിയമം — F = ma.',
+    'മൂന്നാം നിയമം — Action-Reaction (ശരിയായ ഉത്തരം).',
+    'ഗുരുത്വ നിയമം — ഗുരുത്വാകർഷണം.']
+},
+{
+  id:4, subject:'Physics', topic:'ഗുരുത്വാകർഷണം', category:'BOTH', difficulty:'Medium', type:'Concept',
+  question:'ഭൂമിയുടെ ഗുരുത്വ ത്വരണം (g) എത്രയാണ്?',
+  options:['6.67 m/s²','8.9 m/s²','9.8 m/s²','10.8 m/s²'], answer:2,
+  explanation:'ഭൂമിയുടെ ഗുരുത്വ ത്വരണം g = 9.8 m/s².',
+  optionNotes:[
+    '6.67 — ഗുരുത്വ സ്ഥിരാങ്കം G യുടെ ഭാഗം (×10⁻¹¹).',
+    '8.9 — തെറ്റ്.',
+    '9.8 — ശരി (ശരിയായ ഉത്തരം).',
+    '10.8 — തെറ്റ്.']
+},
+{
+  id:5, subject:'Physics', topic:'ഗുരുത്വാകർഷണം', category:'BOTH', difficulty:'Medium', type:'Person-Discovery',
+  question:'ഗുരുത്വാകർഷണ സ്ഥിരാങ്കം (G) കണ്ടെത്തിയത് ആരാണ്?',
+  options:['ഐസക് ന്യൂട്ടൻ','ഹെൻറി കാവൻഡിഷ്','ആൽബർട്ട് ഐൻസ്റ്റീൻ','ഗലീലിയോ'], answer:1,
+  explanation:'ഹെൻറി കാവൻഡിഷ് 1798-ൽ G കണ്ടെത്തി — ടോർഷൻ ബാലൻസ് ഉപയോഗിച്ച്.',
+  optionNotes:[
+    'ന്യൂട്ടൻ — ഗുരുത്വാകർഷണ നിയമം ആവിഷ്കരിച്ചു.',
+    'കാവൻഡിഷ് — G കണ്ടെത്തി (ശരിയായ ഉത്തരം).',
+    'ഐൻസ്റ്റീൻ — ആപേക്ഷികത സിദ്ധാന്തം.',
+    'ഗലീലിയോ — ചലന നിയമങ്ങൾ.']
+},
+{
+  id:6, subject:'Physics', topic:'ഗുരുത്വാകർഷണം', category:'BOTH', difficulty:'Medium', type:'Concept',
+  question:'ചന്ദ്രനിലെ ഭാരം ഭൂമിയിലെ ഭാരത്തിന്റെ എത്ര ഭാഗമാണ്?',
+  options:['1/2','1/4','1/6','1/8'], answer:2,
+  explanation:'ചന്ദ്രനിലെ g ഭൂമിയുടെ 1/6 ആയതിനാൽ ഭാരവും 1/6 ആണ്.',
+  optionNotes:[
+    '1/2 — തെറ്റ്.',
+    '1/4 — തെറ്റ്.',
+    '1/6 — ശരി (ശരിയായ ഉത്തരം).',
+    '1/8 — തെറ്റ്.']
+},
+{
+  id:7, subject:'Physics', topic:'പ്രവൃത്തിയും ഊർജ്ജവും', category:'BOTH', difficulty:'Easy', type:'Unit',
+  question:'പ്രവൃത്തിയുടെ SI യൂണിറ്റ് ഏതാണ്?',
+  options:['വാട്ട്','ജൂൾ','ന്യൂട്ടൺ','പാസ്കൽ'], answer:1,
+  explanation:'പ്രവൃത്തിയുടെയും ഊർജ്ജത്തിന്റെയും SI യൂണിറ്റ് ജൂൾ (J).',
+  optionNotes:[
+    'വാട്ട് — ശക്തിയുടെ യൂണിറ്റ്.',
+    'ജൂൾ — പ്രവൃത്തി/ഊർജ്ജം (ശരിയായ ഉത്തരം).',
+    'ന്യൂട്ടൺ — ബലത്തിന്റെ യൂണിറ്റ്.',
+    'പാസ്കൽ — മർദ്ദത്തിന്റെ യൂണിറ്റ്.']
+},
+{
+  id:8, subject:'Physics', topic:'പ്രവൃത്തിയും ഊർജ്ജവും', category:'BOTH', difficulty:'Medium', type:'Formula',
+  question:'ഗതികോർജ്ജത്തിന്റെ (Kinetic Energy) ഫോർമുല ഏതാണ്?',
+  options:['mgh','mv²','½mv²','½mgh'], answer:2,
+  explanation:'ഗതികോർജ്ജം = ½mv² (m = മാസ്, v = പ്രവേഗം).',
+  optionNotes:[
+    'mgh — സ്ഥിതികോർജ്ജം.',
+    'mv² — തെറ്റ്.',
+    '½mv² — ഗതികോർജ്ജം (ശരിയായ ഉത്തരം).',
+    '½mgh — തെറ്റ്.']
+},
+{
+  id:9, subject:'Physics', topic:'താപം', category:'BOTH', difficulty:'Easy', type:'Unit',
+  question:'താപനിലയുടെ SI യൂണിറ്റ് ഏതാണ്?',
+  options:['സെൽഷ്യസ്','ഫാരൻഹീറ്റ്','കെൽവിൻ','ജൂൾ'], answer:2,
+  explanation:'താപനിലയുടെ SI യൂണിറ്റ് കെൽവിൻ (K).',
+  optionNotes:[
+    'സെൽഷ്യസ് — സാധാരണ യൂണിറ്റ് (SI അല്ല).',
+    'ഫാരൻഹീറ്റ് — യു.എസ്. യൂണിറ്റ്.',
+    'കെൽവിൻ — SI യൂണിറ്റ് (ശരിയായ ഉത്തരം).',
+    'ജൂൾ — ഊർജ്ജത്തിന്റെ യൂണിറ്റ്.']
+},
+{
+  id:10, subject:'Physics', topic:'താപം', category:'BOTH', difficulty:'Medium', type:'Concept',
+  question:'കേവല പൂജ്യം (Absolute Zero) എത്ര ഡിഗ്രി സെൽഷ്യസ് ആണ്?',
+  options:['0 °C','−100 °C','−273.15 °C','−373 °C'], answer:2,
+  explanation:'കേവല പൂജ്യം = −273.15 °C = 0 K.',
+  optionNotes:[
+    '0 °C — ജലത്തിന്റെ ദ്രവണാങ്കം.',
+    '−100 °C — തെറ്റ്.',
+    '−273.15 °C — കേവല പൂജ്യം (ശരിയായ ഉത്തരം).',
+    '−373 °C — തെറ്റ്.']
+},
+{
+  id:11, subject:'Physics', topic:'പ്രകാശം', category:'BOTH', difficulty:'Easy', type:'Concept',
+  question:'ശൂന്യതയിൽ പ്രകാശത്തിന്റെ വേഗം എത്രയാണ്?',
+  options:['3 × 10⁶ m/s','3 × 10⁸ m/s','3 × 10¹⁰ m/s','3 × 10¹² m/s'], answer:1,
+  explanation:'പ്രകാശവേഗം ശൂന്യതയിൽ 3 × 10⁸ m/s (3 ലക്ഷം കി.മീ/സെക്കൻഡ്).',
+  optionNotes:[
+    '3 × 10⁶ — തെറ്റ്.',
+    '3 × 10⁸ — ശരി (ശരിയായ ഉത്തരം).',
+    '3 × 10¹⁰ — തെറ്റ്.',
+    '3 × 10¹² — തെറ്റ്.']
+},
+{
+  id:12, subject:'Physics', topic:'പ്രകാശം', category:'BOTH', difficulty:'Medium', type:'Concept',
+  question:'മഴവില്ല് ഉണ്ടാകാൻ കാരണമായ പ്രകാശ പ്രതിഭാസം ഏതാണ്?',
+  options:['പ്രതിപതനം','അപവർത്തനം','വിസരണം','വിവർത്തനം'], answer:2,
+  explanation:'വെള്ള പ്രകാശം ജലത്തുള്ളികളിൽ വിസരണം (Dispersion) ചെയ്ത് ഏഴ് വർണ്ണങ്ങളായി പിരിയുന്നു — മഴവില്ല്.',
+  optionNotes:[
+    'പ്രതിപതനം — കണ്ണാടി.',
+    'അപവർത്തനം — ലെൻസ്.',
+    'വിസരണം — മഴവില്ല് (ശരിയായ ഉത്തരം).',
+    'വിവർത്തനം — തരംഗങ്ങൾ.']
+},
+{
+  id:13, subject:'Physics', topic:'പ്രകാശം', category:'BOTH', difficulty:'Medium', type:'Concept',
+  question:'മയോപിയ (ഹ്രസ്വദൃഷ്ടി) തിരുത്താൻ ഉപയോഗിക്കുന്ന ലെൻസ് ഏതാണ്?',
+  options:['കോൺവെക്സ്','കോൺകേവ്','സിലിണ്ട്രിക്കൽ','ബൈഫോക്കൽ'], answer:1,
+  explanation:'മയോപിയ തിരുത്താൻ കോൺകേവ് ലെൻസ് ഉപയോഗിക്കുന്നു; ഹൈപ്പർമെട്രോപിയക്ക് കോൺവെക്സ്.',
+  optionNotes:[
+    'കോൺവെക്സ് — ഹൈപ്പർമെട്രോപിയ.',
+    'കോൺകേവ് — മയോപിയ (ശരിയായ ഉത്തരം).',
+    'സിലിണ്ട്രിക്കൽ — അസ്റ്റിഗ്മാറ്റിസം.',
+    'ബൈഫോക്കൽ — പ്രെസ്ബയോപിയ.']
+},
+{
+  id:14, subject:'Physics', topic:'ശബ്ദം', category:'BOTH', difficulty:'Easy', type:'Concept',
+  question:'ശബ്ദം ഏത് തരം തരംഗമാണ്?',
+  options:['വൈദ്യുതകാന്തിക തരംഗം','യാന്ത്രിക തരംഗം','പ്രകാശ തരംഗം','റേഡിയോ തരംഗം'], answer:1,
+  explanation:'ശബ്ദം ഒരു യാന്ത്രിക തരംഗമാണ് — സഞ്ചരിക്കാൻ മാധ്യമം ആവശ്യം.',
+  optionNotes:[
+    'വൈദ്യുതകാന്തികം — പ്രകാശം, റേഡിയോ.',
+    'യാന്ത്രിക തരംഗം — ശബ്ദം (ശരിയായ ഉത്തരം).',
+    'പ്രകാശ തരംഗം — പ്രകാശം.',
+    'റേഡിയോ തരംഗം — വൈദ്യുതകാന്തികം.']
+},
+{
+  id:15, subject:'Physics', topic:'ശബ്ദം', category:'BOTH', difficulty:'Medium', type:'Concept',
+  question:'ശബ്ദത്തിന്റെ വേഗം ഏറ്റവും കൂടുതലുള്ളത് ഏത് മാധ്യമത്തിലാണ്?',
+  options:['വായു','ജലം','ഉരുക്ക്','ശൂന്യത'], answer:2,
+  explanation:'ശബ്ദവേഗം ഖരത്തിൽ ഏറ്റവും കൂടുതൽ — ഉരുക്കിൽ 5,960 m/s.',
+  optionNotes:[
+    'വായു — 343 m/s.',
+    'ജലം — 1,484 m/s.',
+    'ഉരുക്ക് — 5,960 m/s (ശരിയായ ഉത്തരം).',
+    'ശൂന്യത — സഞ്ചരിക്കില്ല.']
+},
+{
+  id:16, subject:'Physics', topic:'ശബ്ദം', category:'BOTH', difficulty:'Medium', type:'Concept',
+  question:'മനുഷ്യന്റെ ശ്രവണ പരിധി എത്രയാണ്?',
+  options:['2 Hz – 2,000 Hz','20 Hz – 20,000 Hz','200 Hz – 2,00,000 Hz','2,000 Hz – 20,000 Hz'], answer:1,
+  explanation:'മനുഷ്യന്റെ ശ്രവണ പരിധി 20 Hz – 20,000 Hz.',
+  optionNotes:[
+    '2 Hz – 2,000 Hz — തെറ്റ്.',
+    '20 Hz – 20,000 Hz — ശരി (ശരിയായ ഉത്തരം).',
+    '200 Hz – 2,00,000 Hz — തെറ്റ്.',
+    '2,000 Hz – 20,000 Hz — തെറ്റ്.']
+},
+{
+  id:17, subject:'Physics', topic:'വൈദ്യുതി', category:'BOTH', difficulty:'Medium', type:'Formula',
+  question:'ഓം നിയമം ഏതാണ്?',
+  options:['V = I/R','V = IR','V = R/I','V = I²R'], answer:1,
+  explanation:'ഓം നിയമം: V = IR (വോൾട്ടേജ് = കറന്റ് × പ്രതിരോധം).',
+  optionNotes:[
+    'V = I/R — തെറ്റ്.',
+    'V = IR — ശരി (ശരിയായ ഉത്തരം).',
+    'V = R/I — തെറ്റ്.',
+    'V = I²R — ഇത് ശക്തിയുടെ ഫോർമുല (P = I²R).']
+},
+{
+  id:18, subject:'Physics', topic:'ഇലക്ട്രോണിക്സ്', category:'883', difficulty:'Medium', type:'Person-Discovery',
+  question:'ട്രാൻസിസ്റ്റർ കണ്ടെത്തിയത് ഏത് വർഷമാണ്?',
+  options:['1932','1947','1958','1969'], answer:1,
+  explanation:'1947-ൽ ബെൽ ലാബിൽ ബാർഡീൻ, ബ്രാറ്റെയിൻ, ഷോക്ലി എന്നിവർ ട്രാൻസിസ്റ്റർ കണ്ടെത്തി.',
+  optionNotes:[
+    '1932 — ന്യൂട്രോൺ കണ്ടെത്തൽ.',
+    '1947 — ട്രാൻസിസ്റ്റർ (ശരിയായ ഉത്തരം).',
+    '1958 — IC കണ്ടെത്തൽ.',
+    '1969 — ഇന്റർനെറ്റ് ആരംഭം.']
+},
+{
+  id:19, subject:'Physics', topic:'ഇലക്ട്രോണിക്സ്', category:'883', difficulty:'Medium', type:'Person-Discovery',
+  question:'ഇലക്ട്രോൺ കണ്ടെത്തിയത് ആരാണ്?',
+  options:['റഥർഫോർഡ്','ജെ.ജെ. തോംസൺ','ചാഡ്വിക്ക്','നീൽസ് ബോർ'], answer:1,
+  explanation:'ജെ.ജെ. തോംസൺ 1897-ൽ ഇലക്ട്രോൺ കണ്ടെത്തി.',
+  optionNotes:[
+    'റഥർഫോർഡ് — പ്രോട്ടോൺ (1919).',
+    'തോംസൺ — ഇലക്ട്രോൺ (ശരിയായ ഉത്തരം).',
+    'ചാഡ്വിക്ക് — ന്യൂട്രോൺ (1932).',
+    'ബോർ — ആറ്റം മാതൃക.']
+},
+{
+  id:20, subject:'Physics', topic:'അളവുകൾ', category:'BOTH', difficulty:'Medium', type:'Concept',
+  question:'SI അടിസ്ഥാന യൂണിറ്റുകൾ എത്രയാണ്?',
+  options:['5','6','7','9'], answer:2,
+  explanation:'SI അടിസ്ഥാന യൂണിറ്റുകൾ 7 — m, kg, s, K, A, mol, cd.',
+  optionNotes:[
+    '5 — തെറ്റ്.',
+    '6 — തെറ്റ്.',
+    '7 — ശരി (ശരിയായ ഉത്തരം).',
+    '9 — തെറ്റ്.']
+}
+];
+</script>
+<script src="assets/engine.js"></script>
+</body>
+</html>

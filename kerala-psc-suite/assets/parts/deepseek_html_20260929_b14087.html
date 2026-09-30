@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Part 01 — Kerala History | Kerala PSC Suite</title>
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+<header class="quiz-header">
+  <h1 id="quizTitle">Part 01 — Kerala History</h1>
+  <p class="meta" id="quizMeta">Loading…</p>
+  <p><a href="index.html">← Back to all parts</a></p>
+</header>
+
+<main class="quiz-container" id="quizContainer"></main>
+
+<script src="assets/parts/part-01.js"></script>
+<script src="assets/engine.js"></script>
+<script>
+  window.addEventListener("DOMContentLoaded", function () {
+    if (window.PART_01_QUESTIONS) {
+      initQuiz("01", "Kerala History", window.PART_01_QUESTIONS);
+    } else {
+      document.getElementById("quizContainer").innerHTML =
+        "<p style='text-align:center;color:#ef4444;'>Could not load questions. Check that assets/parts/part-01.js exists.</p>";
+    }
+  });
+</script>
+</body>
+</html>
