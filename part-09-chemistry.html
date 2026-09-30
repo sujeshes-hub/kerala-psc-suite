@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kerala PSC — Chemistry (Part 8)</title>
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">🎯 Kerala PSC — Chemistry (Part 8)</div>
+  <nav class="tabs" id="tabs">
+    <button data-view="notes" class="active">📚 Study Notes</button>
+    <button data-view="test">📝 Mock Test</button>
+    <button data-view="revision">🔁 Revision</button>
+    <button data-view="bookmarks">⭐ Bookmarks</button>
+    <button data-view="result">📊 Result</button>
+    <button data-view="search">🔎 Search</button>
+  </nav>
+</header>
+
+<div class="scorebar" id="scorebar">
+  <div class="sbitem"><span>Score</span><b id="sbScore">0 / 0</b></div>
+  <div class="sbitem"><span>Attempted</span><b id="sbAtt">0</b></div>
+  <div class="sbitem"><span>Correct</span><b id="sbCor">0</b></div>
+  <div class="sbitem"><span>Wrong</span><b id="sbWr">0</b></div>
+  <div class="sbitem"><span>Remaining</span><b id="sbRem">0</b></div>
+  <div class="sbitem"><span>Accuracy</span><b id="sbAcc">0%</b></div>
+</div>
+<div class="progresswrap"><div class="progressbar" id="progressbar"></div></div>
+
+<main>
+
+<!-- ================= STUDY NOTES ================= -->
+<section id="view-notes" class="view active">
+
+  <div class="viewhead">
+    <h2>📚 CHEMISTRY — Part 8</h2>
+    <p class="hint">
+      <b>Marks: 5</b> &nbsp;|&nbsp; <span class="tag both">BOTH (573 &amp; 883)</span><br>
+      Atom · Periodic table · Acids &amp; bases · pH · Alloys · Fuels · Polymers · Kerala industry
+    </p>
+    <button class="btn primary" id="startMcqBtn">📝 Start MCQ Test (20 Questions)</button>
+  </div>
+
+  <div class="howto">
+    <h3>📖 How to use these notes</h3>
+    <ul>
+      <li><b>Diagrams</b> are inline SVG — work fully offline.</li>
+      <li><b>Trap boxes</b> ⚠️ highlight commonly confused facts.</li>
+      <li><b>Memory tricks</b> 🧠 appear at point of use.</li>
+      <li>Every topic has interactive MCQs in the <b>📝 Mock Test</b> tab.</li>
+    </ul>
+  </div>
+
+  <div class="toc">
+    <h3>🔖 Jump to a topic</h3>
+    <a href="#topic-8-1">8.1 ആറ്റം ഘടന</a>
+    <a href="#topic-8-2">8.2 ആവർത്തന പട്ടിക</a>
+    <a href="#topic-8-3">8.3 ആസിഡുകളും ബേസുകളും</a>
+    <a href="#topic-8-4">8.4 ലോഹസങ്കരങ്ങൾ</a>
+    <a href="#topic-8-5">8.5 ഇന്ധനങ്ങൾ</a>
+    <a href="#topic-8-6">8.6 പോളിമറുകൾ &amp; പ്ലാസ്റ്റിക്</a>
+    <a href="#topic-8-7">8.7 രാസവളങ്ങൾ</a>
+    <a href="#topic-8-8">8.8 കേരളത്തിലെ വ്യവസായങ്ങൾ</a>
+  </div>
+
+  <details class="subject" open>
+    <summary>🧪 PART 8 — CHEMISTRY <span class="tag both">BOTH</span></summary>
+
+    <!-- 8.1 Atom Structure -->
+    <details class="note-block" id="topic-8-1" data-title="ആറ്റം ഘടന">
+      <summary>8.1 ആറ്റം ഘടന (Atomic Structure)</summary>
+      <div class="note-body">
+
+        <div class="svgwrap wide">
+          <div class="figtitle">🖼 Fig. 1 — ആറ്റത്തിന്റെ ഘടന</div>
+          <svg viewBox="0 0 600 300" role="img" aria-label="Structure of an atom">
+            <rect width="600" height="300" fill="#fbfdff"/>
+            <!-- Electron orbits -->
+            <ellipse cx="300" cy="150" rx="200" ry="80" fill="none" stroke="#7a5af8" stroke-width="1.5" stroke-dasharray="4,3"/>
+            <ellipse cx="300" cy="150" rx="130" ry="50" fill="none" stroke="#7a5af8" stroke-width="1.5" stroke-dasharray="4,3"/>
+            <!-- Nucleus -->
+            <circle cx="300" cy="150" r="35" fill="#e3f0ff" stroke="#0b4a8a" stroke-width="2"/>
+            <text x="300" y="145" font-size="11" font-weight="bold" fill="#0b4a8a" text-anchor="middle">Nucleus</text>
+            <text x="300" y="160" font-size="9" fill="#0b4a8a" text-anchor="middle">p⁺ + n⁰</text>
+            <!-- Electrons -->
+            <circle cx="150" cy="150" r="8" fill="#c5221f"/>
+            <text x="150" y="153" font-size="9" fill="#fff" text-anchor="middle">e⁻</text>
+            <circle cx="450" cy="150" r="8" fill="#c5221f"/>
+            <text x="450" y="153" font-size="9" fill="#fff" text-anchor="middle">e⁻</text>
+            <circle cx="300" cy="70" r="8" fill="#c5221f"/>
+            <text x="300" y="73" font-size="9" fill="#fff" text-anchor="middle">e⁻</text>
+            <circle cx="300" cy="230" r="8" fill="#c5221f"/>
+            <text x="300" y="233" font-size="9" fill="#fff" text-anchor="middle">e⁻</text>
+            <!-- Labels -->
+            <text x="30" y="30" font-size="13" font-weight="bold" fill="#1a4a6a">STRUCTURE OF ATOM</text>
+            <text x="30" y="60" font-size="10" fill="#16223a">• Proton (p⁺) — positive charge</text>
+            <text x="30" y="80" font-size="10" fill="#16223a">• Neutron (n⁰) — no charge</text>
+            <text x="30" y="100" font-size="10" fill="#16223a">• Electron (e⁻) — negative charge</text>
+            <text x="30" y="120" font-size="10" fill="#16223a">• Atomic Number (Z) = protons</text>
+            <text x="30" y="140" font-size="10" fill="#16223a">• Mass Number (A) = p + n</text>
+          </svg>
+          <div class="svgcap">Atom = Nucleus (protons + neutrons) + Electrons orbiting in shells.</div>
+        </div>
+
+        <h4>ആറ്റത്തിന്റെ അടിസ്ഥാന കണികകൾ</h4>
+        <table>
+          <tr><th>കണിക</th><th>ചാർജ്</th><th>മാസ്</th><th>കണ്ടെത്തിയത്</th></tr>
+          <tr><td>ഇലക്ട്രോൺ</td><td>−1.6 × 10⁻¹⁹ C</td><td>9.1 × 10⁻³¹ kg</td><td>ജെ.ജെ. തോംസൺ (1897)</td></tr>
+          <tr><td>പ്രോട്ടോൺ</td><td>+1.6 × 10⁻¹⁹ C</td><td>1.67 × 10⁻²⁷ kg</td><td>റഥർഫോർഡ് (1919)</td></tr>
+          <tr><td>ന്യൂട്രോൺ</td><td>0</td><td>1.67 × 10⁻²⁷ kg</td><td>ജെയിംസ് ചാഡ്വിക്ക് (1932)</td></tr>
+        </table>
+
+        <h4>പ്രധാന ആറ്റം മാതൃകകൾ</h4>
+        <table>
+          <tr><th>മാതൃക</th><th>ശാസ്ത്രജ്ഞൻ</th><th>വർഷം</th></tr>
+          <tr><td>പ്ലം പുഡ്ഡിംഗ് മാതൃക</td><td>ജെ.ജെ. തോംസൺ</td><td>1904</td></tr>
+          <tr><td>ആണവ മാതൃക (Nuclear)</td><td>ഏണസ്റ്റ് റഥർഫോർഡ്</td><td>1911</td></tr>
+          <tr><td>ബോർ മാതൃക</td><td>നീൽസ് ബോർ</td><td>1913</td></tr>
+          <tr><td>ക്വാണ്ടം മെക്കാനിക്കൽ മാതൃക</td><td>ഷ്രോഡിംഗർ</td><td>1926</td></tr>
+        </table>
+
+        <h4>ആറ്റം സംഖ്യകൾ</h4>
+        <ul>
+          <li><b>ആറ്റോമിക സംഖ്യ (Z):</b> ഒരു ആറ്റത്തിലെ പ്രോട്ടോണുകളുടെ എണ്ണം.</li>
+          <li><b>മാസ സംഖ്യ (A):</b> പ്രോട്ടോണുകൾ + ന്യൂട്രോണുകൾ.</li>
+          <li><b>ഐസോടോപ്പുകൾ:</b> ഒരേ Z, വ്യത്യസ്ത A (ഉദാ: C-12, C-14).</li>
+          <li><b>ഐസോബാറുകൾ:</b> ഒരേ A, വ്യത്യസ്ത Z (ഉദാ: Ar-40, Ca-40).</li>
+          <li><b>ഐസോടോണുകൾ:</b> ഒരേ ന്യൂട്രോൺ എണ്ണം.</li>
+        </ul>
+
+        <div class="trap"><b>⚠️ PSC Trap</b><br>
+          <b>ആറ്റോമിക സംഖ്യ (Z)</b> = പ്രോട്ടോണുകളുടെ എണ്ണം (ഇലക്ട്രോണുകളുടെ എണ്ണവും തുല്യം).<br>
+          <b>മാസ സംഖ്യ (A)</b> = പ്രോട്ടോൺ + ന്യൂട്രോൺ.<br>
+          ഇവ രണ്ടും കൂട്ടിക്കുഴയ്ക്കരുത്.
+        </div>
+      </div>
+    </details>
+
+    <!-- 8.2 Periodic Table -->
+    <details class="note-block" id="topic-8-2" data-title="ആവർത്തന പട്ടിക">
+      <summary>8.2 ആവർത്തന പട്ടിക (Periodic Table)</summary>
+      <div class="note-body">
+
+        <div class="svgwrap wide">
+          <div class="figtitle">🖼 Fig. 2 — ആവർത്തന പട്ടിക (ഘടന)</div>
+          <svg viewBox="0 0 760 300" role="img" aria-label="Periodic table structure">
+            <rect width="760" height="300" fill="#fbfdff"/>
+
+            <!-- Group labels -->
+            <text x="60" y="35" font-size="10" font-weight="bold" fill="#0b4a8a" text-anchor="middle">1</text>
+            <text x="120" y="35" font-size="10" font-weight="bold" fill="#0b4a8a" text-anchor="middle">2</text>
+            <text x="300" y="35" font-size="10" font-weight="bold" fill="#0b4a8a" text-anchor="middle">13</text>
+            <text x="360" y="35" font-size="10" font-weight="bold" fill="#0b4a8a" text-anchor="middle">14</text>
+            <text x="420" y="35" font-size="10" font-weight="bold" fill="#0b4a8a" text-anchor="middle">15</text>
+            <text x="480" y="35" font-size="10" font-weight="bold" fill="#0b4a8a" text-anchor="middle">16</text>
+            <text x="540" y="35" font-size="10" font-weight="bold" fill="#0b4a8a" text-anchor="middle">17</text>
+            <text x="600" y="35" font-size="10" font-weight="bold" fill="#0b4a8a" text-anchor="middle">18</text>
+
+            <!-- Alkali metals -->
+            <rect x="45" y="45" width="30" height="25" fill="#fde9d9" stroke="#8a4a00" stroke-width="1"/>
+            <text x="60" y="62" font-size="10" font-weight="bold" fill="#8a4a00" text-anchor="middle">Li</text>
+            <rect x="45" y="75" width="30" height="25" fill="#fde9d9" stroke="#8a4a00" stroke-width="1"/>
+            <text x="60" y="92" font-size="10" font-weight="bold" fill="#8a4a00" text-anchor="middle">Na</text>
+            <rect x="45" y="105" width="30" height="25" fill="#fde9d9" stroke="#8a4a00" stroke-width="1"/>
+            <text x="60" y="122" font-size="10" font-weight="bold" fill="#8a4a00" text-anchor="middle">K</text>
+
+            <!-- Alkaline earth -->
+            <rect x="105" y="75" width="30" height="25" fill="#fff6e0" stroke="#8a5300" stroke-width="1"/>
+            <text x="120" y="92" font-size="10" font-weight="bold" fill="#8a5300" text-anchor="middle">Mg</text>
+            <rect x="105" y="105" width="30" height="25" fill="#fff6e0" stroke="#8a5300" stroke-width="1"/>
+            <text x="120" y="122" font-size="10" font-weight="bold" fill="#8a5300" text-anchor="middle">Ca</text>
+
+            <!-- Transition metals -->
+            <rect x="165" y="75" width="30" height="25" fill="#e8e3ff" stroke="#4a2d9c" stroke-width="1"/>
+            <text x="180" y="92" font-size="10" font-weight="bold" fill="#4a2d9c" text-anchor="middle">Fe</text>
+            <rect x="195" y="75" width="30" height="25" fill="#e8e3ff" stroke="#4a2d9c" stroke-width="1"/>
+            <text x="210" y="92" font-size="10" font-weight="bold" fill="#4a2d9c" text-anchor="middle">Co</text>
+            <rect x="225" y="75" width="30" height="25" fill="#e8e3ff" stroke="#4a2d9c" stroke-width="1"/>
+            <text x="240" y="92" font-size="10" font-weight="bold" fill="#4a2d9c" text-anchor="middle">Ni</text>
+            <rect x="255" y="75" width="30" height="25" fill="#e8e3ff" stroke="#4a2d9c" stroke-width="1"/>
+            <text x="270" y="92" font-size="10" font-weight="bold" fill="#4a2d9c" text-anchor="middle">Cu</text>
+            <rect x="165" y="105" width="30" height="25" fill="#e8e3ff" stroke="#4a2d9c" stroke-width="1"/>
+            <text x="180" y="122" font-size="10" font-weight="bold" fill="#4a2d9c" text-anchor="middle">Ag</text>
+            <rect x="195" y="105" width="30" height="25" fill="#e8e3ff" stroke="#4a2d9c" stroke-width="1"/>
+            <text x="210" y="122" font-size="10" font-weight="bold" fill="#4a2d9c" text-anchor="middle">Au</text>
+
+            <!-- Non-metals -->
+            <rect x="285" y="45" width="30" height="25" fill="#e6f6ec" stroke="#177a3d" stroke-width="1"/>
+            <text x="300" y="62" font-size="10" font-weight="bold" fill="#177a3d" text-anchor="middle">B</text>
+            <rect x="345" y="45" width="30" height="25" fill="#e6f6ec" stroke="#177a3d" stroke-width="1"/>
+            <text x="360" y="62" font-size="10" font-weight="bold" fill="#177a3d" text-anchor="middle">C</text>
+            <rect x="405" y="45" width="30" height="25" fill="#e6f6ec" stroke="#177a3d" stroke-width="1"/>
+            <text x="420" y="62" font-size="10" font-weight="bold" fill="#177a3d" text-anchor="middle">N</text>
+            <rect x="465" y="45" width="30" height="25" fill="#e6f6ec" stroke="#177a3d" stroke-width="1"/>
+            <text x="480" y="62" font-size="10" font-weight="bold" fill="#177a3d" text-anchor="middle">O</text>
+            <rect x="525" y="45" width="30" height="25" fill="#e6f6ec" stroke="#177a3d" stroke-width="1"/>
+            <text x="540" y="62" font-size="10" font-weight="bold" fill="#177a3d" text-anchor="middle">F</text>
+            <rect x="585" y="45" width="30" height="25" fill="#f3efff" stroke="#7a5af8" stroke-width="1"/>
+            <text x="600" y="62" font-size="10" font-weight="bold" fill="#7a5af8" text-anchor="middle">He</text>
+
+            <!-- Halogens -->
+            <rect x="525" y="75" width="30" height="25" fill="#fdecea" stroke="#c5221f" stroke-width="1"/>
+            <text x="540" y="92" font-size="10" font-weight="bold" fill="#c5221f" text-anchor="middle">Cl</text>
+            <rect x="585" y="75" width="30" height="25" fill="#f3efff" stroke="#7a5af8" stroke-width="1"/>
+            <text x="600" y="92" font-size="10" font-weight="bold" fill="#7a5af8" text-anchor="middle">Ne</text>
+
+            <rect x="525" y="105" width="30" height="25" fill="#fdecea" stroke="#c5221f" stroke-width="1"/>
+            <text x="540" y="122" font-size="10" font-weight="bold" fill="#c5221f" text-anchor="middle">Br</text>
+            <rect x="585" y="105" width="30" height="25" fill="#f3efff" stroke="#7a5af8" stroke-width="1"/>
+            <text x="600" y="122" font-size="10" font-weight="bold" fill="#7a5af8" text-anchor="middle">Ar</text>
+
+            <text x="380" y="270" font-size="10" fill="#5b6b85" text-anchor="middle">മെൻഡലീവ് (1869) — ആവർത്തന നിയമം · മോസ്ലി (1913) — ആധുനിക ആവർത്തന നിയമം</text>
+            <text x="380" y="290" font-size="10" fill="#5b6b85" text-anchor="middle">ആകെ: 7 പിരീഡുകൾ · 18 ഗ്രൂപ്പുകൾ · 118 മൂലകങ്ങൾ</text>
+          </svg>
+          <div class="svgcap">Periodic table: 7 periods, 18 groups, 118 elements.</div>
+        </div>
+
+        <table>
+          <tr><th>വസ്തുത</th><th>വിവരം</th></tr>
+          <tr><td>ആവർത്തന പട്ടികയുടെ പിതാവ്</td><td>ദിമിത്രി മെൻഡലീവ് (1869)</td></tr>
+          <tr><td>ആധുനിക ആവർത്തന നിയമം</td><td>ഹെൻറി മോസ്ലി (1913) — ആറ്റോമിക സംഖ്യ അടിസ്ഥാനം</td></tr>
+          <tr><td>ആകെ മൂലകങ്ങൾ</td><td>118</td></tr>
+          <tr><td>പിരീഡുകൾ</td><td>7</td></tr>
+          <tr><td>ഗ്രൂപ്പുകൾ</td><td>18</td></tr>
+          <tr><td>ഏറ്റവും ഭാരം കൂടിയ മൂലകം</td><td>ഒഗനെസ്സൺ (Og, 118)</td></tr>
+          <tr><td>ഏറ്റവും ഭാരം കുറഞ്ഞ മൂലകം</td><td>ഹൈഡ്രജൻ (H)</td></tr>
+        </table>
+
+        <h4>പ്രധാന ഗ്രൂപ്പുകൾ</h4>
+        <table>
+          <tr><th>ഗ്രൂപ്പ്</th><th>പേര്</th><th>ഉദാഹരണങ്ങൾ</th></tr>
+          <tr><td>Group 1</td><td>ആൽക്കലി ലോഹങ്ങൾ</td><td>Li, Na, K</td></tr>
+          <tr><td>Group 2</td><td>ആൽക്കലൈൻ എർത്ത് ലോഹങ്ങൾ</td><td>Mg, Ca</td></tr>
+          <tr><td>Group 17</td><td>ഹാലോജനുകൾ</td><td>F, Cl, Br, I</td></tr>
+          <tr><td>Group 18</td><td>ഉത്കൃഷ്ട വാതകങ്ങൾ (Noble gases)</td><td>He, Ne, Ar</td></tr>
+          <tr><td>d-block</td><td>സംക്രമണ ലോഹങ്ങൾ</td><td>Fe, Cu, Ag, Au</td></tr>
+          <tr><td>f-block</td><td>ആന്തരിക സംക്രമണ ലോഹങ്ങൾ</td><td>U, Th</td></tr>
+        </table>
+
+        <div class="mnem"><b>🧠 "LiNa-K-Rb-Cs-Fr"</b> — ആൽക്കലി ലോഹങ്ങൾ (Group 1). "Little Naughty Kids Rub Cats Fur."</div>
+        <div class="mnem"><b>🧠 "He-Ne-Ar-Kr-Xe-Rn"</b> — ഉത്കൃഷ്ട വാതകങ്ങൾ (Group 18).</div>
+      </div>
+    </details>
+
+    <!-- 8.3 Acids & Bases -->
+    <details class="note-block" id="topic-8-3" data-title="ആസിഡുകളും ബേസുകളും">
+      <summary>8.3 ആസിഡുകളും ബേസുകളും (Acids &amp; Bases)</summary>
+      <div class="note-body">
+
+        <div class="svgwrap wide">
+          <div class="figtitle">🖼 Fig. 3 — pH സ്കെയിൽ</div>
+          <svg viewBox="0 0 760 180" role="img" aria-label="pH scale">
+            <rect width="760" height="180" fill="#fbfdff"/>
+            <defs>
+              <linearGradient id="phGrad" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0%" stop-color="#c5221f"/>
+                <stop offset="35%" stop-color="#f5b96a"/>
+                <stop offset="50%" stop-color="#f5e6c8"/>
+                <stop offset="65%" stop-color="#a8d4ed"/>
+                <stop offset="100%" stop-color="#4a2d9c"/>
+              </linearGradient>
+            </defs>
+            <rect x="60" y="80" width="640" height="30" rx="6" fill="url(#phGrad)" stroke="#5b6b85"/>
+
+            <!-- Scale marks -->
+            <text x="60" y="130" font-size="10" fill="#16223a" text-anchor="middle">0</text>
+            <text x="124" y="130" font-size="10" fill="#16223a" text-anchor="middle">1</text>
+            <text x="188" y="130" font-size="10" fill="#16223a" text-anchor="middle">2</text>
+            <text x="252" y="130" font-size="10" fill="#16223a" text-anchor="middle">3</text>
+            <text x="316" y="130" font-size="10" fill="#16223a" text-anchor="middle">4</text>
+            <text x="380" y="130" font-size="10" fill="#16223a" text-anchor="middle">7</text>
+            <text x="444" y="130" font-size="10" fill="#16223a" text-anchor="middle">8</text>
+            <text x="508" y="130" font-size="10" fill="#16223a" text-anchor="middle">9</text>
+            <text x="572" y="130" font-size="10" fill="#16223a" text-anchor="middle">12</text>
+            <text x="636" y="130" font-size="10" fill="#16223a" text-anchor="middle">13</text>
+            <text x="700" y="130" font-size="10" fill="#16223a" text-anchor="middle">14</text>
+
+            <!-- Labels -->
+            <text x="200" y="55" font-size="13" font-weight="bold" fill="#c5221f" text-anchor="middle">ACIDIC</text>
+            <text x="380" y="55" font-size="13" font-weight="bold" fill="#5a3a1a" text-anchor="middle">NEUTRAL</text>
+            <text x="580" y="55" font-size="13" font-weight="bold" fill="#4a2d9c" text-anchor="middle">BASIC</text>
+
+            <text x="380" y="165" font-size="10" fill="#5b6b85" text-anchor="middle">pH &lt; 7 — ആസിഡ് · pH = 7 — ന്യൂട്രൽ · pH &gt; 7 — ബേസ്</text>
+          </svg>
+          <div class="svgcap">pH scale: 0–14. Acidic (0–6), Neutral (7), Basic (8–14).</div>
+        </div>
+
+        <table>
+          <tr><th>പദാർത്ഥം</th><th>pH</th><th>തരം</th></tr>
+          <tr><td>ബാറ്ററി ആസിഡ്</td><td>0–1</td><td>ശക്തമായ ആസിഡ്</td></tr>
+          <tr><td>ആമാശയ ആസിഡ് (HCl)</td><td>1.5–3.5</td><td>ആസിഡ്</td></tr>
+          <tr><td>നാരങ്ങ</td><td>2</td><td>ആസിഡ്</td></tr>
+          <tr><td>വിനാഗിരി</td><td>3</td><td>ആസിഡ്</td></tr>
+          <tr><td>തക്കാളി</td><td>4</td><td>ആസിഡ്</td></tr>
+          <tr><td>കാപ്പി</td><td>5</td><td>ആസിഡ്</td></tr>
+          <tr><td>പാൽ</td><td>6.5</td><td>അൽപ്പം ആസിഡ്</td></tr>
+          <tr><td>ശുദ്ധജലം</td><td>7</td><td>ന്യൂട്രൽ</td></tr>
+          <tr><td>രക്തം</td><td>7.35–7.45</td><td>അൽപ്പം ബേസിക്</td></tr>
+          <tr><td>ബേക്കിംഗ് സോഡ</td><td>9</td><td>ബേസ്</td></tr>
+          <tr><td>സോപ്പ്</td><td>9–10</td><td>ബേസ്</td></tr>
+          <tr><td>അമോണിയ</td><td>11</td><td>ബേസ്</td></tr>
+          <tr><td>ബ്ലീച്ചിംഗ് പൗഡർ</td><td>12</td><td>ബേസ്</td></tr>
+          <tr><td>NaOH</td><td>13–14</td><td>ശക്തമായ ബേസ്</td></tr>
+        </table>
+
+        <h4>പ്രധാന ആസിഡുകൾ</h4>
+        <table>
+          <tr><th>ആസിഡ്</th><th>ഫോർമുല</th><th>സ്രോതസ്സ്</th></tr>
+          <tr><td>ഹൈഡ്രോക്ലോറിക് ആസിഡ്</td><td>HCl</td><td>ആമാശയം</td></tr>
+          <tr><td>സൾഫ്യൂരിക് ആസിഡ്</td><td>H₂SO₄</td><td>ബാറ്ററി</td></tr>
+          <tr><td>നൈട്രിക് ആസിഡ്</td><td>HNO₃</td><td>വെടിമരുന്ന്</td></tr>
+          <tr><td>അസറ്റിക് ആസിഡ്</td><td>CH₃COOH</td><td>വിനാഗിരി</td></tr>
+          <tr><td>സിട്രിക് ആസിഡ്</td><td>C₆H₈O₇</td><td>നാരങ്ങ, ഓറഞ്ച്</td></tr>
+          <tr><td>ലാക്ടിക് ആസിഡ്</td><td>C₃H₆O₃</td><td>പാൽ, തൈര്</td></tr>
+          <tr><td>ഓക്സാലിക് ആസിഡ്</td><td>C₂H₂O₄</td><td>ചീര, ടൊമാറ്റോ</td></tr>
+          <tr><td>കാർബോണിക് ആസിഡ്</td><td>H₂CO₃</td><td>സോഡ</td></tr>
+        </table>
+
+        <h4>പ്രധാന ബേസുകൾ</h4>
+        <table>
+          <tr><th>ബേസ്</th><th>ഫോർമുല</th><th>ഉപയോഗം</th></tr>
+          <tr><td>സോഡിയം ഹൈഡ്രോക്സൈഡ്</td><td>NaOH</td><td>സോപ്പ് നിർമ്മാണം</td></tr>
+          <tr><td>പൊട്ടാസ്യം ഹൈഡ്രോക്സൈഡ്</td><td>KOH</td><td>സോപ്പ്</td></tr>
+          <tr><td>കാൽസ്യം ഹൈഡ്രോക്സൈഡ്</td><td>Ca(OH)₂</td><td>ചുണ്ണാമ്പ്</td></tr>
+          <tr><td>അമോണിയം ഹൈഡ്രോക്സൈഡ്</td><td>NH₄OH</td><td>വീട് ശുചീകരണം</td></tr>
+          <tr><td>മഗ്നീഷ്യം ഹൈഡ്രോക്സൈഡ്</td><td>Mg(OH)₂</td><td>ആന്റാസിഡ്</td></tr>
+          <tr><td>ബേക്കിംഗ് സോഡ</td><td>NaHCO₃</td><td>പാചകം</td></tr>
+        </table>
+
+        <h4>ആസിഡ്-ബേസ് സൂചകങ്ങൾ</h4>
+        <table>
+          <tr><th>സൂചകം</th><th>ആസിഡിൽ</th><th>ബേസിൽ</th></tr>
+          <tr><td>ലിറ്റ്മസ്</td><td>ചുവപ്പ്</td><td>നീല</td></tr>
+          <tr><td>മീഥൈൽ ഓറഞ്ച്</td><td>ചുവപ്പ്/പിങ്ക്</td><td>മഞ്ഞ</td></tr>
+          <tr><td>ഫിനോൾഫ്ത്തലിൻ</td><td>നിറമില്ല</td><td>പിങ്ക്</td></tr>
+          <tr><td>ബ്രോമോതൈമോൾ ബ്ലൂ</td><td>മഞ്ഞ</td><td>നീല</td></tr>
+        </table>
+
+        <div class="mnem"><b>🧠 "Litmus-Red-Acid"</b> — ലിറ്റ്മസ് ആസിഡിൽ ചുവപ്പ്; ബേസിൽ നീല.</div>
+
+        <div class="trap"><b>⚠️ PSC Trap</b><br>
+          <b>രക്തത്തിന്റെ pH:</b> 7.35–7.45 (അൽപ്പം ബേസിക്).<br>
+          <b>ആമാശയത്തിന്റെ pH:</b> 1.5–3.5 (ശക്തമായ ആസിഡ് — HCl).<br>
+          <b>മഴവെള്ളത്തിന്റെ pH:</b> ~5.6 (കാർബോണിക് ആസിഡ് കാരണം).
+        </div>
+      </div>
+    </details>
+
+    <!-- 8.4 Alloys -->
+    <details class="note-block" id="topic-8-4" data-title="ലോഹസങ്കരങ്ങൾ">
+      <summary>8.4 ലോഹസങ്കരങ്ങൾ (Alloys)</summary>
+      <div class="note-body">
+
+        <table>
+          <tr><th>ലോഹസങ്കരം</th><th>ഘടകങ്ങൾ</th><th>ഉപയോഗം</th></tr>
+          <tr><td>ഉരുക്ക് (Steel)</td><td>Fe + C</td><td>കെട്ടിട നിർമ്മാണം</td></tr>
+          <tr><td>സ്റ്റെയിൻലെസ് സ്റ്റീൽ</td><td>Fe + Cr + Ni + C</td><td>പാത്രങ്ങൾ</td></tr>
+          <tr><td>പിത്തള (Brass)</td><td>Cu + Zn</td><td>പാത്രങ്ങൾ, ആഭരണങ്ങൾ</td></tr>
+          <tr><td>വെങ്കലം (Bronze)</td><td>Cu + Sn</td><td>ശിൽപങ്ങൾ, മെഡലുകൾ</td></tr>
+          <tr><td>സോൾഡർ (Solder)</td><td>Pb + Sn</td><td>ഇലക്ട്രോണിക്സ്</td></tr>
+          <tr><td>അമൽഗം (Amalgam)</td><td>മെർക്കുറി + ലോഹം</td><td>ദന്ത ചികിത്സ</td></tr>
+          <tr><td>ഡ്യൂറലുമിൻ</td><td>Al + Cu + Mg + Mn</td><td>വിമാന നിർമ്മാണം</td></tr>
+          <tr><td>അലുമിനിയം ബ്രോൺസ്</td><td>Cu + Al</td><td>നാണയങ്ങൾ</td></tr>
+          <tr><td>ജർമ്മൻ സിൽവർ</td><td>Cu + Zn + Ni</td><td>ആഭരണങ്ങൾ</td></tr>
+          <tr><td>ബാബിറ്റ് മെറ്റൽ</td><td>Sn + Sb + Cu</td><td>ബെയറിംഗ്</td></tr>
+        </table>
+
+        <h4>പ്രധാന വസ്തുതകൾ</h4>
+        <ul>
+          <li><b>ലോഹസങ്കരം:</b> രണ്ടോ അതിലധികമോ ലോഹങ്ങളുടെ (അല്ലെങ്കിൽ ലോഹം + അലോഹം) മിശ്രിതം.</li>
+          <li><b>ഉരുക്ക് (Steel):</b> ഇരുമ്പ് + കാർബൺ. കാർബണിന്റെ അളവ് കൂടിയാൽ കടുപ്പം കൂടും.</li>
+          <li><b>സ്റ്റെയിൻലെസ് സ്റ്റീൽ:</b> ക്രോമിയം ചേർക്കുന്നത് തുരുമ്പിക്കാതിരിക്കാൻ.</li>
+          <li><b>വെങ്കലം:</b> ചരിത്രപരമായി ഏറ്റവും പഴക്കമുള്ള ലോഹസങ്കരം.</li>
+        </ul>
+
+        <div class="mnem"><b>🧠 "Brass = Cu + Zn, Bronze = Cu + Sn"</b> — Brass-Zn, Bronze-Sn. "Zinc-Brass, Tin-Bronze."</div>
+      </div>
+    </details>
+
+    <!-- 8.5 Fuels -->
+    <details class="note-block" id="topic-8-5" data-title="ഇന്ധനങ്ങൾ">
+      <summary>8.5 ഇന്ധനങ്ങൾ (Fuels)</summary>
+      <div class="note-body">
+
+        <table>
+          <tr><th>ഇന്ധനം</th><th>ഘടകം</th><th>ഉപയോഗം</th></tr>
+          <tr><td>LPG</td><td>ബ്യൂട്ടെയ്ൻ + പ്രൊപ്പെയ്ൻ</td><td>അടുക്കള ഗ്യാസ്</td></tr>
+          <tr><td>CNG</td><td>മീഥെയ്ൻ (CH₄)</td><td>വാഹനങ്ങൾ</td></tr>
+          <tr><td>പെട്രോൾ</td><td>C₅–C₁₀ ഹൈഡ്രോകാർബണുകൾ</td><td>വാഹനങ്ങൾ</td></tr>
+          <tr><td>ഡീസൽ</td><td>C₁₀–C₁₈ ഹൈഡ്രോകാർബണുകൾ</td><td>ട്രക്ക്, ബസ്</td></tr>
+          <tr><td>മണ്ണെണ്ണ</td><td>C₁₀–C₁₆</td><td>വിളക്ക്</td></tr>
+          <tr><td>കൽക്കരി</td><td>കാർബൺ + ഹൈഡ്രോകാർബൺ</td><td>വൈദ്യുതി ഉൽപാദനം</td></tr>
+          <tr><td>പ്രകൃതി വാതകം</td><td>മീഥെയ്ൻ</td><td>വീട്, വ്യവസായം</td></tr>
+        </table>
+
+        <h4>കാർബണിന്റെ രൂപങ്ങൾ (Allotropes)</h4>
+        <table>
+          <tr><th>രൂപം</th><th>സ്വഭാവം</th></tr>
+          <tr><td>ഡയമണ്ട് (Diamond)</td><td>ഏറ്റവും കടുപ്പമുള്ള പദാർത്ഥം; വൈദ്യുത ചാലകമല്ല</td></tr>
+          <tr><td>ഗ്രാഫൈറ്റ് (Graphite)</td><td>മൃദുവായത്; വൈദ്യുത ചാലകം (പെൻസിൽ ലെഡ്)</td></tr>
+          <tr><td>ഫുള്ളറീൻ (Fullerene, C₆₀)</td><td>ബക്കിമിൻസ്റ്റർ ഫുള്ളറീൻ</td></tr>
+          <tr><td>ഗ്രാഫീൻ (Graphene)</td><td>ഒറ്റ പാളി കാർബൺ</td></tr>
+        </table>
+
+        <h4>കാർബണിന്റെ ഓക്സൈഡുകൾ</h4>
+        <ul>
+          <li><b>CO₂ (കാർബൺ ഡൈ ഓക്സൈഡ്):</b> ഹരിതഗൃഹ വാതകം; ശ്വസനത്തിൽ പുറന്തള്ളുന്നു.</li>
+          <li><b>CO (കാർബൺ മോണോക്സൈഡ്):</b> വിഷവാതകം; അപൂർണ്ണ ജ്വലനത്തിൽ ഉണ്ടാകുന്നു.</li>
+        </ul>
+
+        <div class="trap"><b>⚠️ PSC Trap</b><br>
+          <b>LPG</b> = ബ്യൂട്ടെയ്ൻ + പ്രൊപ്പെയ്ൻ (ദ്രവീകൃത പെട്രോളിയം ഗ്യാസ്).<br>
+          <b>CNG</b> = കംപ്രസ്ഡ് നാച്ചുറൽ ഗ്യാസ് — പ്രധാനമായും മീഥെയ്ൻ.<br>
+          ഇവ രണ്ടും കൂട്ടിക്കുഴയ്ക്കരുത്.
+        </div>
+      </div>
+    </details>
+
+    <!-- 8.6 Polymers -->
+    <details class="note-block" id="topic-8-6" data-title="പോളിമറുകൾ &amp; പ്ലാസ്റ്റിക്">
+      <summary>8.6 പോളിമറുകൾ &amp; പ്ലാസ്റ്റിക് (Polymers &amp; Plastics)</summary>
+      <div class="note-body">
+
+        <table>
+          <tr><th>പോളിമർ</th><th>മോണോമർ</th><th>ഉപയോഗം</th></tr>
+          <tr><td>പോളിത്തീൻ (Polyethylene)</td><td>എഥിലീൻ</td><td>കവർ, ബാഗ്</td></tr>
+          <tr><td>PVC</td><td>വിനൈൽ ക്ലോറൈഡ്</td><td>പൈപ്പ്</td></tr>
+          <tr><td>ടെഫ്ലോൺ (PTFE)</td><td>ടെട്രാഫ്ലൂറോ എഥിലീൻ</td><td>നോൺ-സ്റ്റിക്ക് പാത്രം</td></tr>
+          <tr><td>ബേക്കലൈറ്റ്</td><td>ഫിനോൾ + ഫോർമാൽഡിഹൈഡ്</td><td>ഇലക്ട്രിക്കൽ സ്വിച്ച്</td></tr>
+          <tr><td>നൈലോൺ</td><td>അഡിപിക് ആസിഡ് + ഹെക്സാമെഥിലിൻ ഡയമിൻ</td><td>കയർ, വസ്ത്രം</td></tr>
+          <tr><td>പോളിസ്റ്റർ</td><td>എഥിലീൻ ഗ്ലൈക്കോൾ + ടെറിഫ്താലിക് ആസിഡ്</td><td>വസ്ത്രം</td></tr>
+          <tr><td>റബ്ബർ (Natural)</td><td>ഐസോപ്രീൻ</td><td>ടയർ</td></tr>
+          <tr><td>വൾക്കനൈസ്ഡ് റബ്ബർ</td><td>റബ്ബർ + സൾഫർ</td><td>ടയർ, ട്യൂബ്</td></tr>
+        </table>
+
+        <h4>പ്രധാന വസ്തുതകൾ</h4>
+        <ul>
+          <li><b>പോളിമർ:</b> ആവർത്തിക്കുന്ന ചെറിയ യൂണിറ്റുകൾ (മോണോമറുകൾ) കൂടിച്ചേർന്ന് ഉണ്ടാകുന്ന വലിയ തന്മാത്ര.</li>
+          <li><b>തെർമോപ്ലാസ്റ്റിക്:</b> ചൂടാക്കുമ്പോൾ ഉരുകുന്നു; തണുക്കുമ്പോൾ കട്ടിയാകുന്നു (ഉദാ: പോളിത്തീൻ, PVC).</li>
+          <li><b>തെർമോസെറ്റിംഗ് പ്ലാസ്റ്റിക്:</b> ഒരിക്കൽ രൂപപ്പെട്ടാൽ വീണ്ടും ഉരുകില്ല (ഉദാ: ബേക്കലൈറ്റ്, മെലാമിൻ).</li>
+          <li><b>നൈലോൺ:</b> ആദ്യ സിന്തറ്റിക് ഫൈബർ — വാലസ് കരോതേഴ്സ് (1935).</li>
+        </ul>
+
+        <h4>പ്ലാസ്റ്റിക് — അപകടങ്ങൾ</h4>
+        <ul>
+          <li>ജൈവികമായി നശിക്കാൻ നൂറ്റാണ്ടുകൾ എടുക്കും.</li>
+          <li>സമുദ്രജീവികൾക്ക് ഭീഷണി.</li>
+          <li>കേരളത്തിൽ പ്ലാസ്റ്റിക് നിരോധനം — 2019 മുതൽ.</li>
+        </ul>
+
+        <div class="mnem"><b>🧠 "PTFE-Teflon, PVC-Pipe"</b> — Teflon പാത്രം, PVC പൈപ്പ്. "Teflon for Cooking, PVC for Plumbing."</div>
+      </div>
+    </details>
+
+    <!-- 8.7 Fertilizers -->
+    <details class="note-block" id="topic-8-7" data-title="രാസവളങ്ങൾ">
+      <summary>8.7 രാസവളങ്ങൾ (Fertilizers)</summary>
+      <div class="note-body">
+
+        <table>
+          <tr><th>വളം</th><th>ഫോർമുല</th><th>പ്രധാന ഘടകം</th></tr>
+          <tr><td>യൂറിയ</td><td>CO(NH₂)₂</td><td>നൈട്രജൻ (46%)</td></tr>
+          <tr><td>അമോണിയം സൾഫേറ്റ്</td><td>(NH₄)₂SO₄</td><td>നൈട്രജൻ</td></tr>
+          <tr><td>സൂപ്പർ ഫോസ്ഫേറ്റ്</td><td>Ca(H₂PO₄)₂</td><td>ഫോസ്ഫറസ്</td></tr>
+          <tr><td>മ്യൂറിയേറ്റ് ഓഫ് പൊട്ടാഷ്</td><td>KCl</td><td>പൊട്ടാസ്യം</td></tr>
+          <tr><td>NPK</td><td>N + P + K</td><td>സമ്പൂർണ്ണ വളം</td></tr>
+          <tr><td>DAP</td><td>(NH₄)₂HPO₄</td><td>നൈട്രജൻ + ഫോസ്ഫറസ്</td></tr>
+        </table>
+
+        <h4>പ്രധാന വസ്തുതകൾ</h4>
+        <ul>
+          <li><b>NPK:</b> നൈട്രജൻ (N), ഫോസ്ഫറസ് (P), പൊട്ടാസ്യം (K) — സസ്യ വളർച്ചയ്ക്ക് അത്യാവശ്യം.</li>
+          <li><b>യൂറിയ:</b> ഏറ്റവും കൂടുതൽ നൈട്രജൻ അടങ്ങിയ വളം (46%).</li>
+          <li><b>ജൈവ വളം:</b> പരിസ്ഥിതി സൗഹൃദം; മണ്ണിന്റെ ഫലഭൂയിഷ്ഠത വർദ്ധിപ്പിക്കുന്നു.</li>
+          <li><b>കീടനാശിനികൾ:</b> DDT, ബി.എച്ച്.സി — ഇപ്പോൾ നിരോധിച്ചിരിക്കുന്നു.</li>
+        </ul>
+
+        <div class="trap"><b>⚠️ PSC Trap</b><br>
+          <b>NPK</b> = Nitrogen, Phosphorus, Potassium.<br>
+          <b>യൂറിയ</b> — ഏറ്റവും കൂടുതൽ നൈട്രജൻ (46%).<br>
+          <b>DAP</b> = Diammonium Phosphate.
+        </div>
+      </div>
+    </details>
+
+    <!-- 8.8 Kerala Industries -->
+    <details class="note-block" id="topic-8-8" data-title="കേരളത്തിലെ വ്യവസായങ്ങൾ">
+      <summary>8.8 കേരളത്തിലെ വ്യവസായങ്ങൾ (Kerala Chemical Industries)</summary>
+      <div class="note-body">
+
+        <h4>പ്രധാന വ്യവസായങ്ങൾ</h4>
+        <table>
+          <tr><th>വ്യവസായം</th><th>സ്ഥലം</th><th>ഉൽപ്പന്നം</th></tr>
+          <tr><td>Travancore Titanium Products</td><td>തിരുവനന്തപുരം</td><td>ടൈറ്റാനിയം ഡൈ ഓക്സൈഡ്</td></tr>
+          <tr><td>FACT (Fertilizers and Chemicals Travancore)</td><td>അമ്പലമുകൾ, എറണാകുളം</td><td>രാസവളങ്ങൾ</td></tr>
+          <tr><td>KMML (Kerala Minerals and Metals Ltd)</td><td>ചവറ, കൊല്ലം</td><td>ടൈറ്റാനിയം സ്പോഞ്ച്</td></tr>
+          <tr><td>KELTRON</td><td>തിരുവനന്തപുരം</td><td>ഇലക്ട്രോണിക്സ്</td></tr>
+          <tr><td>HMT</td><td>കളമശ്ശേരി</td><td>മെഷീൻ ടൂൾസ്</td></tr>
+          <tr><td>Kerala Chemicals &amp; Proteins</td><td>ആലുവ</td><td>രാസവസ്തുക്കൾ</td></tr>
+          <tr><td>Carborundum Universal</td><td>കൊച്ചി</td><td>അബ്രേസിവ്സ്</td></tr>
+          <tr><td>Apollo Tyres</td><td>പെരുമ്പാവൂർ</td><td>ടയർ</td></tr>
+          <tr><td>MRF</td><td>വെങ്ങോല, എറണാകുളം</td><td>ടയർ</td></tr>
+          <tr><td>Coir Board</td><td>ആലപ്പുഴ</td><td>കയർ ഉൽപ്പന്നങ്ങൾ</td></tr>
+        </table>
+
+        <h4>പ്രധാന വസ്തുതകൾ</h4>
+        <ul>
+          <li><b>ആലപ്പുഴ:</b> കയർ വ്യവസായത്തിന്റെ കേന്ദ്രം.</li>
+          <li><b>ചവറ:</b> ഇന്ത്യയിലെ ഏക ടൈറ്റാനിയം സ്പോഞ്ച് നിർമ്മാണ കേന്ദ്രം (KMML).</li>
+          <li><b>അമ്പലമുകൾ:</b> FACT-ന്റെ ആസ്ഥാനം — ഇന്ത്യയിലെ ആദ്യ രാസവള നിർമ്മാണ ശാല.</li>
+          <li><b>എറണാകുളം:</b> റബ്ബർ, ടയർ വ്യവസായ കേന്ദ്രം.</li>
+        </ul>
+
+        <div class="mnem"><b>🧠 "FACT-Ampalamukal, KMML-Chavara"</b> — FACT രാസവളം; KMML ടൈറ്റാനിയം. "Fertilizer-Ampalamukal, Metal-Chavara."</div>
+      </div>
+    </details>
+  </details>
+
+  <!-- PSC TRAPS -->
+  <details class="subject">
+    <summary>⚠️ PSC TRAPS — Chemistry</summary>
+    <div class="note-body">
+      <table>
+        <tr><th>Trap</th><th>ശരിയായ വസ്തുത</th></tr>
+        <tr><td>ആറ്റോമിക സംഖ്യ vs മാസ സംഖ്യ</td><td>Z = പ്രോട്ടോൺ എണ്ണം; A = പ്രോട്ടോൺ + ന്യൂട്രോൺ</td></tr>
+        <tr><td>ആവർത്തന പട്ടികയുടെ പിതാവ്</td><td>മെൻഡലീവ് (1869); ആധുനിക — മോസ്ലി (1913)</td></tr>
+        <tr><td>രക്തത്തിന്റെ pH</td><td>7.35–7.45 (അൽപ്പം ബേസിക്)</td></tr>
+        <tr><td>ആമാശയത്തിന്റെ pH</td><td>1.5–3.5 (HCl)</td></tr>
+        <tr><td>Brass vs Bronze</td><td>Brass = Cu+Zn; Bronze = Cu+Sn</td></tr>
+        <tr><td>LPG vs CNG</td><td>LPG = ബ്യൂട്ടെയ്ൻ+പ്രൊപ്പെയ്ൻ; CNG = മീഥെയ്ൻ</td></tr>
+        <tr><td>കാർബണിന്റെ രൂപങ്ങൾ</td><td>ഡയമണ്ട് (കടുപ്പം); ഗ്രാഫൈറ്റ് (ചാലകം)</td></tr>
+        <tr><td>യൂറിയ</td><td>ഏറ്റവും കൂടുതൽ നൈട്രജൻ (46%)</td></tr>
+        <tr><td>KMML</td><td>ചവറ (കൊല്ലം) — ടൈറ്റാനിയം സ്പോഞ്ച്</td></tr>
+      </table>
+    </div>
+  </details>
+
+  <!-- 1-Minute Revision -->
+  <details class="subject">
+    <summary>⚡ 1-Minute Revision — Chemistry</summary>
+    <div class="note-body">
+      <table>
+        <tr><th>ചോദ്യം</th><th>ഉത്തരം</th></tr>
+        <tr><td>ഇലക്ട്രോൺ കണ്ടെത്തിയത്</td><td>ജെ.ജെ. തോംസൺ (1897)</td></tr>
+        <tr><td>പ്രോട്ടോൺ കണ്ടെത്തിയത്</td><td>റഥർഫോർഡ് (1919)</td></tr>
+        <tr><td>ന്യൂട്രോൺ കണ്ടെത്തിയത്</td><td>ചാഡ്വിക്ക് (1932)</td></tr>
+        <tr><td>ആവർത്തന പട്ടികയുടെ പിതാവ്</td><td>മെൻഡലീവ് (1869)</td></tr>
+        <tr><td>ആധുനിക ആവർത്തന നിയമം</td><td>മോസ്ലി (1913)</td></tr>
+        <tr><td>ആകെ മൂലകങ്ങൾ</td><td>118</td></tr>
+        <tr><td>ഏറ്റവും ഭാരം കുറഞ്ഞ മൂലകം</td><td>ഹൈഡ്രജൻ</td></tr>
+        <tr><td>രക്തത്തിന്റെ pH</td><td>7.35–7.45</td></tr>
+        <tr><td>ആമാശയത്തിന്റെ pH</td><td>1.5–3.5</td></tr>
+        <tr><td>ലിറ്റ്മസ് ആസിഡിൽ</td><td>ചുവപ്പ്</td></tr>
+        <tr><td>ലിറ്റ്മസ് ബേസിൽ</td><td>നീല</td></tr>
+        <tr><td>Brass ഘടകങ്ങൾ</td><td>Cu + Zn</td></tr>
+        <tr><td>Bronze ഘടകങ്ങൾ</td><td>Cu + Sn</td></tr>
+        <tr><td>LPG ഘടകങ്ങൾ</td><td>ബ്യൂട്ടെയ്ൻ + പ്രൊപ്പെയ്ൻ</td></tr>
+        <tr><td>CNG-യുടെ പ്രധാന ഘടകം</td><td>മീഥെയ്ൻ</td></tr>
+        <tr><td>ഏറ്റവും കടുപ്പമുള്ള പദാർത്ഥം</td><td>ഡയമണ്ട്</td></tr>
+        <tr><td>പെൻസിൽ ലെഡ്</td><td>ഗ്രാഫൈറ്റ്</td></tr>
+        <tr><td>Teflon</td><td>PTFE (നോൺ-സ്റ്റിക്ക്)</td></tr>
+        <tr><td>യൂറിയയിലെ നൈട്രജൻ %</td><td>46%</td></tr>
+        <tr><td>KMML സ്ഥിതി</td><td>ചവറ, കൊല്ലം</td></tr>
+      </table>
+    </div>
+  </details>
+
+  <p class="hint" style="margin-top:1rem">
+    <b>Coverage:</b> Part 8 (Chemistry) — 20 MCQs.
+  </p>
+</section>
+
+<!-- ================= MOCK TEST ================= -->
+<section id="view-test" class="view">
+  <div class="toolbar">
+    <div class="filters">
+      <span class="flabel">Exam:</span>
+      <button class="chip active" data-cat="ALL">ALL</button>
+      <button class="chip" data-cat="573">573</button>
+      <button class="chip" data-cat="883">883</button>
+      <button class="chip" data-cat="BOTH">BOTH</button>
+      <select id="topicFilter" aria-label="Filter by topic"><option value="ALL">All Topics</option></select>
+      <select id="diffFilter" aria-label="Filter by difficulty">
+        <option value="ALL">All Difficulty</option>
+        <option value="Easy">🟢 Easy</option>
+        <option value="Medium">🟡 Medium</option>
+        <option value="Hard">🟠 Hard</option>
+        <option value="Very Hard">🔴 Very Hard</option>
+      </select>
+    </div>
+    <div class="tools">
+      <label class="flabel">Negative:
+        <input type="number" id="negInput" value="0.33" step="0.01" min="0" style="width:74px" aria-label="Negative mark value">
+      </label>
+      <button class="btn ghost" id="resetBtn">Reset Progress</button>
+      <button class="btn primary" id="finishBtn">Finish Test</button>
+    </div>
+  </div>
+  <div id="setInfo" class="hint" style="margin-bottom:.6rem"></div>
+  <div class="navwrap">
+    <h4>Questions</h4>
+    <div class="navgrid" id="navgrid"></div>
+  </div>
+  <div class="qcard" id="qcard"></div>
+</section>
+
+<!-- ================= REVISION ================= -->
+<section id="view-revision" class="view">
+  <div class="viewhead">
+    <h2>🔁 REVISION MODE</h2>
+    <p class="hint">Practise only the questions you need. Choosing a set replaces the current test set.</p>
+  </div>
+  <div class="revpanel">
+    <div class="setgrid" id="setgrid"></div>
+    <div style="margin-top:.8rem; display:flex; gap:.5rem; flex-wrap:wrap">
+      <button class="btn primary" data-set="all">📚 Practise All Questions</button>
+      <button class="btn ghost" data-set="reset">↺ Clear Revision Filter</button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BOOKMARKS ================= -->
+<section id="view-bookmarks" class="view">
+  <div class="viewhead">
+    <h2>⭐ BOOKMARKS</h2>
+    <p class="hint">Bookmarks are stored in your browser and remain after you close or refresh the file.</p>
+  </div>
+  <div id="bookmarkList"></div>
+</section>
+
+<!-- ================= RESULT ================= -->
+<section id="view-result" class="view">
+  <div id="resultHost"></div>
+</section>
+
+<!-- ================= SEARCH ================= -->
+<section id="view-search" class="view">
+  <div class="viewhead">
+    <h2>🔎 SEARCH</h2>
+    <p class="hint">Search notes and questions — persons, places, articles, acts, sections, dates, terms.</p>
+  </div>
+  <div class="searchbox">
+    <input type="search" id="searchInput" placeholder="Type at least 2 characters…" aria-label="Search notes and questions">
+    <button class="btn ghost" id="clearSearch">Clear</button>
+  </div>
+  <div id="searchResults"></div>
+</section>
+
+</main>
+
+<!-- ================= PART 8 QUESTIONS + ENGINE ================= -->
+<script>
+window.PART_KEY   = 'chemistry';
+window.PART_TITLE = 'Chemistry';
+
+window.QUESTIONS = [
+{
+  id:1, subject:'Chemistry', topic:'ആറ്റം ഘടന', category:'BOTH', difficulty:'Easy', type:'Person-Discovery',
+  question:'ഇലക്ട്രോൺ കണ്ടെത്തിയത് ആരാണ്?',
+  options:['റഥർഫോർഡ്','ജെ.ജെ. തോംസൺ','ചാഡ്വിക്ക്','നീൽസ് ബോർ'], answer:1,
+  explanation:'ജെ.ജെ. തോംസൺ 1897-ൽ ഇലക്ട്രോൺ കണ്ടെത്തി.',
+  optionNotes:[
+    'റഥർഫോർഡ് — പ്രോട്ടോൺ (1919).',
+    'തോംസൺ — ഇലക്ട്രോൺ (ശരിയായ ഉത്തരം).',
+    'ചാഡ്വിക്ക് — ന്യൂട്രോൺ (1932).',
+    'ബോർ — ആറ്റം മാതൃക.']
+},
+{
+  id:2, subject:'Chemistry', topic:'ആറ്റം ഘടന', category:'BOTH', difficulty:'Easy', type:'Person-Discovery',
+  question:'ന്യൂട്രോൺ കണ്ടെത്തിയത് ആരാണ്?',
+  options:['ജെ.ജെ. തോംസൺ','റഥർഫോർഡ്','ജെയിംസ് ചാഡ്വിക്ക്','നീൽസ് ബോർ'], answer:2,
+  explanation:'ജെയിംസ് ചാഡ്വിക്ക് 1932-ൽ ന്യൂട്രോൺ കണ്ടെത്തി.',
+  optionNotes:[
+    'തോംസൺ — ഇലക്ട്രോൺ.',
+    'റഥർഫോർഡ് — പ്രോട്ടോൺ.',
+    'ചാഡ്വിക്ക് — ന്യൂട്രോൺ (ശരിയായ ഉത്തരം).',
+    'ബോർ — ആറ്റം മാതൃക.']
+},
+{
+  id:3, subject:'Chemistry', topic:'ആറ്റം ഘടന', category:'BOTH', difficulty:'Medium', type:'Concept',
+  question:'ഒരു ആറ്റത്തിലെ പ്രോട്ടോണുകളുടെ എണ്ണത്തെ എന്ത് വിളിക്കുന്നു?',
+  options:['മാസ സംഖ്യ','ആറ്റോമിക സംഖ്യ','വാലൻസി','ഐസോടോപ്പ്'], answer:1,
+  explanation:'ആറ്റോമിക സംഖ്യ (Z) = പ്രോട്ടോണുകളുടെ എണ്ണം.',
+  optionNotes:[
+    'മാസ സംഖ്യ — പ്രോട്ടോൺ + ന്യൂട്രോൺ.',
+    'ആറ്റോമിക സംഖ്യ — പ്രോട്ടോൺ എണ്ണം (ശരിയായ ഉത്തരം).',
+    'വാലൻസി — ബാഹ്യ ഇലക്ട്രോൺ എണ്ണം.',
+    'ഐസോടോപ്പ് — ഒരേ Z, വ്യത്യസ്ത A.']
+},
+{
+  id:4, subject:'Chemistry', topic:'ആവർത്തന പട്ടിക', category:'BOTH', difficulty:'Easy', type:'Person-Discovery',
+  question:'ആവർത്തന പട്ടികയുടെ പിതാവ് ആരാണ്?',
+  options:['ജോൺ ഡാൽട്ടൺ','ദിമിത്രി മെൻഡലീവ്','ഹെൻറി മോസ്ലി','ജോൺ ന്യൂലാൻഡ്സ്'], answer:1,
+  explanation:'ദിമിത്രി മെൻഡലീവ് (1869) ആണ് ആവർത്തന പട്ടികയുടെ പിതാവ്.',
+  optionNotes:[
+    'ഡാൽട്ടൺ — ആറ്റം സിദ്ധാന്തം.',
+    'മെൻഡലീവ് — ആവർത്തന പട്ടിക (ശരിയായ ഉത്തരം).',
+    'മോസ്ലി — ആധുനിക ആവർത്തന നിയമം (1913).',
+    'ന്യൂലാൻഡ്സ് — ഓക്ടേവ് നിയമം.']
+},
+{
+  id:5, subject:'Chemistry', topic:'ആവർത്തന പട്ടിക', category:'BOTH', difficulty:'Medium', type:'Concept',
+  question:'ആവർത്തന പട്ടികയിൽ ആകെ എത്ര ഗ്രൂപ്പുകൾ ഉണ്ട്?',
+  options:['8','16','18','20'], answer:2,
+  explanation:'ആവർത്തന പട്ടികയിൽ 18 ഗ്രൂപ്പുകളും 7 പിരീഡുകളും ഉണ്ട്.',
+  optionNotes:[
+    '8 — തെറ്റ്.',
+    '16 — തെറ്റ്.',
+    '18 — ശരി (ശരിയായ ഉത്തരം).',
+    '20 — തെറ്റ്.']
+},
+{
+  id:6, subject:'Chemistry', topic:'ആവർത്തന പട്ടിക', category:'BOTH', difficulty:'Medium', type:'Concept',
+  question:'ഏറ്റവും ഭാരം കുറഞ്ഞ മൂലകം ഏതാണ്?',
+  options:['ഹീലിയം','ഹൈഡ്രജൻ','ഓക്സിജൻ','ലിഥിയം'], answer:1,
+  explanation:'ഹൈഡ്രജൻ (H) ആണ് ഏറ്റവും ഭാരം കുറഞ്ഞ മൂലകം — ആറ്റോമിക സംഖ്യ 1.',
+  optionNotes:[
+    'ഹീലിയം — രണ്ടാം സ്ഥാനം.',
+    'ഹൈഡ്രജൻ — ഒന്നാം സ്ഥാനം (ശരിയായ ഉത്തരം).',
+    'ഓക്സിജൻ — 8-ാം സ്ഥാനം.',
+    'ലിഥിയം — 3-ാം സ്ഥാനം.']
+},
+{
+  id:7, subject:'Chemistry', topic:'ആസിഡും ബേസും', category:'BOTH', difficulty:'Easy', type:'Concept',
+  question:'pH സ്കെയിലിൽ ന്യൂട്രൽ മൂല്യം എത്രയാണ്?',
+  options:['0','5','7','14'], answer:2,
+  explanation:'pH 7 = ന്യൂട്രൽ. അതിന് താഴെ ആസിഡ്, മുകളിൽ ബേസ്.',
+  optionNotes:[
+    '0 — ശക്തമായ ആസിഡ്.',
+    '5 — ആസിഡ്.',
+    '7 — ന്യൂട്രൽ (ശരിയായ ഉത്തരം).',
+    '14 — ശക്തമായ ബേസ്.']
+},
+{
+  id:8, subject:'Chemistry', topic:'ആസിഡും ബേസും', category:'BOTH', difficulty:'Medium', type:'Concept',
+  question:'ആമാശയത്തിലെ ആസിഡ് ഏതാണ്?',
+  options:['സൾഫ്യൂരിക് ആസിഡ്','ഹൈഡ്രോക്ലോറിക് ആസിഡ്','നൈട്രിക് ആസിഡ്','അസറ്റിക് ആസിഡ്'], answer:1,
+  explanation:'ആമാശയത്തിൽ ഹൈഡ്രോക്ലോറിക് ആസിഡ് (HCl) ഉണ്ട് — ഭക്ഷണ ദഹനത്തിന് സഹായിക്കുന്നു.',
+  optionNotes:[
+    'H₂SO₄ — ബാറ്ററി ആസിഡ്.',
+    'HCl — ആമാശയ ആസിഡ് (ശരിയായ ഉത്തരം).',
+    'HNO₃ — വെടിമരുന്ന്.',
+    'അസറ്റിക് — വിനാഗിരി.']
+},
+{
+  id:9, subject:'Chemistry', topic:'ആസിഡും ബേസും', category:'BOTH', difficulty:'Medium', type:'Concept',
+  question:'ലിറ്റ്മസ് കടലാസ് ആസിഡിൽ മുക്കുമ്പോൾ ഏത് നിറമാകും?',
+  options:['നീല','ചുവപ്പ്','പച്ച','മഞ്ഞ'], answer:1,
+  explanation:'ലിറ്റ്മസ് ആസിഡിൽ ചുവപ്പും ബേസിൽ നീലയും ആകും.',
+  optionNotes:[
+    'നീല — ബേസ്.',
+    'ചുവപ്പ് — ആസിഡ് (ശരിയായ ഉത്തരം).',
+    'പച്ച — ന്യൂട്രൽ.',
+    'മഞ്ഞ — മീഥൈൽ ഓറഞ്ചിൽ ബേസ്.']
+},
+{
+  id:10, subject:'Chemistry', topic:'ആസിഡും ബേസും', category:'BOTH', difficulty:'Medium', type:'Concept',
+  question:'രക്തത്തിന്റെ സാധാരണ pH എത്രയാണ്?',
+  options:['5.5–6.5','6.5–7.0','7.35–7.45','8.0–9.0'], answer:2,
+  explanation:'രക്തത്തിന്റെ സാധാരണ pH 7.35–7.45 — അൽപ്പം ബേസിക്.',
+  optionNotes:[
+    '5.5–6.5 — മഴവെള്ളം.',
+    '6.5–7.0 — പാൽ.',
+    '7.35–7.45 — രക്തം (ശരിയായ ഉത്തരം).',
+    '8.0–9.0 — ബേക്കിംഗ് സോഡ.']
+},
+{
+  id:11, subject:'Chemistry', topic:'ലോഹസങ്കരം', category:'BOTH', difficulty:'Easy', type:'Concept',
+  question:'"പിത്തള" (Brass) ഏതൊക്കെ ലോഹങ്ങളുടെ ലോഹസങ്കരമാണ്?',
+  options:['Cu + Sn','Cu + Zn','Fe + C','Al + Cu'], answer:1,
+  explanation:'പിത്തള = ചെമ്പ് (Cu) + സിങ്ക് (Zn).',
+  optionNotes:[
+    'Cu + Sn — വെങ്കലം (Bronze).',
+    'Cu + Zn — പിത്തള (ശരിയായ ഉത്തരം).',
+    'Fe + C — ഉരുക്ക് (Steel).',
+    'Al + Cu — ഡ്യൂറലുമിൻ.']
+},
+{
+  id:12, subject:'Chemistry', topic:'ലോഹസങ്കരം', category:'BOTH', difficulty:'Medium', type:'Concept',
+  question:'"വെങ്കലം" (Bronze) ഏതൊക്കെ ലോഹങ്ങളുടെ ലോഹസങ്കരമാണ്?',
+  options:['Cu + Zn','Cu + Sn','Fe + Ni','Pb + Sn'], answer:1,
+  explanation:'വെങ്കലം = ചെമ്പ് (Cu) + ടിൻ (Sn).',
+  optionNotes:[
+    'Cu + Zn — പിത്തള (Brass).',
+    'Cu + Sn — വെങ്കലം (ശരിയായ ഉത്തരം).',
+    'Fe + Ni — ഇനോക്സ്.',
+    'Pb + Sn — സോൾഡർ.']
+},
+{
+  id:13, subject:'Chemistry', topic:'ഇന്ധനങ്ങൾ', category:'BOTH', difficulty:'Medium', type:'Concept',
+  question:'LPG-യിലെ പ്രധാന ഘടകങ്ങൾ ഏതൊക്കെയാണ്?',
+  options:['മീഥെയ്ൻ + ഈഥെയ്ൻ','ബ്യൂട്ടെയ്ൻ + പ്രൊപ്പെയ്ൻ','ഹൈഡ്രജൻ + ഓക്സിജൻ','പെട്രോൾ + ഡീസൽ'], answer:1,
+  explanation:'LPG (Liquefied Petroleum Gas) = ബ്യൂട്ടെയ്ൻ + പ്രൊപ്പെയ്ൻ.',
+  optionNotes:[
+    'മീഥെയ്ൻ + ഈഥെയ്ൻ — CNG.',
+    'ബ്യൂട്ടെയ്ൻ + പ്രൊപ്പെയ്ൻ — LPG (ശരിയായ ഉത്തരം).',
+    'ഹൈഡ്രജൻ + ഓക്സിജൻ — ജലം.',
+    'പെട്രോൾ + ഡീസൽ — ദ്രവ ഇന്ധനങ്ങൾ.']
+},
+{
+  id:14, subject:'Chemistry', topic:'ഇന്ധനങ്ങൾ', category:'BOTH', difficulty:'Medium', type:'Concept',
+  question:'CNG-യുടെ പ്രധാന ഘടകം ഏതാണ്?',
+  options:['മീഥെയ്ൻ','ബ്യൂട്ടെയ്ൻ','പ്രൊപ്പെയ്ൻ','ഈഥെയ്ൻ'], answer:0,
+  explanation:'CNG (Compressed Natural Gas) = പ്രധാനമായും മീഥെയ്ൻ (CH₄).',
+  optionNotes:[
+    'മീഥെയ്ൻ — CNG (ശരിയായ ഉത്തരം).',
+    'ബ്യൂട്ടെയ്ൻ — LPG.',
+    'പ്രൊപ്പെയ്ൻ — LPG.',
+    'ഈഥെയ്ൻ — പെട്രോളിയം.']
+},
+{
+  id:15, subject:'Chemistry', topic:'കാർബൺ', category:'BOTH', difficulty:'Easy', type:'Concept',
+  question:'ഏറ്റവും കടുപ്പമുള്ള പ്രകൃതിദത്ത പദാർത്ഥം ഏതാണ്?',
+  options:['ഇരുമ്പ്','ഡയമണ്ട്','ഗ്രാഫൈറ്റ്','പ്ലാറ്റിനം'], answer:1,
+  explanation:'ഡയമണ്ട് ആണ് ഏറ്റവും കടുപ്പമുള്ള പ്രകൃതിദത്ത പദാർത്ഥം — കാർബണിന്റെ ഒരു രൂപം.',
+  optionNotes:[
+    'ഇരുമ്പ് — കടുപ്പമുള്ളത്, പക്ഷേ ഡയമണ്ടിനേക്കാൾ കുറവ്.',
+    'ഡയമണ്ട് — ഏറ്റവും കടുപ്പം (ശരിയായ ഉത്തരം).',
+    'ഗ്രാഫൈറ്റ് — മൃദുവായത്.',
+    'പ്ലാറ്റിനം — കടുപ്പമുള്ളത്, പക്ഷേ ഡയമണ്ടിനേക്കാൾ കുറവ്.']
+},
+{
+  id:16, subject:'Chemistry', topic:'പോളിമർ', category:'BOTH', difficulty:'Medium', type:'Concept',
+  question:'"ടെഫ്ലോൺ" ഏത് പോളിമറാണ്?',
+  options:['പോളിത്തീൻ','PVC','PTFE','ബേക്കലൈറ്റ്'], answer:2,
+  explanation:'ടെഫ്ലോൺ = PTFE (പോളിടെട്രാഫ്ലൂറോ എഥിലീൻ) — നോൺ-സ്റ്റിക്ക് പാത്രങ്ങളിൽ ഉപയോഗം.',
+  optionNotes:[
+    'പോളിത്തീൻ — കവർ.',
+    'PVC — പൈപ്പ്.',
+    'PTFE — ടെഫ്ലോൺ (ശരിയായ ഉത്തരം).',
+    'ബേക്കലൈറ്റ് — സ്വിച്ച്.']
+},
+{
+  id:17, subject:'Chemistry', topic:'പോളിമർ', category:'BOTH', difficulty:'Medium', type:'Concept',
+  question:'ആദ്യ സിന്തറ്റിക് ഫൈബർ ഏതാണ്?',
+  options:['പോളിസ്റ്റർ','നൈലോൺ','റയോൺ','അക്രിലിക്'], answer:1,
+  explanation:'നൈലോൺ ആണ് ആദ്യ സിന്തറ്റിക് ഫൈബർ — വാലസ് കരോതേഴ്സ് (1935).',
+  optionNotes:[
+    'പോളിസ്റ്റർ — പിന്നീട്.',
+    'നൈലോൺ — ആദ്യം (ശരിയായ ഉത്തരം).',
+    'റയോൺ — സെമി-സിന്തറ്റിക്.',
+    'അക്രിലിക് — പിന്നീട്.']
+},
+{
+  id:18, subject:'Chemistry', topic:'രാസവളം', category:'BOTH', difficulty:'Medium', type:'Concept',
+  question:'ഏറ്റവും കൂടുതൽ നൈട്രജൻ അടങ്ങിയ വളം ഏതാണ്?',
+  options:['അമോണിയം സൾഫേറ്റ്','യൂറിയ','DAP','NPK'], answer:1,
+  explanation:'യൂറിയയിൽ 46% നൈട്രജൻ അടങ്ങിയിരിക്കുന്നു — ഏറ്റവും കൂടുതൽ.',
+  optionNotes:[
+    'അമോണിയം സൾഫേറ്റ് — 21% N.',
+    'യൂറിയ — 46% N (ശരിയായ ഉത്തരം).',
+    'DAP — 18% N.',
+    'NPK — മിശ്രിതം.']
+},
+{
+  id:19, subject:'Chemistry', topic:'കേരള വ്യവസായം', category:'BOTH', difficulty:'Medium', type:'Place-Feature',
+  question:'KMML (Kerala Minerals and Metals Ltd) എവിടെയാണ് സ്ഥിതി ചെയ്യുന്നത്?',
+  options:['ആലുവ','ചവറ (കൊല്ലം)','അമ്പലമുകൾ','തിരുവനന്തപുരം'], answer:1,
+  explanation:'KMML ചവറ (കൊല്ലം ജില്ല) യിൽ സ്ഥിതി ചെയ്യുന്നു — ഇന്ത്യയിലെ ഏക ടൈറ്റാനിയം സ്പോഞ്ച് നിർമ്മാണ കേന്ദ്രം.',
+  optionNotes:[
+    'ആലുവ — Kerala Chemicals & Proteins.',
+    'ചവറ — KMML (ശരിയായ ഉത്തരം).',
+    'അമ്പലമുകൾ — FACT.',
+    'തിരുവനന്തപുരം — Travancore Titanium Products.']
+},
+{
+  id:20, subject:'Chemistry', topic:'കേരള വ്യവസായം', category:'BOTH', difficulty:'Medium', type:'Place-Feature',
+  question:'FACT (Fertilizers and Chemicals Travancore) ന്റെ ആസ്ഥാനം എവിടെയാണ്?',
+  options:['ചവറ','അമ്പലമുകൾ (എറണാകുളം)','ആലുവ','കളമശ്ശേരി'], answer:1,
+  explanation:'FACT-ന്റെ ആസ്ഥാനം അമ്പലമുകൾ, എറണാകുളം — ഇന്ത്യയിലെ ആദ്യ രാസവള നിർമ്മാണ ശാല.',
+  optionNotes:[
+    'ചവറ — KMML.',
+    'അമ്പലമുകൾ — FACT (ശരിയായ ഉത്തരം).',
+    'ആലുവ — Kerala Chemicals & Proteins.',
+    'കളമശ്ശേരി — HMT.']
+}
+];
+</script>
+<script src="assets/engine.js"></script>
+</body>
+</html>

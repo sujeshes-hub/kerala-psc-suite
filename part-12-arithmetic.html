@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kerala PSC — Simple Arithmetic (Part 11)</title>
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">🎯 Kerala PSC — Simple Arithmetic (Part 11)</div>
+  <nav class="tabs" id="tabs">
+    <button data-view="notes" class="active">📚 Study Notes</button>
+    <button data-view="test">📝 Mock Test</button>
+    <button data-view="revision">🔁 Revision</button>
+    <button data-view="bookmarks">⭐ Bookmarks</button>
+    <button data-view="result">📊 Result</button>
+    <button data-view="search">🔎 Search</button>
+  </nav>
+</header>
+
+<div class="scorebar" id="scorebar">
+  <div class="sbitem"><span>Score</span><b id="sbScore">0 / 0</b></div>
+  <div class="sbitem"><span>Attempted</span><b id="sbAtt">0</b></div>
+  <div class="sbitem"><span>Correct</span><b id="sbCor">0</b></div>
+  <div class="sbitem"><span>Wrong</span><b id="sbWr">0</b></div>
+  <div class="sbitem"><span>Remaining</span><b id="sbRem">0</b></div>
+  <div class="sbitem"><span>Accuracy</span><b id="sbAcc">0%</b></div>
+</div>
+<div class="progresswrap"><div class="progressbar" id="progressbar"></div></div>
+
+<main>
+
+<!-- ================= STUDY NOTES ================= -->
+<section id="view-notes" class="view active">
+
+  <div class="viewhead">
+    <h2>📚 SIMPLE ARITHMETIC — Part 11</h2>
+    <p class="hint">
+      <b>Marks: 5</b> &nbsp;|&nbsp; <span class="tag both">BOTH (573 &amp; 883)</span><br>
+      BODMAS · Percentage · Profit &amp; Loss · SI &amp; CI · Time-Work-Distance · Average · AP/GP · Mensuration · Trigonometry [883]
+    </p>
+    <button class="btn primary" id="startMcqBtn">📝 Start MCQ Test (25 Questions)</button>
+  </div>
+
+  <div class="howto">
+    <h3>📖 How to use these notes</h3>
+    <ul>
+      <li><b>Formulas</b> are boxed for quick reference.</li>
+      <li><b>Worked examples</b> show step-by-step solution.</li>
+      <li><b>Trap boxes</b> ⚠️ highlight common mistakes.</li>
+      <li><b>Memory tricks</b> 🧠 make formulas stick.</li>
+      <li>25 interactive MCQs in the <b>📝 Mock Test</b> tab.</li>
+    </ul>
+  </div>
+
+  <div class="toc">
+    <h3>🔖 Jump to a topic</h3>
+    <a href="#topic-11-1">11.1 BODMAS &amp; സംഖ്യകൾ</a>
+    <a href="#topic-11-2">11.2 ശതമാനം (Percentage)</a>
+    <a href="#topic-11-3">11.3 ലാഭവും നഷ്ടവും</a>
+    <a href="#topic-11-4">11.4 സാധാരണ പലിശ (SI)</a>
+    <a href="#topic-11-5">11.5 കൂട്ടുപലിശ (CI)</a>
+    <a href="#topic-11-6">11.6 സമയം-ദൂരം-വേഗം</a>
+    <a href="#topic-11-7">11.7 സമയവും ജോലിയും</a>
+    <a href="#topic-11-8">11.8 ശരാശരി (Average)</a>
+    <a href="#topic-11-9">11.9 അനുപാതം &amp; AP/GP</a>
+    <a href="#topic-11-10">11.10 ക്ഷേത്രഗണിതം (Mensuration)</a>
+    <a href="#topic-11-11">11.11 ത്രികോണമിതി [883]</a>
+  </div>
+
+  <details class="subject" open>
+    <summary>➗ PART 11 — SIMPLE ARITHMETIC <span class="tag both">BOTH</span></summary>
+
+    <!-- 11.1 BODMAS -->
+    <details class="note-block" id="topic-11-1" data-title="BODMAS &amp; സംഖ്യകൾ">
+      <summary>11.1 BODMAS &amp; സംഖ്യാ സിദ്ധാന്തം (Number System)</summary>
+      <div class="note-body">
+
+        <div class="svgwrap wide">
+          <div class="figtitle">🖼 Fig. 1 — BODMAS ക്രമം</div>
+          <svg viewBox="0 0 760 200" role="img" aria-label="BODMAS order">
+            <rect width="760" height="200" fill="#fbfdff"/>
+            <rect x="20" y="60" width="120" height="80" rx="10" fill="#e3f0ff" stroke="#0b4a8a" stroke-width="1.5"/>
+            <text x="80" y="90" font-size="18" font-weight="bold" fill="#0b4a8a" text-anchor="middle">B</text>
+            <text x="80" y="115" font-size="10" fill="#16223a" text-anchor="middle">Brackets</text>
+
+            <rect x="150" y="60" width="120" height="80" rx="10" fill="#ffe9d6" stroke="#8a4a00" stroke-width="1.5"/>
+            <text x="210" y="90" font-size="18" font-weight="bold" fill="#8a4a00" text-anchor="middle">O</text>
+            <text x="210" y="115" font-size="10" fill="#16223a" text-anchor="middle">Of / Orders</text>
+
+            <rect x="280" y="60" width="120" height="80" rx="10" fill="#e6f6ec" stroke="#177a3d" stroke-width="1.5"/>
+            <text x="340" y="90" font-size="18" font-weight="bold" fill="#177a3d" text-anchor="middle">D</text>
+            <text x="340" y="115" font-size="10" fill="#16223a" text-anchor="middle">Division (÷)</text>
+
+            <rect x="410" y="60" width="120" height="80" rx="10" fill="#e8e3ff" stroke="#4a2d9c" stroke-width="1.5"/>
+            <text x="470" y="90" font-size="18" font-weight="bold" fill="#4a2d9c" text-anchor="middle">M</text>
+            <text x="470" y="115" font-size="10" fill="#16223a" text-anchor="middle">Multiplication (×)</text>
+
+            <rect x="540" y="60" width="120" height="80" rx="10" fill="#fdecea" stroke="#c5221f" stroke-width="1.5"/>
+            <text x="600" y="90" font-size="18" font-weight="bold" fill="#c5221f" text-anchor="middle">A</text>
+            <text x="600" y="115" font-size="10" fill="#16223a" text-anchor="middle">Addition (+)</text>
+
+            <rect x="670" y="60" width="80" height="80" rx="10" fill="#fff6e0" stroke="#8a5300" stroke-width="1.5"/>
+            <text x="710" y="90" font-size="18" font-weight="bold" fill="#8a5300" text-anchor="middle">S</text>
+            <text x="710" y="115" font-size="10" fill="#16223a" text-anchor="middle">Subtraction (−)</text>
+
+            <text x="380" y="25" font-size="13" font-weight="bold" fill="#1a4a6a" text-anchor="middle">BODMAS — Operation Order</text>
+            <text x="380" y="180" font-size="10" fill="#5b6b85" text-anchor="middle">Left to right, top to bottom: B → O → D → M → A → S</text>
+          </svg>
+          <div class="svgcap">BODMAS order: Brackets → Of → Division → Multiplication → Addition → Subtraction.</div>
+        </div>
+
+        <h4>സംഖ്യാ വിഭാഗങ്ങൾ (Number Types)</h4>
+        <table>
+          <tr><th>തരം</th><th>ഉദാഹരണം</th></tr>
+          <tr><td>പ്രകൃത സംഖ്യകൾ (Natural)</td><td>1, 2, 3, 4, …</td></tr>
+          <tr><td>പൂർണ്ണ സംഖ്യകൾ (Whole)</td><td>0, 1, 2, 3, …</td></tr>
+          <tr><td>പൂർണ്ണാംഗ സംഖ്യകൾ (Integers)</td><td>…, −2, −1, 0, 1, 2, …</td></tr>
+          <tr><td>ഭിന്നസംഖ്യകൾ (Rational)</td><td>½, ¾, ⅔</td></tr>
+          <tr><td>അഭിന്നസംഖ്യകൾ (Irrational)</td><td>√2, π</td></tr>
+          <tr><td>അഭാജ്യ സംഖ്യകൾ (Prime)</td><td>2, 3, 5, 7, 11, 13, …</td></tr>
+          <tr><td>സംയുക്ത സംഖ്യകൾ (Composite)</td><td>4, 6, 8, 9, 10, …</td></tr>
+        </table>
+
+        <h4>പ്രധാന ഫോർമുലകൾ</h4>
+        <ul>
+          <li><b>1 മുതൽ n വരെയുള്ള സംഖ്യകളുടെ തുക:</b> n(n+1)/2</li>
+          <li><b>1 മുതൽ n വരെയുള്ള വർഗ്ഗങ്ങളുടെ തുക:</b> n(n+1)(2n+1)/6</li>
+          <li><b>1 മുതൽ n വരെയുള്ള ഘനങ്ങളുടെ തുക:</b> [n(n+1)/2]²</li>
+          <li><b>ആദ്യ n ഒറ്റസംഖ്യകളുടെ തുക:</b> n²</li>
+          <li><b>ആദ്യ n ഇരട്ടസംഖ്യകളുടെ തുക:</b> n(n+1)</li>
+        </ul>
+
+        <h4>ഉദാഹരണം</h4>
+        <p><b>ചോദ്യം:</b> 12 + 8 × 3 − 6 ÷ 2 = ?</p>
+        <p><b>ഉത്തരം:</b> BODMAS → 12 + (8 × 3) − (6 ÷ 2) = 12 + 24 − 3 = <b>33</b>.</p>
+
+        <div class="mnem"><b>🧠 "BODMAS"</b> — "Bhai-Bhai Of Division, My Aunt Sister."<br>
+          Brackets → Of → Division → Multiplication → Addition → Subtraction.</div>
+      </div>
+    </details>
+
+    <!-- 11.2 Percentage -->
+    <details class="note-block" id="topic-11-2" data-title="ശതമാനം">
+      <summary>11.2 ശതമാനം (Percentage)</summary>
+      <div class="note-body">
+
+        <h4>അടിസ്ഥാന ഫോർമുല</h4>
+        <div class="quick"><b>⚡ ഫോർമുല:</b> x% = x/100. 25% = ¼; 50% = ½; 20% = ⅕; 75% = ¾.</div>
+
+        <table>
+          <tr><th>ശതമാനം</th><th>ഭിന്നസംഖ്യ</th><th>ദശാംശം</th></tr>
+          <tr><td>10%</td><td>1/10</td><td>0.1</td></tr>
+          <tr><td>12.5%</td><td>1/8</td><td>0.125</td></tr>
+          <tr><td>20%</td><td>1/5</td><td>0.2</td></tr>
+          <tr><td>25%</td><td>1/4</td><td>0.25</td></tr>
+          <tr><td>33⅓%</td><td>1/3</td><td>0.333…</td></tr>
+          <tr><td>50%</td><td>1/2</td><td>0.5</td></tr>
+          <tr><td>66⅔%</td><td>2/3</td><td>0.666…</td></tr>
+          <tr><td>75%</td><td>3/4</td><td>0.75</td></tr>
+          <tr><td>100%</td><td>1</td><td>1</td></tr>
+        </table>
+
+        <h4>പ്രധാന ഫോർമുലകൾ</h4>
+        <ul>
+          <li><b>ഒരു സംഖ്യയുടെ x% :</b> (x/100) × സംഖ്യ</li>
+          <li><b>A, B-യുടെ എത്ര ശതമാനം:</b> (A/B) × 100</li>
+          <li><b>x% വർദ്ധനവിന് ശേഷം:</b> സംഖ്യ × (1 + x/100)</li>
+          <li><b>x% കുറവിന് ശേഷം:</b> സംഖ്യ × (1 − x/100)</li>
+          <li><b>x% വർദ്ധനവും തുടർന്ന് x% കുറവും:</b> സംഖ്യ × (1 + x/100)(1 − x/100) = x²/10000 കുറയും</li>
+        </ul>
+
+        <h4>ഉദാഹരണം</h4>
+        <p><b>ചോദ്യം:</b> ഒരു സംഖ്യ 25% വർദ്ധിച്ച് 500 ആയാൽ യഥാർത്ഥ സംഖ്യ എത്ര?</p>
+        <p><b>ഉത്തരം:</b> സംഖ്യ × 1.25 = 500 → സംഖ്യ = 500 ÷ 1.25 = <b>400</b>.</p>
+
+        <div class="trap"><b>⚠️ PSC Trap</b><br>
+          <b>x% വർദ്ധനവും x% കുറവും ഒരുമിച്ച്</b> = യഥാർത്ഥത്തിൽ <b>x²/100 %</b> കുറവ്.<br>
+          ഉദാ: 10% കൂടി 10% കുറഞ്ഞാൽ = 1% കുറവ്.
+        </div>
+      </div>
+    </details>
+
+    <!-- 11.3 Profit & Loss -->
+    <details class="note-block" id="topic-11-3" data-title="ലാഭവും നഷ്ടവും">
+      <summary>11.3 ലാഭവും നഷ്ടവും (Profit &amp; Loss)</summary>
+      <div class="note-body">
+
+        <h4>അടിസ്ഥാന ഫോർമുലകൾ</h4>
+        <div class="quick">
+          <b>⚡ മുഖ്യ ഫോർമുലകൾ:</b><br>
+          • ലാഭം = SP − CP<br>
+          • നഷ്ടം = CP − SP<br>
+          • ലാഭ% = (ലാഭം/CP) × 100<br>
+          • നഷ്ട% = (നഷ്ടം/CP) × 100<br>
+          • SP = CP × (100 + ലാഭ%)/100<br>
+          • CP = SP × 100/(100 + ലാഭ%)
+        </div>
+
+        <table>
+          <tr><th>ഇനം</th><th>അർത്ഥം</th></tr>
+          <tr><td>CP (Cost Price)</td><td>വാങ്ങിയ വില</td></tr>
+          <tr><td>SP (Selling Price)</td><td>വിറ്റ വില</td></tr>
+          <tr><td>MP (Marked Price)</td><td>രേഖപ്പെടുത്തിയ വില</td></tr>
+          <tr><td>Discount</td><td>MP-യിൽ നിന്ന് കുറയ്ക്കൽ</td></tr>
+        </table>
+
+        <h4>ഡിസ്കൗണ്ട്</h4>
+        <ul>
+          <li><b>Discount %:</b> (Discount/MP) × 100</li>
+          <li><b>SP:</b> MP × (100 − Discount%)/100</li>
+        </ul>
+
+        <h4>ഉദാഹരണം</h4>
+        <p><b>ചോദ്യം:</b> 200 രൂപയ്ക്ക് വാങ്ങിയ വസ്തു 250 രൂപയ്ക്ക് വിറ്റാൽ ലാഭ ശതമാനം?</p>
+        <p><b>ഉത്തരം:</b> ലാഭം = 250 − 200 = 50; ലാഭ% = (50/200) × 100 = <b>25%</b>.</p>
+
+        <div class="trap"><b>⚠️ PSC Trap</b><br>
+          <b>ലാഭ% എപ്പോഴും CP-യിൽ നിന്നാണ് കണക്കാക്കുന്നത്</b>, SP-യിൽ നിന്നല്ല.<br>
+          <b>Discount% എപ്പോഴും MP-യിൽ നിന്നാണ് കണക്കാക്കുന്നത്.</b>
+        </div>
+      </div>
+    </details>
+
+    <!-- 11.4 Simple Interest -->
+    <details class="note-block" id="topic-11-4" data-title="സാധാരണ പലിശ">
+      <summary>11.4 സാധാരണ പലിശ (Simple Interest — SI)</summary>
+      <div class="note-body">
+
+        <h4>ഫോർമുല</h4>
+        <div class="quick">
+          <b>⚡ SI = (P × R × T) / 100</b><br>
+          • P = മൂലധനം (Principal)<br>
+          • R = പലിശ നിരക്ക് (% per annum)<br>
+          • T = കാലയളവ് (വർഷങ്ങളിൽ)<br>
+          • Total Amount (A) = P + SI
+        </div>
+
+        <h4>ഉദാഹരണം</h4>
+        <p><b>ചോദ്യം:</b> ₹5,000-ന് 8% വാർഷിക നിരക്കിൽ 3 വർഷത്തേക്ക് SI എത്ര?</p>
+        <p><b>ഉത്തരം:</b> SI = (5000 × 8 × 3)/100 = <b>₹1,200</b>.</p>
+
+        <h4>പ്രധാന പോയിന്റുകൾ</h4>
+        <ul>
+          <li>SI എപ്പോഴും മൂലധനത്തിന്റെ മേൽ മാത്രം കണക്കാക്കുന്നു.</li>
+          <li>പലിശ കൂട്ടിച്ചേർത്ത് പുതിയ മൂലധനം ഉണ്ടാക്കുന്നില്ല.</li>
+          <li>SI × 2 = P എങ്കിൽ, R × T = 100.</li>
+        </ul>
+      </div>
+    </details>
+
+    <!-- 11.5 Compound Interest -->
+    <details class="note-block" id="topic-11-5" data-title="കൂട്ടുപലിശ">
+      <summary>11.5 കൂട്ടുപലിശ (Compound Interest — CI)</summary>
+      <div class="note-body">
+
+        <h4>ഫോർമുല</h4>
+        <div class="quick">
+          <b>⚡ A = P × (1 + R/100)<sup>T</sup></b><br>
+          <b>CI = A − P</b><br>
+          • വാർഷിക കൂട്ടുപലിശയ്ക്ക് — T വർഷം<br>
+          • അർദ്ധവാർഷികത്തിന് — R/2, T×2<br>
+          • ത്രൈമാസികത്തിന് — R/4, T×4
+        </div>
+
+        <h4>SI-യും CI-യും തമ്മിലുള്ള വ്യത്യാസം</h4>
+        <table>
+          <tr><th>വർഷം</th><th>CI − SI (R% വാർഷികം)</th></tr>
+          <tr><td>1</td><td>0</td></tr>
+          <tr><td>2</td><td>P × (R/100)²</td></tr>
+          <tr><td>3</td><td>P × (R/100)² × (300 + R)/100</td></tr>
+        </table>
+
+        <h4>ഉദാഹരണം</h4>
+        <p><b>ചോദ്യം:</b> ₹10,000-ന് 10% വാർഷിക നിരക്കിൽ 2 വർഷത്തേക്ക് CI എത്ര?</p>
+        <p><b>ഉത്തരം:</b> A = 10000 × (1.1)² = 10000 × 1.21 = ₹12,100; CI = 12,100 − 10,000 = <b>₹2,100</b>.</p>
+
+        <div class="trap"><b>⚠️ PSC Trap</b><br>
+          <b>SI</b> എപ്പോഴും ഒരേ തുകയിൽ കണക്കാക്കുന്നു.<br>
+          <b>CI</b> പലിശ കൂട്ടിച്ചേർത്ത് പുതിയ മൂലധനത്തിൽ കണക്കാക്കുന്നു.<br>
+          ഒരേ നിരക്കിൽ <b>CI &gt; SI</b> എപ്പോഴും (T ≥ 2).
+        </div>
+      </div>
+    </details>
+
+    <!-- 11.6 Time Speed Distance -->
+    <details class="note-block" id="topic-11-6" data-title="സമയം-ദൂരം-വേഗം">
+      <summary>11.6 സമയം-ദൂരം-വേഗം (Time, Speed, Distance)</summary>
+      <div class="note-body">
+
+        <h4>ഫോർമുലകൾ</h4>
+        <div class="quick">
+          <b>⚡ Speed = Distance / Time</b><br>
+          <b>Distance = Speed × Time</b><br>
+          <b>Time = Distance / Speed</b>
+        </div>
+
+        <h4>യൂണിറ്റ് മാറ്റങ്ങൾ</h4>
+        <table>
+          <tr><th>ഫ്രം</th><th>ടു</th><th>ഗുണിക്കുക</th></tr>
+          <tr><td>km/h</td><td>m/s</td><td>× 5/18</td></tr>
+          <tr><td>m/s</td><td>km/h</td><td>× 18/5</td></tr>
+          <tr><td>km</td><td>m</td><td>× 1000</td></tr>
+          <tr><td>hour</td><td>minute</td><td>× 60</td></tr>
+        </table>
+
+        <h4>ശരാശരി വേഗം (Average Speed)</h4>
+        <ul>
+          <li><b>ഒരേ ദൂരം രണ്ട് വേഗതയിൽ:</b> 2ab/(a+b) — Harmonic Mean</li>
+          <li><b>ഒരേ സമയം രണ്ട് വേഗതയിൽ:</b> (a+b)/2 — Arithmetic Mean</li>
+        </ul>
+
+        <h4>ഉദാഹരണം</h4>
+        <p><b>ചോദ്യം:</b> 60 km/h വേഗതയിൽ 3 മണിക്കൂറിൽ സഞ്ചരിക്കുന്ന ദൂരം?</p>
+        <p><b>ഉത്തരം:</b> D = 60 × 3 = <b>180 km</b>.</p>
+
+        <div class="mnem"><b>🧠 "5/18 → m/s, 18/5 → km/h"</b> — "5 to 18 is m/s, 18 to 5 is km/h."</div>
+      </div>
+    </details>
+
+    <!-- 11.7 Time & Work -->
+    <details class="note-block" id="topic-11-7" data-title="സമയവും ജോലിയും">
+      <summary>11.7 സമയവും ജോലിയും (Time &amp; Work)</summary>
+      <div class="note-body">
+
+        <h4>അടിസ്ഥാന തത്വം</h4>
+        <ul>
+          <li>ഒരാൾ x ദിവസത്തിൽ ചെയ്യുന്ന ജോലി → 1 ദിവസത്തിൽ 1/x ഭാഗം.</li>
+          <li>ഒരാൾ ഒരു ദിവസത്തിൽ ചെയ്യുന്നത് y ഭാഗം → മുഴുവൻ ജോലി y/x ദിവസത്തിൽ.</li>
+        </ul>
+
+        <h4>ഫോർമുലകൾ</h4>
+        <div class="quick">
+          <b>⚡ A, x ദിവസം; B, y ദിവസം:</b><br>
+          • ഒരുമിച്ച്: 1/x + 1/y = (x+y)/xy<br>
+          • ഒരുമിച്ച് എടുക്കുന്ന സമയം: xy/(x+y)<br>
+          • A, B, C — x, y, z ദിവസം: xyz/(xy+yz+zx)
+        </div>
+
+        <h4>ഉദാഹരണം</h4>
+        <p><b>ചോദ്യം:</b> A ഒരു ജോലി 10 ദിവസത്തിലും B 15 ദിവസത്തിലും ചെയ്യും. ഒരുമിച്ച് എത്ര ദിവസം?</p>
+        <p><b>ഉത്തരം:</b> (10 × 15)/(10 + 15) = 150/25 = <b>6 ദിവസം</b>.</p>
+
+        <div class="trap"><b>⚠️ PSC Trap</b><br>
+          <b>M₁D₁H₁/W₁ = M₂D₂H₂/W₂</b> — Men × Days × Hours / Work. Work rate constant.</div>
+      </div>
+    </details>
+
+    <!-- 11.8 Average -->
+    <details class="note-block" id="topic-11-8" data-title="ശരാശരി">
+      <summary>11.8 ശരാശരി (Average)</summary>
+      <div class="note-body">
+
+        <h4>ഫോർമുല</h4>
+        <div class="quick"><b>⚡ Average = (Sum of all values) / (Number of values)</b></div>
+
+        <h4>പ്രധാന പോയിന്റുകൾ</h4>
+        <ul>
+          <li><b>1 മുതൽ n വരെയുള്ള ശരാശരി:</b> (n+1)/2</li>
+          <li><b>ആദ്യ n പ്രകൃത സംഖ്യകളുടെ ശരാശരി:</b> (n+1)/2</li>
+          <li><b>ആദ്യ n ഒറ്റസംഖ്യകളുടെ ശരാശരി:</b> n</li>
+          <li><b>ആദ്യ n ഇരട്ടസംഖ്യകളുടെ ശരാശരി:</b> n+1</li>
+          <li><b>ആദ്യ n സ്വാഭാവിക സംഖ്യകളുടെ വർഗ്ഗങ്ങളുടെ ശരാശരി:</b> (n+1)(2n+1)/6</li>
+        </ul>
+
+        <h4>ഉദാഹരണം</h4>
+        <p><b>ചോദ്യം:</b> 5, 10, 15, 20, 25 എന്ന സംഖ്യകളുടെ ശരാശരി?</p>
+        <p><b>ഉത്തരം:</b> (5 + 10 + 15 + 20 + 25)/5 = 75/5 = <b>15</b>.</p>
+
+        <div class="mnem"><b>🧠 "Avg = Sum/Count"</b> — "Sum over Count, Average is Found."</div>
+      </div>
+    </details>
+
+    <!-- 11.9 Ratio & AP/GP -->
+    <details class="note-block" id="topic-11-9" data-title="അനുപാതം &amp; AP/GP">
+      <summary>11.9 അനുപാതം &amp; AP/GP (Ratio, Progression)</summary>
+      <div class="note-body">
+
+        <h4>അനുപാതം (Ratio)</h4>
+        <ul>
+          <li>a : b — a/b</li>
+          <li><b>a : b = c : d</b> എങ്കിൽ <b>ad = bc</b> (Cross-multiply).</li>
+          <li><b>a : b = 2 : 3, b : c = 4 : 5</b> എങ്കിൽ a : b : c = 8 : 12 : 15.</li>
+        </ul>
+
+        <h4>അനുപാത വിഭജനം</h4>
+        <ul>
+          <li>₹x — a : b എന്ന അനുപാതത്തിൽ: ഭാഗങ്ങൾ = ax/(a+b), bx/(a+b)</li>
+        </ul>
+
+        <h4>AP (Arithmetic Progression)</h4>
+        <div class="quick">
+          <b>⚡ a, a+d, a+2d, …</b><br>
+          • nth term: a<sub>n</sub> = a + (n−1)d<br>
+          • Sum of n terms: S<sub>n</sub> = n/2 × [2a + (n−1)d]<br>
+          • Sum = n/2 × (first + last)
+        </div>
+
+        <h4>GP (Geometric Progression)</h4>
+        <div class="quick">
+          <b>⚡ a, ar, ar², ar³, …</b><br>
+          • nth term: a<sub>n</sub> = ar<sup>n−1</sup><br>
+          • Sum of n terms: S<sub>n</sub> = a(r<sup>n</sup> − 1)/(r − 1) (r ≠ 1)
+        </div>
+
+        <h4>ഉദാഹരണം</h4>
+        <p><b>ചോദ്യം:</b> 3, 7, 11, 15, … എന്ന AP-യുടെ 10-ാം പദം?</p>
+        <p><b>ഉത്തരം:</b> a = 3, d = 4; a₁₀ = 3 + 9×4 = <b>39</b>.</p>
+
+        <div class="trap"><b>⚠️ PSC Trap</b><br>
+          <b>AP:</b> പൊതു വ്യത്യാസം (d) സ്ഥിരം — കൂട്ടുക.<br>
+          <b>GP:</b> പൊതു അനുപാതം (r) സ്ഥിരം — ഗുണിക്കുക.
+        </div>
+      </div>
+    </details>
+
+    <!-- 11.10 Mensuration -->
+    <details class="note-block" id="topic-11-10" data-title="ക്ഷേത്രഗണിതം">
+      <summary>11.10 ക്ഷേത്രഗണിതം (Mensuration)</summary>
+      <div class="note-body">
+
+        <h4>2D രൂപങ്ങൾ — വിസ്തീർണ്ണവും ചുറ്റളവും</h4>
+        <table>
+          <tr><th>രൂപം</th><th>വിസ്തീർണ്ണം</th><th>ചുറ്റളവ്</th></tr>
+          <tr><td>ചതുരം (Square)</td><td>a²</td><td>4a</td></tr>
+          <tr><td>ദീർഘചതുരം (Rectangle)</td><td>l × b</td><td>2(l+b)</td></tr>
+          <tr><td>ത്രികോണം (Triangle)</td><td>½ × base × height</td><td>a+b+c</td></tr>
+          <tr><td>വൃത്തം (Circle)</td><td>πr²</td><td>2πr</td></tr>
+          <tr><td>സമചതുര ത്രികോണം</td><td>(√3/4) × a²</td><td>3a</td></tr>
+          <tr><td>സാമാന്തരികം (Parallelogram)</td><td>base × height</td><td>2(a+b)</td></tr>
+          <tr><td>ട്രപ്പീസിയം</td><td>½ × (a+b) × h</td><td>a+b+c+d</td></tr>
+        </table>
+
+        <h4>3D രൂപങ്ങൾ — വ്യാപ്തവും ഉപരിതല വിസ്തീർണ്ണവും</h4>
+        <table>
+          <tr><th>രൂപം</th><th>വ്യാപ്തം (Volume)</th><th>ഉപരിതല വിസ്തീർണ്ണം</th></tr>
+          <tr><td>ക്യൂബ് (Cube)</td><td>a³</td><td>6a²</td></tr>
+          <tr><td>ക്യൂബോയിഡ് (Cuboid)</td><td>l × b × h</td><td>2(lb + bh + hl)</td></tr>
+          <tr><td>സിലിണ്ടർ (Cylinder)</td><td>πr²h</td><td>2πr(r+h)</td></tr>
+          <tr><td>കോൺ (Cone)</td><td>⅓ πr²h</td><td>πr(l+r)</td></tr>
+          <tr><td>ഗോളം (Sphere)</td><td>(4/3)πr³</td><td>4πr²</td></tr>
+          <tr><td>അർദ്ധഗോളം (Hemisphere)</td><td>(2/3)πr³</td><td>3πr²</td></tr>
+        </table>
+
+        <h4>പ്രധാന പോയിന്റുകൾ</h4>
+        <ul>
+          <li><b>π (pi) = 22/7 ≈ 3.14159</b></li>
+          <li><b>1 m² = 10,000 cm²</b></li>
+          <li><b>1 m³ = 10,00,000 cm³ = 1,000 ലിറ്റർ</b></li>
+          <li><b>1 ലിറ്റർ = 1,000 cm³</b></li>
+          <li><b>1 ഹെക്ടർ = 10,000 m²</b></li>
+        </ul>
+
+        <h4>ഉദാഹരണം</h4>
+        <p><b>ചോദ്യം:</b> 7 cm ആരമുള്ള വൃത്തത്തിന്റെ വിസ്തീർണ്ണം? (π = 22/7)</p>
+        <p><b>ഉത്തരം:</b> A = πr² = (22/7) × 7 × 7 = <b>154 cm²</b>.</p>
+
+        <div class="mnem"><b>🧠 "2πr — Circle, 2πrh — Cylinder"</b> — Circle-ന് r, Cylinder-ന് rh.</div>
+      </div>
+    </details>
+
+    <!-- 11.11 Trigonometry -->
+    <details class="note-block" id="topic-11-11" data-title="ത്രികോണമിതി [883]">
+      <summary>11.11 ത്രികോണമിതി (Trigonometry) [883]</summary>
+      <div class="note-body">
+
+        <h4>അടിസ്ഥാന അനുപാതങ്ങൾ</h4>
+        <table>
+          <tr><th>അനുപാതം</th><th>ഫോർമുല</th></tr>
+          <tr><td>sin θ</td><td>ലംബം / കർണ്ണം (P/H)</td></tr>
+          <tr><td>cos θ</td><td>പാദം / കർണ്ണം (B/H)</td></tr>
+          <tr><td>tan θ</td><td>ലംബം / പാദം (P/B) = sin θ / cos θ</td></tr>
+          <tr><td>cosec θ</td><td>1 / sin θ</td></tr>
+          <tr><td>sec θ</td><td>1 / cos θ</td></tr>
+          <tr><td>cot θ</td><td>1 / tan θ</td></tr>
+        </table>
+
+        <h4>പ്രധാന മൂല്യങ്ങൾ</h4>
+        <table>
+          <tr><th>θ</th><th>sin</th><th>cos</th><th>tan</th></tr>
+          <tr><td>0°</td><td>0</td><td>1</td><td>0</td></tr>
+          <tr><td>30°</td><td>½</td><td>√3/2</td><td>1/√3</td></tr>
+          <tr><td>45°</td><td>1/√2</td><td>1/√2</td><td>1</td></tr>
+          <tr><td>60°</td><td>√3/2</td><td>½</td><td>√3</td></tr>
+          <tr><td>90°</td><td>1</td><td>0</td><td>∞</td></tr>
+        </table>
+
+        <h4>പ്രധാന സമവാക്യങ്ങൾ (Identities)</h4>
+        <ul>
+          <li>sin²θ + cos²θ = 1</li>
+          <li>1 + tan²θ = sec²θ</li>
+          <li>1 + cot²θ = cosec²θ</li>
+        </ul>
+
+        <h4>ഉയരവും ദൂരവും (Height &amp; Distance)</h4>
+        <ul>
+          <li><b>Elevation (ഉയരം):</b> നിരീക്ഷകന്റെ കണ്ണിൽ നിന്ന് മുകളിലേക്ക് കാണുന്ന കോൺ.</li>
+          <li><b>Depression (താഴ്ച):</b> നിരീക്ഷകന്റെ കണ്ണിൽ നിന്ന് താഴേക്ക് കാണുന്ന കോൺ.</li>
+        </ul>
+
+        <div class="mnem"><b>🧠 "Pandit Badri Prasad / Har Har Bhole"</b><br>
+          <b>P</b>andit = Perpendicular; <b>B</b>adri = Base; <b>P</b>rasad = Perpendicular.<br>
+          <b>H</b>ar = Hypotenuse; <b>H</b>ar = Hypotenuse; <b>B</b>hole = Base.<br>
+          → sin = P/H, cos = B/H, tan = P/B.</div>
+      </div>
+    </details>
+  </details>
+
+  <!-- PSC TRAPS -->
+  <details class="subject">
+    <summary>⚠️ PSC TRAPS — Arithmetic</summary>
+    <div class="note-body">
+      <table>
+        <tr><th>Trap</th><th>ശരിയായ വസ്തുത</th></tr>
+        <tr><td>ലാഭ% കണക്കാക്കുന്നത്</td><td>CP-യിൽ നിന്ന് (SP-യിൽ നിന്നല്ല)</td></tr>
+        <tr><td>Discount% കണക്കാക്കുന്നത്</td><td>MP-യിൽ നിന്ന് (CP-യിൽ നിന്നല്ല)</td></tr>
+        <tr><td>x% വർദ്ധനവും x% കുറവും</td><td>x²/100 % കുറവ്</td></tr>
+        <tr><td>km/h → m/s</td><td>× 5/18</td></tr>
+        <tr><td>m/s → km/h</td><td>× 18/5</td></tr>
+        <tr><td>ഒരേ ദൂരം ശരാശരി വേഗം</td><td>2ab/(a+b)</td></tr>
+        <tr><td>ഒരേ സമയം ശരാശരി വേഗം</td><td>(a+b)/2</td></tr>
+        <tr><td>CI vs SI</td><td>CI ≥ SI (T ≥ 2). T=1-ൽ CI = SI</td></tr>
+        <tr><td>1 ലിറ്റർ</td><td>1,000 cm³</td></tr>
+        <tr><td>AP vs GP</td><td>AP = കൂട്ടൽ (d); GP = ഗുണനം (r)</td></tr>
+      </table>
+    </div>
+  </details>
+
+  <!-- 1-Minute Revision -->
+  <details class="subject">
+    <summary>⚡ 1-Minute Revision — Arithmetic</summary>
+    <div class="note-body">
+      <table>
+        <tr><th>ചോദ്യം</th><th>ഉത്തരം</th></tr>
+        <tr><td>BODMAS ക്രമം</td><td>Brackets → Of → Division → Multiplication → Addition → Subtraction</td></tr>
+        <tr><td>1 മുതൽ n വരെയുള്ള തുക</td><td>n(n+1)/2</td></tr>
+        <tr><td>ആദ്യ n ഒറ്റസംഖ്യകളുടെ തുക</td><td>n²</td></tr>
+        <tr><td>ലാഭ% = ?</td><td>(ലാഭം/CP) × 100</td></tr>
+        <tr><td>SI ഫോർമുല</td><td>(P × R × T) / 100</td></tr>
+        <tr><td>CI ഫോർമുല</td><td>A = P(1 + R/100)^T</td></tr>
+        <tr><td>km/h → m/s</td><td>× 5/18</td></tr>
+        <tr><td>ഒരേ ദൂരം ശരാശരി വേഗം</td><td>2ab/(a+b)</td></tr>
+        <tr><td>A=x ദിവസം, B=y — ഒരുമിച്ച്</td><td>xy/(x+y)</td></tr>
+        <tr><td>ശരാശരി</td><td>Sum / Count</td></tr>
+        <tr><td>AP nth term</td><td>a + (n−1)d</td></tr>
+        <tr><td>GP nth term</td><td>ar^(n−1)</td></tr>
+        <tr><td>വൃത്ത വിസ്തീർണ്ണം</td><td>πr²</td></tr>
+        <tr><td>ഗോള വ്യാപ്തം</td><td>(4/3)πr³</td></tr>
+        <tr><td>sin θ</td><td>P/H</td></tr>
+        <tr><td>cos θ</td><td>B/H</td></tr>
+        <tr><td>tan θ</td><td>P/B</td></tr>
+        <tr><td>1 ലിറ്റർ = ? cm³</td><td>1,000 cm³</td></tr>
+        <tr><td>π മൂല്യം</td><td>22/7 ≈ 3.14159</td></tr>
+      </table>
+    </div>
+  </details>
+
+  <p class="hint" style="margin-top:1rem">
+    <b>Coverage:</b> Part 11 (Simple Arithmetic) — 25 MCQs.
+  </p>
+</section>
+
+<!-- ================= MOCK TEST ================= -->
+<section id="view-test" class="view">
+  <div class="toolbar">
+    <div class="filters">
+      <span class="flabel">Exam:</span>
+      <button class="chip active" data-cat="ALL">ALL</button>
+      <button class="chip" data-cat="573">573</button>
+      <button class="chip" data-cat="883">883</button>
+      <button class="chip" data-cat="BOTH">BOTH</button>
+      <select id="topicFilter" aria-label="Filter by topic"><option value="ALL">All Topics</option></select>
+      <select id="diffFilter" aria-label="Filter by difficulty">
+        <option value="ALL">All Difficulty</option>
+        <option value="Easy">🟢 Easy</option>
+        <option value="Medium">🟡 Medium</option>
+        <option value="Hard">🟠 Hard</option>
+        <option value="Very Hard">🔴 Very Hard</option>
+      </select>
+    </div>
+    <div class="tools">
+      <label class="flabel">Negative:
+        <input type="number" id="negInput" value="0.33" step="0.01" min="0" style="width:74px" aria-label="Negative mark value">
+      </label>
+      <button class="btn ghost" id="resetBtn">Reset Progress</button>
+      <button class="btn primary" id="finishBtn">Finish Test</button>
+    </div>
+  </div>
+  <div id="setInfo" class="hint" style="margin-bottom:.6rem"></div>
+  <div class="navwrap">
+    <h4>Questions</h4>
+    <div class="navgrid" id="navgrid"></div>
+  </div>
+  <div class="qcard" id="qcard"></div>
+</section>
+
+<!-- ================= REVISION ================= -->
+<section id="view-revision" class="view">
+  <div class="viewhead">
+    <h2>🔁 REVISION MODE</h2>
+    <p class="hint">Practise only the questions you need. Choosing a set replaces the current test set.</p>
+  </div>
+  <div class="revpanel">
+    <div class="setgrid" id="setgrid"></div>
+    <div style="margin-top:.8rem; display:flex; gap:.5rem; flex-wrap:wrap">
+      <button class="btn primary" data-set="all">📚 Practise All Questions</button>
+      <button class="btn ghost" data-set="reset">↺ Clear Revision Filter</button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BOOKMARKS ================= -->
+<section id="view-bookmarks" class="view">
+  <div class="viewhead">
+    <h2>⭐ BOOKMARKS</h2>
+    <p class="hint">Bookmarks are stored in your browser and remain after you close or refresh the file.</p>
+  </div>
+  <div id="bookmarkList"></div>
+</section>
+
+<!-- ================= RESULT ================= -->
+<section id="view-result" class="view">
+  <div id="resultHost"></div>
+</section>
+
+<!-- ================= SEARCH ================= -->
+<section id="view-search" class="view">
+  <div class="viewhead">
+    <h2>🔎 SEARCH</h2>
+    <p class="hint">Search notes and questions — persons, places, articles, acts, sections, dates, terms.</p>
+  </div>
+  <div class="searchbox">
+    <input type="search" id="searchInput" placeholder="Type at least 2 characters…" aria-label="Search notes and questions">
+    <button class="btn ghost" id="clearSearch">Clear</button>
+  </div>
+  <div id="searchResults"></div>
+</section>
+
+</main>
+
+<!-- ================= PART 11 QUESTIONS + ENGINE ================= -->
+<script>
+window.PART_KEY   = 'arithmetic';
+window.PART_TITLE = 'Simple Arithmetic';
+
+window.QUESTIONS = [
+{
+  id:1, subject:'Arithmetic', topic:'BODMAS', category:'BOTH', difficulty:'Easy', type:'Formula',
+  question:'12 + 8 × 3 − 6 ÷ 2 = ?',
+  options:['30','33','36','40'], answer:1,
+  explanation:'BODMAS → 12 + (8×3) − (6÷2) = 12 + 24 − 3 = 33.',
+  optionNotes:[
+    '30 — തെറ്റ്.',
+    '33 — ശരി (ശരിയായ ഉത്തരം).',
+    '36 — തെറ്റ്.',
+    '40 — തെറ്റ്.']
+},
+{
+  id:2, subject:'Arithmetic', topic:'സംഖ്യകൾ', category:'BOTH', difficulty:'Medium', type:'Formula',
+  question:'1 മുതൽ 10 വരെയുള്ള സംഖ്യകളുടെ തുക എത്ര?',
+  options:['45','50','55','60'], answer:2,
+  explanation:'n(n+1)/2 = 10×11/2 = 55.',
+  optionNotes:[
+    '45 — തെറ്റ്.',
+    '50 — തെറ്റ്.',
+    '55 — ശരി (ശരിയായ ഉത്തരം).',
+    '60 — തെറ്റ്.']
+},
+{
+  id:3, subject:'Arithmetic', topic:'ശതമാനം', category:'BOTH', difficulty:'Easy', type:'Formula',
+  question:'80-ന്റെ 25% എത്ര?',
+  options:['15','18','20','25'], answer:2,
+  explanation:'80 × 25/100 = 20.',
+  optionNotes:[
+    '15 — തെറ്റ്.',
+    '18 — തെറ്റ്.',
+    '20 — ശരി (ശരിയായ ഉത്തരം).',
+    '25 — തെറ്റ്.']
+},
+{
+  id:4, subject:'Arithmetic', topic:'ശതമാനം', category:'BOTH', difficulty:'Medium', type:'Formula',
+  question:'ഒരു സംഖ്യ 25% വർദ്ധിച്ച് 500 ആയാൽ യഥാർത്ഥ സംഖ്യ എത്ര?',
+  options:['300','350','400','450'], answer:2,
+  explanation:'x × 1.25 = 500 → x = 400.',
+  optionNotes:[
+    '300 — തെറ്റ്.',
+    '350 — തെറ്റ്.',
+    '400 — ശരി (ശരിയായ ഉത്തരം).',
+    '450 — തെറ്റ്.']
+},
+{
+  id:5, subject:'Arithmetic', topic:'ശതമാനം', category:'BOTH', difficulty:'Hard', type:'Concept',
+  question:'ഒരു സംഖ്യ 10% വർദ്ധിച്ച് വീണ്ടും 10% കുറഞ്ഞാൽ ആകെ എത്ര ശതമാനം മാറ്റം?',
+  options:['വർദ്ധനവ് ഇല്ല','1% കുറവ്','1% വർദ്ധനവ്','2% കുറവ്'], answer:1,
+  explanation:'x% കൂടിയും x% കുറഞ്ഞും = x²/100 കുറവ്. 10²/100 = 1% കുറവ്.',
+  optionNotes:[
+    'വർദ്ധനവ് ഇല്ല — തെറ്റ്.',
+    '1% കുറവ് — ശരി (ശരിയായ ഉത്തരം).',
+    '1% വർദ്ധനവ് — തെറ്റ്.',
+    '2% കുറവ് — തെറ്റ്.']
+},
+{
+  id:6, subject:'Arithmetic', topic:'ലാഭം', category:'BOTH', difficulty:'Easy', type:'Formula',
+  question:'200 രൂപയ്ക്ക് വാങ്ങിയ വസ്തു 250 രൂപയ്ക്ക് വിറ്റാൽ ലാഭ ശതമാനം?',
+  options:['20%','25%','30%','50%'], answer:1,
+  explanation:'ലാഭം = 50; ലാഭ% = (50/200) × 100 = 25%.',
+  optionNotes:[
+    '20% — തെറ്റ്.',
+    '25% — ശരി (ശരിയായ ഉത്തരം).',
+    '30% — തെറ്റ്.',
+    '50% — തെറ്റ്.']
+},
+{
+  id:7, subject:'Arithmetic', topic:'ലാഭം', category:'BOTH', difficulty:'Medium', type:'Formula',
+  question:'20% ലാഭത്തിൽ 600 രൂപയ്ക്ക് വിറ്റ വസ്തുവിന്റെ വാങ്ങിയ വില എത്ര?',
+  options:['450','480','500','550'], answer:2,
+  explanation:'CP = SP × 100/(100+20) = 600 × 100/120 = 500.',
+  optionNotes:[
+    '450 — തെറ്റ്.',
+    '480 — തെറ്റ്.',
+    '500 — ശരി (ശരിയായ ഉത്തരം).',
+    '550 — തെറ്റ്.']
+},
+{
+  id:8, subject:'Arithmetic', topic:'SI', category:'BOTH', difficulty:'Easy', type:'Formula',
+  question:'₹5,000-ന് 8% വാർഷിക നിരക്കിൽ 3 വർഷത്തേക്ക് സാധാരണ പലിശ എത്ര?',
+  options:['₹1,000','₹1,200','₹1,400','₹1,500'], answer:1,
+  explanation:'SI = (5000 × 8 × 3)/100 = 1200.',
+  optionNotes:[
+    '1000 — തെറ്റ്.',
+    '1200 — ശരി (ശരിയായ ഉത്തരം).',
+    '1400 — തെറ്റ്.',
+    '1500 — തെറ്റ്.']
+},
+{
+  id:9, subject:'Arithmetic', topic:'SI', category:'BOTH', difficulty:'Medium', type:'Formula',
+  question:'₹10,000-ന് 5% വാർഷിക നിരക്കിൽ എത്ര വർഷത്തിൽ SI ₹2,500 ആകും?',
+  options:['3','4','5','6'], answer:2,
+  explanation:'T = SI × 100/(P × R) = 2500 × 100/(10000 × 5) = 5 വർഷം.',
+  optionNotes:[
+    '3 — തെറ്റ്.',
+    '4 — തെറ്റ്.',
+    '5 — ശരി (ശരിയായ ഉത്തരം).',
+    '6 — തെറ്റ്.']
+},
+{
+  id:10, subject:'Arithmetic', topic:'CI', category:'BOTH', difficulty:'Medium', type:'Formula',
+  question:'₹10,000-ന് 10% വാർഷിക നിരക്കിൽ 2 വർഷത്തേക്ക് കൂട്ടുപലിശ എത്ര?',
+  options:['₹2,000','₹2,100','₹2,200','₹2,500'], answer:1,
+  explanation:'A = 10000 × (1.1)² = 12,100; CI = 2,100.',
+  optionNotes:[
+    '2000 — SI ആയിരുന്നെങ്കിൽ.',
+    '2100 — ശരി (ശരിയായ ഉത്തരം).',
+    '2200 — തെറ്റ്.',
+    '2500 — തെറ്റ്.']
+},
+{
+  id:11, subject:'Arithmetic', topic:'വേഗം', category:'BOTH', difficulty:'Easy', type:'Formula',
+  question:'60 km/h വേഗതയിൽ 3 മണിക്കൂറിൽ സഞ്ചരിക്കുന്ന ദൂരം എത്ര?',
+  options:['120 km','150 km','180 km','200 km'], answer:2,
+  explanation:'D = Speed × Time = 60 × 3 = 180 km.',
+  optionNotes:[
+    '120 — തെറ്റ്.',
+    '150 — തെറ്റ്.',
+    '180 — ശരി (ശരിയായ ഉത്തരം).',
+    '200 — തെറ്റ്.']
+},
+{
+  id:12, subject:'Arithmetic', topic:'വേഗം', category:'BOTH', difficulty:'Medium', type:'Concept',
+  question:'90 km/h-നെ m/s ആക്കിയാൽ എത്ര?',
+  options:['20','25','30','35'], answer:1,
+  explanation:'km/h → m/s: × 5/18. 90 × 5/18 = 25 m/s.',
+  optionNotes:[
+    '20 — തെറ്റ്.',
+    '25 — ശരി (ശരിയായ ഉത്തരം).',
+    '30 — തെറ്റ്.',
+    '35 — തെറ്റ്.']
+},
+{
+  id:13, subject:'Arithmetic', topic:'വേഗം', category:'BOTH', difficulty:'Hard', type:'Concept',
+  question:'ഒരാൾ 60 km/h-ൽ പോയി 40 km/h-ൽ മടങ്ങി. ശരാശരി വേഗത?',
+  options:['45 km/h','48 km/h','50 km/h','52 km/h'], answer:1,
+  explanation:'Average = 2ab/(a+b) = 2×60×40/100 = 48 km/h.',
+  optionNotes:[
+    '45 — തെറ്റ്.',
+    '48 — ശരി (ശരിയായ ഉത്തരം).',
+    '50 — തെറ്റ്.',
+    '52 — തെറ്റ്.']
+},
+{
+  id:14, subject:'Arithmetic', topic:'ജോലി', category:'BOTH', difficulty:'Medium', type:'Formula',
+  question:'A ഒരു ജോലി 10 ദിവസത്തിലും B 15 ദിവസത്തിലും ചെയ്യും. ഒരുമിച്ച് എത്ര ദിവസം?',
+  options:['5','6','7','8'], answer:1,
+  explanation:'xy/(x+y) = 10×15/25 = 6 ദിവസം.',
+  optionNotes:[
+    '5 — തെറ്റ്.',
+    '6 — ശരി (ശരിയായ ഉത്തരം).',
+    '7 — തെറ്റ്.',
+    '8 — തെറ്റ്.']
+},
+{
+  id:15, subject:'Arithmetic', topic:'ജോലി', category:'BOTH', difficulty:'Hard', type:'Concept',
+  question:'A യും B യും ഒരുമിച്ച് 12 ദിവസത്തിൽ ഒരു ജോലി ചെയ്യും. A ഒറ്റയ്ക്ക് 20 ദിവസം. B ഒറ്റയ്ക്ക് എത്ര?',
+  options:['25','28','30','35'], answer:2,
+  explanation:'1/20 + 1/B = 1/12 → 1/B = 1/12 − 1/20 = 2/60 = 1/30 → B = 30.',
+  optionNotes:[
+    '25 — തെറ്റ്.',
+    '28 — തെറ്റ്.',
+    '30 — ശരി (ശരിയായ ഉത്തരം).',
+    '35 — തെറ്റ്.']
+},
+{
+  id:16, subject:'Arithmetic', topic:'ശരാശരി', category:'BOTH', difficulty:'Easy', type:'Formula',
+  question:'5, 10, 15, 20, 25 എന്ന സംഖ്യകളുടെ ശരാശരി എത്ര?',
+  options:['12','15','18','20'], answer:1,
+  explanation:'Sum = 75; Average = 75/5 = 15.',
+  optionNotes:[
+    '12 — തെറ്റ്.',
+    '15 — ശരി (ശരിയായ ഉത്തരം).',
+    '18 — തെറ്റ്.',
+    '20 — തെറ്റ്.']
+},
+{
+  id:17, subject:'Arithmetic', topic:'ശരാശരി', category:'BOTH', difficulty:'Medium', type:'Concept',
+  question:'ആദ്യ 10 പ്രകൃത സംഖ്യകളുടെ ശരാശരി എത്ര?',
+  options:['5','5.5','6','6.5'], answer:1,
+  explanation:'Average = (n+1)/2 = 11/2 = 5.5.',
+  optionNotes:[
+    '5 — തെറ്റ്.',
+    '5.5 — ശരി (ശരിയായ ഉത്തരം).',
+    '6 — തെറ്റ്.',
+    '6.5 — തെറ്റ്.']
+},
+{
+  id:18, subject:'Arithmetic', topic:'അനുപാതം', category:'BOTH', difficulty:'Medium', type:'Formula',
+  question:'₹1,000 — 2 : 3 എന്ന അനുപാതത്തിൽ വിഭജിച്ചാൽ ഭാഗങ്ങൾ എത്ര?',
+  options:['₹400, ₹600','₹300, ₹700','₹500, ₹500','₹200, ₹800'], answer:0,
+  explanation:'ഭാഗങ്ങൾ = 1000×2/5 = 400; 1000×3/5 = 600.',
+  optionNotes:[
+    '400, 600 — ശരി (ശരിയായ ഉത്തരം).',
+    '300, 700 — തെറ്റ്.',
+    '500, 500 — തെറ്റ്.',
+    '200, 800 — തെറ്റ്.']
+},
+{
+  id:19, subject:'Arithmetic', topic:'AP', category:'BOTH', difficulty:'Medium', type:'Formula',
+  question:'3, 7, 11, 15, … എന്ന AP-യുടെ 10-ാം പദം എത്ര?',
+  options:['36','39','43','47'], answer:1,
+  explanation:'a = 3, d = 4; a₁₀ = 3 + 9×4 = 39.',
+  optionNotes:[
+    '36 — തെറ്റ്.',
+    '39 — ശരി (ശരിയായ ഉത്തരം).',
+    '43 — തെറ്റ്.',
+    '47 — തെറ്റ്.']
+},
+{
+  id:20, subject:'Arithmetic', topic:'AP', category:'BOTH', difficulty:'Hard', type:'Formula',
+  question:'ഒരു AP-യുടെ ആദ്യ പദം 5-ഉം പൊതു വ്യത്യാസം 3-ഉം ആണ്. ആദ്യ 10 പദങ്ങളുടെ തുക എത്ര?',
+  options:['165','175','185','195'], answer:2,
+  explanation:'S₁₀ = 10/2 × [2×5 + 9×3] = 5 × [10 + 27] = 5 × 37 = 185.',
+  optionNotes:[
+    '165 — തെറ്റ്.',
+    '175 — തെറ്റ്.',
+    '185 — ശരി (ശരിയായ ഉത്തരം).',
+    '195 — തെറ്റ്.']
+},
+{
+  id:21, subject:'Arithmetic', topic:'ക്ഷേത്രഗണിതം', category:'BOTH', difficulty:'Easy', type:'Formula',
+  question:'7 cm ആരമുള്ള വൃത്തത്തിന്റെ വിസ്തീർണ്ണം എത്ര? (π = 22/7)',
+  options:['144 cm²','154 cm²','164 cm²','174 cm²'], answer:1,
+  explanation:'A = πr² = (22/7) × 7 × 7 = 154 cm².',
+  optionNotes:[
+    '144 — തെറ്റ്.',
+    '154 — ശരി (ശരിയായ ഉത്തരം).',
+    '164 — തെറ്റ്.',
+    '174 — തെറ്റ്.']
+},
+{
+  id:22, subject:'Arithmetic', topic:'ക്ഷേത്രഗണിതം', category:'BOTH', difficulty:'Medium', type:'Formula',
+  question:'10 cm വശമുള്ള ക്യൂബിന്റെ വ്യാപ്തം എത്ര?',
+  options:['100 cm³','500 cm³','1000 cm³','1500 cm³'], answer:2,
+  explanation:'V = a³ = 10³ = 1000 cm³.',
+  optionNotes:[
+    '100 — തെറ്റ് (അത് a² = 100 cm²).',
+    '500 — തെറ്റ്.',
+    '1000 — ശരി (ശരിയായ ഉത്തരം).',
+    '1500 — തെറ്റ്.']
+},
+{
+  id:23, subject:'Arithmetic', topic:'ക്ഷേത്രഗണിതം', category:'883', difficulty:'Medium', type:'Formula',
+  question:'1 ലിറ്റർ എത്ര cm³?',
+  options:['100','500','1,000','10,000'], answer:2,
+  explanation:'1 ലിറ്റർ = 1,000 cm³.',
+  optionNotes:[
+    '100 — തെറ്റ്.',
+    '500 — തെറ്റ്.',
+    '1,000 — ശരി (ശരിയായ ഉത്തരം).',
+    '10,000 — തെറ്റ്.']
+},
+{
+  id:24, subject:'Arithmetic', topic:'ത്രികോണമിതി', category:'883', difficulty:'Medium', type:'Formula',
+  question:'sin 30° എത്ര?',
+  options:['1','½','√3/2','1/√2'], answer:1,
+  explanation:'sin 30° = ½.',
+  optionNotes:[
+    '1 — sin 90°.',
+    '½ — ശരി (ശരിയായ ഉത്തരം).',
+    '√3/2 — sin 60°.',
+    '1/√2 — sin 45°.']
+},
+{
+  id:25, subject:'Arithmetic', topic:'ത്രികോണമിതി', category:'883', difficulty:'Hard', type:'Formula',
+  question:'tan 45° എത്ര?',
+  options:['0','½','1','√3'], answer:2,
+  explanation:'tan 45° = 1.',
+  optionNotes:[
+    '0 — tan 0°.',
+    '½ — tan 26.5°.',
+    '1 — ശരി (ശരിയായ ഉത്തരം).',
+    '√3 — tan 60°.']
+}
+];
+</script>
+<script src="assets/engine.js"></script>
+</body>
+</html>

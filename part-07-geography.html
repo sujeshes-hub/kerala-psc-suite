@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kerala PSC — Geography (Part 2)</title>
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">🎯 Kerala PSC — Geography (Part 2)</div>
+  <nav class="tabs" id="tabs">
+    <button data-view="notes" class="active">📚 Study Notes</button>
+    <button data-view="test">📝 Mock Test</button>
+    <button data-view="revision">🔁 Revision</button>
+    <button data-view="bookmarks">⭐ Bookmarks</button>
+    <button data-view="result">📊 Result</button>
+    <button data-view="search">🔎 Search</button>
+  </nav>
+</header>
+
+<div class="scorebar" id="scorebar">
+  <div class="sbitem"><span>Score</span><b id="sbScore">0 / 0</b></div>
+  <div class="sbitem"><span>Attempted</span><b id="sbAtt">0</b></div>
+  <div class="sbitem"><span>Correct</span><b id="sbCor">0</b></div>
+  <div class="sbitem"><span>Wrong</span><b id="sbWr">0</b></div>
+  <div class="sbitem"><span>Remaining</span><b id="sbRem">0</b></div>
+  <div class="sbitem"><span>Accuracy</span><b id="sbAcc">0%</b></div>
+</div>
+<div class="progresswrap"><div class="progressbar" id="progressbar"></div></div>
+
+<main>
+
+<!-- ================= STUDY NOTES ================= -->
+<section id="view-notes" class="view active">
+
+  <div class="viewhead">
+    <h2>📚 GEOGRAPHY — Part 2</h2>
+    <p class="hint">
+      <b>Marks: 5</b> &nbsp;|&nbsp; <span class="tag both">BOTH (573 &amp; 883)</span><br>
+      World · India · Kerala geography, climate, rivers, soils, GIS.
+    </p>
+    <button class="btn primary" id="startMcqBtn">📝 Start MCQ Test (20 Questions)</button>
+  </div>
+
+  <div class="howto">
+    <h3>📖 How to use these notes</h3>
+    <ul>
+      <li><b>Diagrams</b> are inline SVG — work fully offline.</li>
+      <li><b>Trap boxes</b> ⚠️ highlight commonly confused facts.</li>
+      <li><b>Memory tricks</b> 🧠 appear at point of use.</li>
+      <li>Every topic has interactive MCQs in the <b>📝 Mock Test</b> tab.</li>
+    </ul>
+  </div>
+
+  <div class="toc">
+    <h3>🔖 Jump to a topic</h3>
+    <a href="#topic-2-1">2.1 ഭൂമിയുടെ ഘടന</a>
+    <a href="#topic-2-2">2.2 അന്തരീക്ഷം</a>
+    <a href="#topic-2-3">2.3 ഇന്ത്യൻ ഭൂമിശാസ്ത്രം</a>
+    <a href="#topic-2-4">2.4 കേരള ഭൂമിശാസ്ത്രം</a>
+    <a href="#topic-2-5">2.5 GIS &amp; Remote Sensing</a>
+  </div>
+
+  <details class="subject" open>
+    <summary>🌍 PART 2 — GEOGRAPHY <span class="tag both">BOTH</span></summary>
+
+    <!-- 2.1 Earth Structure -->
+    <details class="note-block" id="topic-2-1" data-title="ഭൂമിയുടെ ഘടന">
+      <summary>2.1 ഭൂമിയുടെ ഘടന (Structure of the Earth)</summary>
+      <div class="note-body">
+
+        <div class="svgwrap wide">
+          <div class="figtitle">🖼 Fig. 1 — ഭൂമിയുടെ ആന്തരിക ഘടന</div>
+          <svg viewBox="0 0 600 280" role="img" aria-label="Layers of the Earth">
+            <rect width="600" height="280" fill="#fbfdff"/>
+            <!-- Crust -->
+            <circle cx="300" cy="140" r="120" fill="#8b5a2b" stroke="#5a3a1a" stroke-width="2"/>
+            <!-- Mantle -->
+            <circle cx="300" cy="140" r="110" fill="#e07a3b"/>
+            <!-- Outer core -->
+            <circle cx="300" cy="140" r="70" fill="#f4a259"/>
+            <!-- Inner core -->
+            <circle cx="300" cy="140" r="35" fill="#fde68a" stroke="#c98a1b" stroke-width="1.5"/>
+            <!-- Labels -->
+            <text x="300" y="35" font-size="11" font-weight="bold" fill="#fff" text-anchor="middle">Crust (0–35 km)</text>
+            <text x="300" y="70" font-size="11" font-weight="bold" fill="#3a1a0a" text-anchor="middle">Mantle (35–2900 km)</text>
+            <text x="300" y="125" font-size="10" font-weight="bold" fill="#3a1a0a" text-anchor="middle">Outer core</text>
+            <text x="300" y="140" font-size="10" font-weight="bold" fill="#3a1a0a" text-anchor="middle">(2900–5150 km)</text>
+            <text x="300" y="160" font-size="10" font-weight="bold" fill="#3a1a0a" text-anchor="middle">Inner core</text>
+            <text x="300" y="175" font-size="10" font-weight="bold" fill="#3a1a0a" text-anchor="middle">(5150–6371 km)</text>
+            <!-- Right legend -->
+            <text x="450" y="60" font-size="11" font-weight="bold" fill="#1a4a6a">Three main layers:</text>
+            <text x="450" y="82" font-size="10" fill="#16223a">1. Crust — SIAL (Si + Al), solid</text>
+            <text x="450" y="100" font-size="10" fill="#16223a">2. Mantle — SIMA (Si + Mg), semi-molten</text>
+            <text x="450" y="118" font-size="10" fill="#16223a">3. Core — NIFE (Ni + Fe), liquid + solid</text>
+            <text x="450" y="145" font-size="11" font-weight="bold" fill="#1a4a6a">Discontinuities:</text>
+            <text x="450" y="165" font-size="10" fill="#16223a">Moho — Crust / Mantle</text>
+            <text x="450" y="183" font-size="10" fill="#16223a">Gutenberg — Mantle / Core</text>
+            <text x="450" y="201" font-size="10" fill="#16223a">Lehmann — Outer / Inner core</text>
+          </svg>
+          <div class="svgcap">Crust → Mantle → Core; discontinuities at Moho, Gutenberg, Lehmann.</div>
+        </div>
+
+        <table>
+          <tr><th>പാളി</th><th>ഘടകങ്ങൾ</th><th>അവസ്ഥ</th><th>കനം</th></tr>
+          <tr><td>ഭൂപടലം (Crust)</td><td>SIAL (Si + Al)</td><td>ഖരം</td><td>0–35 km</td></tr>
+          <tr><td>മാന്റിൽ (Mantle)</td><td>SIMA (Si + Mg)</td><td>അർദ്ധ ദ്രവം</td><td>35–2900 km</td></tr>
+          <tr><td>കാമ്പ് (Core)</td><td>NIFE (Ni + Fe)</td><td>പുറം: ദ്രവം, ഉൾ: ഖരം</td><td>2900–6371 km</td></tr>
+        </table>
+
+        <h4>ഭൂമിയുടെ പ്രധാന വസ്തുതകൾ</h4>
+        <ul>
+          <li><b>ഭ്രമണം (Rotation):</b> 23 മണിക്കൂർ 56 മിനിറ്റ് 4 സെക്കൻഡ് — രാപ്പകൽ.</li>
+          <li><b>പരിക്രമണം (Revolution):</b> 365 ദിവസം 6 മണിക്കൂർ 9 മിനിറ്റ് — ഋതുക്കൾ.</li>
+          <li><b>ഭ്രമണ അച്ചുതണ്ടിന്റെ ചരിവ്:</b> 23.5° (23° 26′ 13″).</li>
+          <li><b>ഭൂമിയുടെ ശരാശരി ആരം:</b> 6,371 km.</li>
+          <li><b>സമുദ്രത്തിന്റെ ആഴം (ശരാശരി):</b> 3,800 m.</li>
+        </ul>
+
+        <div class="mnem"><b>🧠 SIAL-SIMA-NIFE</b> — ക്രമത്തിൽ ക്രസ്റ്റ്-മാന്റിൽ-കോർ. ഓരോന്നിലെ രാസ ഘടകങ്ങളുടെ ആദ്യാക്ഷരങ്ങൾ ചേർത്തത്.</div>
+      </div>
+    </details>
+
+    <!-- 2.2 Atmosphere -->
+    <details class="note-block" id="topic-2-2" data-title="അന്തരീക്ഷം">
+      <summary>2.2 അന്തരീക്ഷം (Atmosphere)</summary>
+      <div class="note-body">
+
+        <div class="svgwrap wide">
+          <div class="figtitle">🖼 Fig. 2 — അന്തരീക്ഷ പാളികൾ</div>
+          <svg viewBox="0 0 700 260" role="img" aria-label="Layers of the atmosphere">
+            <rect width="700" height="260" fill="#fbfdff"/>
+            <!-- Troposphere -->
+            <rect x="60" y="200" width="560" height="50" fill="#a8d4ed"/>
+            <text x="70" y="228" font-size="12" font-weight="bold" fill="#0b4a8a">Troposphere (0–12 km)</text>
+            <!-- Stratosphere -->
+            <rect x="60" y="150" width="560" height="50" fill="#cfe8f5"/>
+            <text x="70" y="178" font-size="12" font-weight="bold" fill="#0b4a8a">Stratosphere (12–50 km) · Ozone</text>
+            <!-- Mesosphere -->
+            <rect x="60" y="100" width="560" height="50" fill="#e6f0f7"/>
+            <text x="70" y="128" font-size="12" font-weight="bold" fill="#0b4a8a">Mesosphere (50–85 km)</text>
+            <!-- Thermosphere -->
+            <rect x="60" y="40" width="560" height="60" fill="#f2f8fc"/>
+            <text x="70" y="70" font-size="12" font-weight="bold" fill="#0b4a8a">Thermosphere (85–600 km) · Ionosphere</text>
+            <!-- Exosphere -->
+            <text x="70" y="25" font-size="12" font-weight="bold" fill="#0b4a8a">Exosphere (600 km+) → space</text>
+          </svg>
+          <div class="svgcap">Troposphere (weather) → Stratosphere (ozone) → Mesosphere → Thermosphere (ionosphere) → Exosphere.</div>
+        </div>
+
+        <table>
+          <tr><th>പാളി</th><th>ഉയരം</th><th>പ്രധാന വസ്തുത</th></tr>
+          <tr><td>ട്രോപ്പോസ്ഫിയർ</td><td>0–12 km</td><td>കാലാവസ്ഥാ പ്രതിഭാസങ്ങൾ, ജീവജാലങ്ങൾ</td></tr>
+          <tr><td>സ്ട്രാറ്റോസ്ഫിയർ</td><td>12–50 km</td><td>ഓസോൺ പാളി — UV കിരണങ്ങൾ തടയുന്നു</td></tr>
+          <tr><td>മീസോസ്ഫിയർ</td><td>50–85 km</td><td>ഉൽക്കകൾ കത്തിനശിക്കുന്നു</td></tr>
+          <tr><td>തെർമോസ്ഫിയർ</td><td>85–600 km</td><td>അയണോസ്ഫിയർ — റേഡിയോ തരംഗ പ്രതിഫലനം</td></tr>
+          <tr><td>എക്സോസ്ഫിയർ</td><td>600 km+</td><td>ബഹിരാകാശത്തേക്ക് ലയിക്കുന്നു</td></tr>
+        </table>
+
+        <h4>വായുവിന്റെ ഘടന (Dry Air by Volume)</h4>
+        <table>
+          <tr><th>വാതകം</th><th>ശതമാനം</th></tr>
+          <tr><td>നൈട്രജൻ (N₂)</td><td>78.08%</td></tr>
+          <tr><td>ഓക്സിജൻ (O₂)</td><td>20.95%</td></tr>
+          <tr><td>ആർഗോൺ (Ar)</td><td>0.93%</td></tr>
+          <tr><td>കാർബൺ ഡൈ ഓക്സൈഡ് (CO₂)</td><td>0.04%</td></tr>
+        </table>
+
+        <div class="mnem"><b>🧠 N-O-A-C</b> — നൈട്രജൻ (78%), ഓക്സിജൻ (21%), ആർഗോൺ (0.93%), CO₂ (0.04%).</div>
+      </div>
+    </details>
+
+    <!-- 2.3 Indian Geography -->
+    <details class="note-block" id="topic-2-3" data-title="ഇന്ത്യൻ ഭൂമിശാസ്ത്രം">
+      <summary>2.3 ഇന്ത്യൻ ഭൂമിശാസ്ത്രം (Indian Geography)</summary>
+      <div class="note-body">
+
+        <h4>പർവ്വതനിരകൾ &amp; കൊടുമുടികൾ</h4>
+        <table>
+          <tr><th>പർവ്വതം/കൊടുമുടി</th><th>ഉയരം</th><th>സ്ഥാനം</th></tr>
+          <tr><td>K2 (ഗോഡ്വിൻ ഓസ്റ്റിൻ)</td><td>8,611 m</td><td>ഇന്ത്യയിലെ ഏറ്റവും ഉയരം — PoK-ൽ; ഇന്ത്യൻ അധികൃത അഭിപ്രായം</td></tr>
+          <tr><td>കാഞ്ചൻജംഗ</td><td>8,586 m</td><td>ഇന്ത്യയിലെ ഏറ്റവും ഉയരം (സിക്കിം)</td></tr>
+          <tr><td>നന്ദാദേവി</td><td>7,816 m</td><td>ഉത്തരാഖണ്ഡ്</td></tr>
+          <tr><td>അനമുടി</td><td>2,695 m</td><td>കേരളത്തിലെ ഏറ്റവും ഉയരം; ദക്ഷിണേന്ത്യയിലെ ഏറ്റവും ഉയരം</td></tr>
+        </table>
+
+        <h4>ഇന്ത്യയുടെ പ്രധാന നദികൾ</h4>
+        <table>
+          <tr><th>നദി</th><th>ഉത്ഭവം</th><th>പതനം</th><th>നീളം</th></tr>
+          <tr><td>ഗംഗ</td><td>ഗംഗോത്രി (ഉത്തരാഖണ്ഡ്)</td><td>ബംഗാൾ ഉൾക്കടൽ</td><td>2,525 km</td></tr>
+          <tr><td>ബ്രഹ്മപുത്ര</td><td>മാനസസരോവർ (ടിബറ്റ്)</td><td>ബംഗാൾ ഉൾക്കടൽ</td><td>2,900 km</td></tr>
+          <tr><td>സിന്ധു</td><td>മാനസസരോവർ (ടിബറ്റ്)</td><td>അറേബ്യൻ കടൽ</td><td>3,180 km</td></tr>
+          <tr><td>ഗോദാവരി</td><td>ത്രയംബക് (നാസിക്)</td><td>ബംഗാൾ ഉൾക്കടൽ</td><td>1,465 km</td></tr>
+          <tr><td>കൃഷ്ണ</td><td>മഹാബലേശ്വർ</td><td>ബംഗാൾ ഉൾക്കടൽ</td><td>1,400 km</td></tr>
+          <tr><td>നർമ്മദ</td><td>അമർകണ്ടക്</td><td>അറേബ്യൻ കടൽ</td><td>1,312 km</td></tr>
+          <tr><td>കാവേരി</td><td>താലക്കാവേരി (കർണാടക)</td><td>ബംഗാൾ ഉൾക്കടൽ</td><td>805 km</td></tr>
+        </table>
+
+        <div class="mnem"><b>🧠 പശ്ചിമഘട്ട നദികൾ (West-flowing)</b> — നർമ്മദ, താപ്തി, മാഹി, സബർമതി (N-T-M-S). കേരളത്തിലെ 41 നദികളിൽ 40-ഉം പശ്ചിമഘട്ടത്തിൽ നിന്ന് പടിഞ്ഞാറോട്ട് ഒഴുകുന്നു; കബനി മാത്രം കിഴക്കോട്ട്.</div>
+
+        <h4>ഇന്ത്യയുടെ അതിർത്തികൾ</h4>
+        <ul>
+          <li><b>ആകെ അതിർത്തി:</b> 15,200 km.</li>
+          <li><b>സമുദ്രതീരം:</b> 7,516.6 km.</li>
+          <li><b>ഏറ്റവും നീളമുള്ള അതിർത്തി:</b> ബംഗ്ലാദേശ് (4,096 km).</li>
+          <li><b>ഏറ്റവും ചെറിയ അതിർത്തി:</b> ഭൂട്ടാൻ (699 km).</li>
+        </ul>
+
+        <div class="trap"><b>⚠️ PSC Trap</b><br>
+          ഇന്ത്യയിലെ ഏറ്റവും ഉയരമുള്ള കൊടുമുടി — K2 എന്നും കാഞ്ചൻജംഗ എന്നും ഉത്തരങ്ങൾ കാണാം. <b>ഇന്ത്യൻ ഭൂപ്രദേശത്ത്</b> ഉള്ളത് കാഞ്ചൻജംഗ (8,586 m); K2 (8,611 m) PoK-ൽ ആണ്.
+        </div>
+      </div>
+    </details>
+
+    <!-- 2.4 Kerala Geography -->
+    <details class="note-block" id="topic-2-4" data-title="കേരള ഭൂമിശാസ്ത്രം">
+      <summary>2.4 കേരള ഭൂമിശാസ്ത്രം (Kerala Geography)</summary>
+      <div class="note-body">
+
+        <div class="svgwrap tall">
+          <div class="figtitle">🖼 Fig. 3 — കേരളത്തിന്റെ ഭൂമിശാസ്ത്ര ഭൂപ്രകൃതി</div>
+          <svg viewBox="0 0 380 500" role="img" aria-label="Kerala physical divisions">
+            <rect width="380" height="500" fill="#fbfdff"/>
+            <!-- Sea strip -->
+            <rect x="0" y="60" width="60" height="400" fill="#a8d4ed"/>
+            <text x="30" y="270" font-size="10" font-weight="bold" fill="#0b4a8a" text-anchor="middle" transform="rotate(-90 30 270)">LAKSHADWEEP SEA</text>
+            <!-- Coastal plains -->
+            <rect x="60" y="60" width="60" height="400" fill="#f0e6c8"/>
+            <text x="90" y="270" font-size="10" font-weight="bold" fill="#5a3a00" text-anchor="middle" transform="rotate(-90 90 270)">COASTAL PLAINS</text>
+            <!-- Midlands -->
+            <rect x="120" y="60" width="80" height="400" fill="#c9ddb6"/>
+            <text x="160" y="270" font-size="10" font-weight="bold" fill="#2a5a1a" text-anchor="middle" transform="rotate(-90 160 270)">MIDLANDS</text>
+            <!-- Highlands -->
+            <rect x="200" y="60" width="180" height="400" fill="#9ec48a"/>
+            <text x="290" y="270" font-size="11" font-weight="bold" fill="#1a4a0a" text-anchor="middle" transform="rotate(-90 290 270)">WESTERN GHATS</text>
+            <text x="290" y="290" font-size="10" font-weight="bold" fill="#1a4a0a" text-anchor="middle" transform="rotate(-90 290 290)">(HIGH RANGES)</text>
+
+            <!-- Anamudi marker -->
+            <circle cx="270" cy="150" r="6" fill="#c5221f" stroke="#fff" stroke-width="1.5"/>
+            <text x="240" y="145" font-size="10" font-weight="bold" fill="#7a1a12" text-anchor="end">ANAMUDI</text>
+            <text x="240" y="158" font-size="9" fill="#7a1a12" text-anchor="end">2,695 m</text>
+
+            <!-- Title -->
+            <text x="190" y="20" font-size="12" font-weight="bold" fill="#1a4a6a" text-anchor="middle">KERALA — PHYSICAL DIVISIONS</text>
+            <text x="190" y="38" font-size="10" fill="#5b6b85" text-anchor="middle">North to South: Sea → Coast → Midland → Ghats</text>
+          </svg>
+          <div class="svgcap">Kerala's 3 physical divisions: Coastal plains (west) → Midlands → Western Ghats (east).</div>
+        </div>
+
+        <h4>അടിസ്ഥാന വസ്തുതകൾ</h4>
+        <table>
+          <tr><th>വിഷയം</th><th>വിവരം</th></tr>
+          <tr><td>രൂപീകരണം</td><td>1956 നവംബർ 1 (ഭാഷാടിസ്ഥാനത്തിൽ)</td></tr>
+          <tr><td>വിസ്തീർണ്ണം</td><td>38,863 ച.കി.മീ (ഇന്ത്യയിൽ 21-ാം സ്ഥാനം)</td></tr>
+          <tr><td>ജില്ലകൾ</td><td>14</td></tr>
+          <tr><td>തലസ്ഥാനം</td><td>തിരുവനന്തപുരം</td></tr>
+          <tr><td>ഏറ്റവും വലിയ ജില്ല</td><td>ഇടുക്കി (വിസ്തീർണ്ണം)</td></tr>
+          <tr><td>ഏറ്റവും ചെറിയ ജില്ല</td><td>ആലപ്പുഴ</td></tr>
+          <tr><td>ഏറ്റവും വലിയ കടൽത്തീരം</td><td>കണ്ണൂർ (82 km)</td></tr>
+          <tr><td>ആകെ കടൽത്തീരം</td><td>590 km</td></tr>
+          <tr><td>ഏറ്റവും നീളമുള്ള നദി</td><td>പെരിയാർ (244 km)</td></tr>
+          <tr><td>ഏറ്റവും ചെറിയ നദി</td><td>മണിമലയാർ (മണിമല)</td></tr>
+        </table>
+
+        <h4>കേരളത്തിലെ പ്രധാന നദികൾ</h4>
+        <table>
+          <tr><th>നദി</th><th>നീളം</th><th>ഉത്ഭവം</th></tr>
+          <tr><td>പെരിയാർ</td><td>244 km</td><td>ശിവഗിരി മല (ഇടുക്കി)</td></tr>
+          <tr><td>ഭാരതപ്പുഴ</td><td>209 km</td><td>ആനമല (പാലക്കാട്)</td></tr>
+          <tr><td>പമ്പ</td><td>176 km</td><td>പുലച്ചിമല (പത്തനംതിട്ട)</td></tr>
+          <tr><td>ചാലിയാർ</td><td>169 km</td><td>ഇളംമ്പലേരി മല</td></tr>
+          <tr><td>കല്ലട</td><td>121 km</td><td>ചെന്തുരുണി (കൊല്ലം)</td></tr>
+        </table>
+
+        <h4>കേരളത്തിലെ കായലുകൾ (Backwaters)</h4>
+        <ul>
+          <li><b>വേമ്പനാട് കായൽ:</b> കേരളത്തിലെ ഏറ്റവും വലിയ കായൽ (ആലപ്പുഴ, കോട്ടയം, എറണാകുളം).</li>
+          <li><b>അഷ്ടമുടി കായൽ:</b> കൊല്ലം ജില്ല — പ്രശസ്ത ടൂറിസ്റ്റ് കേന്ദ്രം.</li>
+          <li><b>വെള്ളായണി കായൽ:</b> തിരുവനന്തപുരം — നെൽകൃഷി.</li>
+          <li><b>പൂക്കോട് കായൽ:</b> വയനാട്.</li>
+        </ul>
+
+        <h4>കേരളത്തിലെ കാലാവസ്ഥ</h4>
+        <ul>
+          <li><b>തരം:</b> ഉഷ്ണമേഖലാ മൺസൂൺ കാലാവസ്ഥ.</li>
+          <li><b>മൺസൂൺ:</b> ജൂൺ 1 → തെക്കുപടിഞ്ഞാറൻ മൺസൂൺ (ഏറ്റവും നേരത്തെ എത്തുന്നത് കേരളത്തിൽ).</li>
+          <li><b>രണ്ടാം മൺസൂൺ:</b> ഒക്ടോബർ–നവംബർ → വടക്കുകിഴക്കൻ മൺസൂൺ (തുലാവർഷം).</li>
+          <li><b>ഏറ്റവും കൂടുതൽ മഴ:</b> ഇടുക്കി, വയനാട്.</li>
+          <li><b>ഏറ്റവും കുറവ് മഴ:</b> ചിന്നക്കനാൽ (ഇടുക്കി).</li>
+        </ul>
+
+        <div class="mnem"><b>🧠 14 ജില്ലകൾ — ദക്ഷിണത്തിൽ നിന്ന് വടക്കോട്ട്</b>: തിരുവനന്തപുരം → കൊല്ലം → പത്തനംതിട്ട → ആലപ്പുഴ → കോട്ടയം → എറണാകുളം → തൃശൂർ → പാലക്കാട് → മലപ്പുറം → കോഴിക്കോട് → വയനാട് → കണ്ണൂർ → കാസർകോട് (ഇടുക്കി ഉൾനാടൻ).</div>
+
+        <div class="trap"><b>⚠️ PSC Trap</b><br>
+          പെരിയാർ (244 km) ആണ് <b>കേരളത്തിലെ ഏറ്റവും നീളമുള്ള നദി</b>, എന്നാൽ <b>ഇന്ത്യയിൽ ഏറ്റവും നീളമുള്ള നദി</b> ഗംഗ (2,525 km). ഇവ രണ്ടും കൂട്ടിക്കുഴയ്ക്കരുത്.
+        </div>
+      </div>
+    </details>
+
+    <!-- 2.5 GIS & Remote Sensing -->
+    <details class="note-block" id="topic-2-5" data-title="GIS &amp; Remote Sensing">
+      <summary>2.5 GIS &amp; Remote Sensing (GIS &amp; Remote Sensing)</summary>
+      <div class="note-body">
+
+        <h4>GIS — Geographic Information System</h4>
+        <ul>
+          <li><b>നിർവ്വചനം:</b> ഭൂമിശാസ്ത്ര വിവരങ്ങൾ ശേഖരിക്കുകയും സംഭരിക്കുകയും വിശകലനം ചെയ്യുകയും ചെയ്യുന്ന കമ്പ്യൂട്ടർ സംവിധാനം.</li>
+          <li><b>ഘടകങ്ങൾ:</b> Hardware, Software, Data, People, Methods (5 components).</li>
+          <li><b>പ്രധാന GIS സോഫ്റ്റ്വെയറുകൾ:</b> ArcGIS, QGIS, GRASS GIS.</li>
+          <li><b>ഉപയോഗങ്ങൾ:</b> Urban planning, disaster management, agriculture, transportation.</li>
+        </ul>
+
+        <h4>Remote Sensing (RS)</h4>
+        <ul>
+          <li><b>നിർവ്വചനം:</b> ഭൗതിക സമ്പർക്കമില്ലാതെ, ഉപഗ്രഹങ്ങൾ/വിമാനങ്ങൾ വഴി ഭൂമിയെ നിരീക്ഷിക്കുന്ന സാങ്കേതികവിദ്യ.</li>
+          <li><b>രണ്ട് തരം:</b> Active RS (സ്വന്തം ഊർജ്ജം അയച്ച് തിരികെ വാങ്ങുന്നു — RADAR, LiDAR), Passive RS (സൂര്യപ്രകാശം ഉപയോഗിക്കുന്നു — Landsat, IRS).</li>
+          <li><b>ഇന്ത്യൻ ഉപഗ്രഹങ്ങൾ:</b> IRS (Indian Remote Sensing) — 1988 മുതൽ. Cartosat, Resourcesat, Oceansat.</li>
+        </ul>
+
+        <h4>GPS — Global Positioning System</h4>
+        <ul>
+          <li><b>ഉടമസ്ഥത:</b> യു.എസ്. സർക്കാർ.</li>
+          <li><b>ഉപഗ്രഹങ്ങൾ:</b> 24+ (NAVSTAR).</li>
+          <li><b>ഇന്ത്യയുടെ:</b> IRNSS / NavIC (2018-ൽ പൂർണ്ണം).</li>
+        </ul>
+
+        <div class="mnem"><b>🧠 GIS-RS-GPS</b> — Geographic Information System → Remote Sensing → Global Positioning System. "G-R-G" എന്ന് ഓർക്കുക.</div>
+      </div>
+    </details>
+  </details>
+
+  <!-- PSC TRAPS -->
+  <details class="subject">
+    <summary>⚠️ PSC TRAPS — Geography</summary>
+    <div class="note-body">
+      <table>
+        <tr><th>Trap</th><th>ശരിയായ വസ്തുത</th></tr>
+        <tr><td>ഇന്ത്യയിലെ ഏറ്റവും ഉയരമുള്ള കൊടുമുടി</td><td>K2 (8,611 m) PoK-ൽ; ഇന്ത്യൻ ഭൂപ്രദേശത്ത് കാഞ്ചൻജംഗ (8,586 m)</td></tr>
+        <tr><td>കേരളത്തിലെ ഏറ്റവും നീളമുള്ള നദി</td><td>പെരിയാർ (244 km); ഇന്ത്യയിൽ ഗംഗ (2,525 km)</td></tr>
+        <tr><td>കേരളത്തിലെ ഏറ്റവും വലിയ കായൽ</td><td>വേമ്പനാട് കായൽ</td></tr>
+        <tr><td>ഏറ്റവും നീളമുള്ള കടൽത്തീരം</td><td>കണ്ണൂർ (82 km); കേരളത്തിന്റെ ആകെ 590 km</td></tr>
+        <tr><td>ഏറ്റവും കൂടുതൽ മഴ</td><td>ഇടുക്കി; കുറവ് ചിന്നക്കനാൽ</td></tr>
+        <tr><td>ഏറ്റവും വലിയ ജില്ല / ചെറിയ ജില്ല</td><td>ഇടുക്കി / ആലപ്പുഴ</td></tr>
+      </table>
+    </div>
+  </details>
+
+  <!-- 1-Minute Revision -->
+  <details class="subject">
+    <summary>⚡ 1-Minute Revision — Geography</summary>
+    <div class="note-body">
+      <table>
+        <tr><th>ചോദ്യം</th><th>ഉത്തരം</th></tr>
+        <tr><td>ഭൂമിയുടെ ആന്തരിക പാളികൾ</td><td>ക്രസ്റ്റ് (SIAL) → മാന്റിൽ (SIMA) → കോർ (NIFE)</td></tr>
+        <tr><td>അന്തരീക്ഷത്തിലെ ഓസോൺ പാളി</td><td>സ്ട്രാറ്റോസ്ഫിയർ</td></tr>
+        <tr><td>ഇന്ത്യയുടെ ഏറ്റവും നീളമുള്ള നദി</td><td>ഗംഗ (2,525 km)</td></tr>
+        <tr><td>ഇന്ത്യയിലെ ഏറ്റവും നീളമുള്ള അതിർത്തി</td><td>ബംഗ്ലാദേശ് (4,096 km)</td></tr>
+        <tr><td>കേരളത്തിലെ ഏറ്റവും വലിയ ജില്ല</td><td>ഇടുക്കി</td></tr>
+        <tr><td>കേരളത്തിലെ ഏറ്റവും നീളമുള്ള നദി</td><td>പെരിയാർ (244 km)</td></tr>
+        <tr><td>കേരളത്തിൽ ആദ്യം മൺസൂൺ എത്തുന്നത്</td><td>ജൂൺ 1</td></tr>
+        <tr><td>കേരളത്തിലെ ഏറ്റവും ഉയരമുള്ള കൊടുമുടി</td><td>അനമുടി (2,695 m)</td></tr>
+        <tr><td>ഇന്ത്യയുടെ സ്വന്തം GPS</td><td>NavIC / IRNSS</td></tr>
+      </table>
+    </div>
+  </details>
+
+  <p class="hint" style="margin-top:1rem">
+    <b>Coverage:</b> Part 2 (Geography) — 20 MCQs.
+  </p>
+</section>
+
+<!-- ================= MOCK TEST ================= -->
+<section id="view-test" class="view">
+  <div class="toolbar">
+    <div class="filters">
+      <span class="flabel">Exam:</span>
+      <button class="chip active" data-cat="ALL">ALL</button>
+      <button class="chip" data-cat="573">573</button>
+      <button class="chip" data-cat="883">883</button>
+      <button class="chip" data-cat="BOTH">BOTH</button>
+      <select id="topicFilter" aria-label="Filter by topic"><option value="ALL">All Topics</option></select>
+      <select id="diffFilter" aria-label="Filter by difficulty">
+        <option value="ALL">All Difficulty</option>
+        <option value="Easy">🟢 Easy</option>
+        <option value="Medium">🟡 Medium</option>
+        <option value="Hard">🟠 Hard</option>
+        <option value="Very Hard">🔴 Very Hard</option>
+      </select>
+    </div>
+    <div class="tools">
+      <label class="flabel">Negative:
+        <input type="number" id="negInput" value="0.33" step="0.01" min="0" style="width:74px" aria-label="Negative mark value">
+      </label>
+      <button class="btn ghost" id="resetBtn">Reset Progress</button>
+      <button class="btn primary" id="finishBtn">Finish Test</button>
+    </div>
+  </div>
+  <div id="setInfo" class="hint" style="margin-bottom:.6rem"></div>
+  <div class="navwrap">
+    <h4>Questions</h4>
+    <div class="navgrid" id="navgrid"></div>
+  </div>
+  <div class="qcard" id="qcard"></div>
+</section>
+
+<!-- ================= REVISION ================= -->
+<section id="view-revision" class="view">
+  <div class="viewhead">
+    <h2>🔁 REVISION MODE</h2>
+    <p class="hint">Practise only the questions you need. Choosing a set replaces the current test set.</p>
+  </div>
+  <div class="revpanel">
+    <div class="setgrid" id="setgrid"></div>
+    <div style="margin-top:.8rem; display:flex; gap:.5rem; flex-wrap:wrap">
+      <button class="btn primary" data-set="all">📚 Practise All Questions</button>
+      <button class="btn ghost" data-set="reset">↺ Clear Revision Filter</button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BOOKMARKS ================= -->
+<section id="view-bookmarks" class="view">
+  <div class="viewhead">
+    <h2>⭐ BOOKMARKS</h2>
+    <p class="hint">Bookmarks are stored in your browser and remain after you close or refresh the file.</p>
+  </div>
+  <div id="bookmarkList"></div>
+</section>
+
+<!-- ================= RESULT ================= -->
+<section id="view-result" class="view">
+  <div id="resultHost"></div>
+</section>
+
+<!-- ================= SEARCH ================= -->
+<section id="view-search" class="view">
+  <div class="viewhead">
+    <h2>🔎 SEARCH</h2>
+    <p class="hint">Search notes and questions — persons, places, articles, acts, sections, dates, terms.</p>
+  </div>
+  <div class="searchbox">
+    <input type="search" id="searchInput" placeholder="Type at least 2 characters…" aria-label="Search notes and questions">
+    <button class="btn ghost" id="clearSearch">Clear</button>
+  </div>
+  <div id="searchResults"></div>
+</section>
+
+</main>
+
+<!-- ================= PART 2 QUESTIONS + ENGINE ================= -->
+<script>
+window.PART_KEY   = 'geography';
+window.PART_TITLE = 'Geography';
+
+window.QUESTIONS = [
+{
+  id:1, subject:'Geography', topic:'ഭൂമിയുടെ ഘടന', category:'BOTH', difficulty:'Easy', type:'Concept',
+  question:'ഭൂമിയുടെ ഏറ്റവും പുറമേയുള്ള പാളിയായ ഭൂപടലത്തിന്റെ (Crust) പ്രധാന ഘടകങ്ങൾ ഏതൊക്കെ?',
+  options:['SIMA (Si + Mg)','NIFE (Ni + Fe)','SIAL (Si + Al)','COSH (Co + S + H)'], answer:2,
+  explanation:'ഭൂപടലം (Crust) പ്രധാനമായും സിലിക്കൺ (Si), അലുമിനിയം (Al) എന്നിവ കൊണ്ട് നിർമ്മിതമാണ് — SIAL.',
+  optionNotes:[
+    'SIMA — മാന്റിലിലെ ഘടകങ്ങൾ.',
+    'NIFE — കാമ്പിലെ (Core) ഘടകങ്ങൾ.',
+    'SIAL — ക്രസ്റ്റിലെ ഘടകങ്ങൾ (ശരിയായ ഉത്തരം).',
+    'COSH — ശാസ്ത്രീയമായ ഒരു പദമല്ല.']
+},
+{
+  id:2, subject:'Geography', topic:'ഭൂമിയുടെ ഘടന', category:'BOTH', difficulty:'Medium', type:'Concept',
+  question:'ഏത് അസന്തുലിതത്വമാണ് (Discontinuity) ക്രസ്റ്റിനെയും മാന്റിലിനെയും വേർതിരിക്കുന്നത്?',
+  options:['ഗുട്ടൻബർഗ് അസന്തുലിതത്വം','മോഹോ അസന്തുലിതത്വം','ലെഹ്മാൻ അസന്തുലിതത്വം','കോൺറാഡ് അസന്തുലിതത്വം'], answer:1,
+  explanation:'മോഹോറോവിസിക് അസന്തുലിതത്വം (Moho) ക്രസ്റ്റിനെയും മാന്റിലിനെയും വേർതിരിക്കുന്നു.',
+  optionNotes:[
+    'ഗുട്ടൻബർഗ് — മാന്റിൽ / കോർ.',
+    'മോഹോ — ക്രസ്റ്റ് / മാന്റിൽ (ശരിയായ ഉത്തരം).',
+    'ലെഹ്മാൻ — പുറം കോർ / ഉൾ കോർ.',
+    'കോൺറാഡ് — ഉപരിപാളി / അധോപാളി.']
+},
+{
+  id:3, subject:'Geography', topic:'അന്തരീക്ഷം', category:'BOTH', difficulty:'Easy', type:'Concept',
+  question:'അന്തരീക്ഷത്തിൽ ഏറ്റവും കൂടുതലുള്ള വാതകം ഏതാണ്?',
+  options:['ഓക്സിജൻ','കാർബൺ ഡൈ ഓക്സൈഡ്','നൈട്രജൻ','ആർഗോൺ'], answer:2,
+  explanation:'അന്തരീക്ഷത്തിൽ 78.08% നൈട്രജൻ ആണ്.',
+  optionNotes:[
+    'ഓക്സിജൻ — 20.95%.',
+    'CO₂ — 0.04%.',
+    'നൈട്രജൻ — 78.08% (ശരിയായ ഉത്തരം).',
+    'ആർഗോൺ — 0.93%.']
+},
+{
+  id:4, subject:'Geography', topic:'അന്തരീക്ഷം', category:'BOTH', difficulty:'Medium', type:'Concept',
+  question:'ഓസോൺ പാളി അന്തരീക്ഷത്തിന്റെ ഏത് പാളിയിലാണ് കാണപ്പെടുന്നത്?',
+  options:['ട്രോപ്പോസ്ഫിയർ','സ്ട്രാറ്റോസ്ഫിയർ','മീസോസ്ഫിയർ','തെർമോസ്ഫിയർ'], answer:1,
+  explanation:'ഓസോൺ പാളി സ്ട്രാറ്റോസ്ഫിയറിൽ (12–50 km) ആണ്.',
+  optionNotes:[
+    'ട്രോപ്പോസ്ഫിയർ — കാലാവസ്ഥാ പ്രതിഭാസങ്ങൾ.',
+    'സ്ട്രാറ്റോസ്ഫിയർ — ഓസോൺ പാളി (ശരിയായ ഉത്തരം).',
+    'മീസോസ്ഫിയർ — ഉൽക്കകൾ കത്തുന്നു.',
+    'തെർമോസ്ഫിയർ — അയണോസ്ഫിയർ.']
+},
+{
+  id:5, subject:'Geography', topic:'ഇന്ത്യൻ ഭൂമിശാസ്ത്രം', category:'BOTH', difficulty:'Medium', type:'Place-Feature',
+  question:'ഇന്ത്യയിലെ ഏറ്റവും നീളമുള്ള നദി ഏതാണ്?',
+  options:['ബ്രഹ്മപുത്ര','ഗോദാവരി','ഗംഗ','സിന്ധു'], answer:2,
+  explanation:'ഗംഗ 2,525 km നീളമുള്ളതും ഇന്ത്യയിലെ ഏറ്റവും നീളമുള്ള നദിയുമാണ്.',
+  optionNotes:[
+    'ബ്രഹ്മപുത്ര — 2,900 km ആകെ, എന്നാൽ ഇന്ത്യയിൽ 916 km മാത്രം.',
+    'ഗോദാവരി — 1,465 km; ദക്ഷിണേന്ത്യയിലെ ഏറ്റവും നീളം.',
+    'ഗംഗ — 2,525 km (ശരിയായ ഉത്തരം).',
+    'സിന്ധു — 3,180 km ആകെ, എന്നാൽ ഭൂരിഭാഗവും പാകിസ്ഥാനിൽ.']
+},
+{
+  id:6, subject:'Geography', topic:'ഇന്ത്യൻ ഭൂമിശാസ്ത്രം', category:'BOTH', difficulty:'Hard', type:'Person-Place',
+  question:'ഇന്ത്യയുടെ ഏറ്റവും ഉയരമുള്ള കൊടുമുടി (ഇന്ത്യൻ ഭൂപ്രദേശത്ത്) ഏതാണ്?',
+  options:['K2','കാഞ്ചൻജംഗ','നന്ദാദേവി','അനമുടി'], answer:1,
+  explanation:'ഇന്ത്യൻ ഭൂപ്രദേശത്ത് ഏറ്റവും ഉയരമുള്ള കൊടുമുടി കാഞ്ചൻജംഗ (8,586 m). K2 (8,611 m) PoK-ൽ ആണ്.',
+  optionNotes:[
+    'K2 — 8,611 m; PoK-ൽ; ഇന്ത്യ അവകാശപ്പെടുന്നു.',
+    'കാഞ്ചൻജംഗ — 8,586 m; സിക്കിം (ശരിയായ ഉത്തരം).',
+    'നന്ദാദേവി — 7,816 m; ഉത്തരാഖണ്ഡ്.',
+    'അനമുടി — 2,695 m; കേരളം.']
+},
+{
+  id:7, subject:'Geography', topic:'ഇന്ത്യൻ ഭൂമിശാസ്ത്രം', category:'BOTH', difficulty:'Medium', type:'Place-Feature',
+  question:'ഇന്ത്യയുടെ ഏറ്റവും നീളമുള്ള അതിർത്തി ഏത് രാജ്യവുമായാണ്?',
+  options:['ചൈന','പാകിസ്ഥാൻ','ബംഗ്ലാദേശ്','നേപ്പാൾ'], answer:2,
+  explanation:'ബംഗ്ലാദേശുമായി 4,096 km അതിർത്തിയുണ്ട് — ഇന്ത്യയുടെ ഏറ്റവും നീളമുള്ളത്.',
+  optionNotes:[
+    'ചൈന — 3,488 km.',
+    'പാകിസ്ഥാൻ — 3,323 km.',
+    'ബംഗ്ലാദേശ് — 4,096 km (ശരിയായ ഉത്തരം).',
+    'നേപ്പാൾ — 1,751 km.']
+},
+{
+  id:8, subject:'Geography', topic:'ഇന്ത്യൻ ഭൂമിശാസ്ത്രം', category:'BOTH', difficulty:'Medium', type:'Place-Feature',
+  question:'താഴെ പറയുന്ന നദികളിൽ പടിഞ്ഞാറോട്ട് ഒഴുകുന്നത് ഏതാണ്?',
+  options:['ഗോദാവരി','കൃഷ്ണ','നർമ്മദ','കാവേരി'], answer:2,
+  explanation:'നർമ്മദ നദി പടിഞ്ഞാറോട്ട് ഒഴുകി അറേബ്യൻ കടലിൽ പതിക്കുന്നു. ബാക്കിയെല്ലാം കിഴക്കോട്ട്.',
+  optionNotes:[
+    'ഗോദാവരി — കിഴക്കോട്ട്.',
+    'കൃഷ്ണ — കിഴക്കോട്ട്.',
+    'നർമ്മദ — പടിഞ്ഞാറോട്ട് (ശരിയായ ഉത്തരം).',
+    'കാവേരി — കിഴക്കോട്ട്.']
+},
+{
+  id:9, subject:'Geography', topic:'ഇന്ത്യൻ ഭൂമിശാസ്ത്രം', category:'883', difficulty:'Hard', type:'Person-Place',
+  question:'ഋഗ്വേദ കാലത്ത് "സപ്തസിന്ധു" എന്നറിയപ്പെട്ടിരുന്ന പ്രദേശം ഏതിനെ സൂചിപ്പിക്കുന്നു?',
+  options:['ഏഴ് കടലുകൾ','ഏഴ് നദികൾ','ഏഴ് പർവ്വതങ്ങൾ','ഏഴ് ദ്വീപുകൾ'], answer:1,
+  explanation:'"സപ്തസിന്ധു" = ഏഴ് നദികൾ (സിന്ധു, സരസ്വതി, വിപാശ, ശതദ്രു, പരുഷ്ണി, അസിക്‌നി, വിതസ്ത).',
+  optionNotes:[
+    'ഏഴ് കടലുകൾ — തെറ്റ്.',
+    'ഏഴ് നദികൾ — ശരി (ശരിയായ ഉത്തരം).',
+    'ഏഴ് പർവ്വതങ്ങൾ — തെറ്റ്.',
+    'ഏഴ് ദ്വീപുകൾ — തെറ്റ്.']
+},
+{
+  id:10, subject:'Geography', topic:'കേരള ഭൂമിശാസ്ത്രം', category:'BOTH', difficulty:'Easy', type:'Place-Feature',
+  question:'കേരളത്തിലെ ഏറ്റവും നീളമുള്ള നദി ഏതാണ്?',
+  options:['ഭാരതപ്പുഴ','പെരിയാർ','പമ്പ','ചാലിയാർ'], answer:1,
+  explanation:'പെരിയാർ 244 km നീളമുള്ളതും കേരളത്തിലെ ഏറ്റവും നീളമുള്ള നദിയുമാണ്.',
+  optionNotes:[
+    'ഭാരതപ്പുഴ — 209 km.',
+    'പെരിയാർ — 244 km (ശരിയായ ഉത്തരം).',
+    'പമ്പ — 176 km.',
+    'ചാലിയാർ — 169 km.']
+},
+{
+  id:11, subject:'Geography', topic:'കേരള ഭൂമിശാസ്ത്രം', category:'BOTH', difficulty:'Medium', type:'Place-Feature',
+  question:'കേരളത്തിലെ ഏറ്റവും ഉയരമുള്ള കൊടുമുടി ഏതാണ്?',
+  options:['അനമുടി','അഗസ്ത്യമല','മന്നാമല','ചെമ്പ്ര പീക്ക്'], answer:0,
+  explanation:'അനമുടി (2,695 m) — കേരളത്തിലെയും ദക്ഷിണേന്ത്യയിലെയും ഏറ്റവും ഉയരമുള്ള കൊടുമുടി.',
+  optionNotes:[
+    'അനമുടി — 2,695 m (ശരിയായ ഉത്തരം).',
+    'അഗസ്ത്യമല — 1,868 m.',
+    'മന്നാമല — 2,617 m.',
+    'ചെമ്പ്ര പീക്ക് — 2,100 m.']
+},
+{
+  id:12, subject:'Geography', topic:'കേരള ഭൂമിശാസ്ത്രം', category:'BOTH', difficulty:'Medium', type:'Place-Feature',
+  question:'കേരളത്തിലെ ഏറ്റവും വലിയ ജില്ല (വിസ്തീർണ്ണം അനുസരിച്ച്) ഏതാണ്?',
+  options:['ഇടുക്കി','പാലക്കാട്','മലപ്പുറം','കണ്ണൂർ'], answer:0,
+  explanation:'ഇടുക്കി ജില്ലയാണ് വിസ്തീർണ്ണത്തിൽ ഏറ്റവും വലിയത് (4,358 km²).',
+  optionNotes:[
+    'ഇടുക്കി — ഏറ്റവും വലിയ ജില്ല (ശരിയായ ഉത്തരം).',
+    'പാലക്കാട് — രണ്ടാം സ്ഥാനം.',
+    'മലപ്പുറം — മൂന്നാം സ്ഥാനം.',
+    'കണ്ണൂർ — വലിയ ജില്ലയല്ല.']
+},
+{
+  id:13, subject:'Geography', topic:'കേരള ഭൂമിശാസ്ത്രം', category:'BOTH', difficulty:'Medium', type:'Place-Feature',
+  question:'കേരളത്തിലെ ഏറ്റവും വലിയ കായൽ (Backwater) ഏതാണ്?',
+  options:['അഷ്ടമുടി കായൽ','വേമ്പനാട് കായൽ','വെള്ളായണി കായൽ','പൂക്കോട് കായൽ'], answer:1,
+  explanation:'വേമ്പനാട് കായൽ — കേരളത്തിലെ ഏറ്റവും വലിയ കായൽ (ആലപ്പുഴ, കോട്ടയം, എറണാകുളം).',
+  optionNotes:[
+    'അഷ്ടമുടി — കൊല്ലം ജില്ല; രണ്ടാം സ്ഥാനം.',
+    'വേമ്പനാട് — ഏറ്റവും വലിയത് (ശരിയായ ഉത്തരം).',
+    'വെള്ളായണി — തിരുവനന്തപുരം.',
+    'പൂക്കോട് — വയനാട്.']
+},
+{
+  id:14, subject:'Geography', topic:'കേരള ഭൂമിശാസ്ത്രം', category:'BOTH', difficulty:'Medium', type:'Place-Feature',
+  question:'കേരളത്തിൽ സാധാരണയായി തെക്കുപടിഞ്ഞാറൻ മൺസൂൺ എപ്പോൾ ആരംഭിക്കുന്നു?',
+  options:['ഏപ്രിൽ 1','മേയ് 1','ജൂൺ 1','ജൂലൈ 1'], answer:2,
+  explanation:'ജൂൺ 1-ന് കേരളത്തിൽ തെക്കുപടിഞ്ഞാറൻ മൺസൂൺ ആരംഭിക്കുന്നു — ഇന്ത്യയിൽ ആദ്യം.',
+  optionNotes:[
+    'ഏപ്രിൽ 1 — തെറ്റ്.',
+    'മേയ് 1 — തെറ്റ്.',
+    'ജൂൺ 1 — കേരളത്തിൽ തെക്കുപടിഞ്ഞാറൻ മൺസൂൺ (ശരിയായ ഉത്തരം).',
+    'ജൂലൈ 1 — തെറ്റ്.']
+},
+{
+  id:15, subject:'Geography', topic:'കേരള ഭൂമിശാസ്ത്രം', category:'BOTH', difficulty:'Hard', type:'Person-Place',
+  question:'കേരളത്തിൽ ഏറ്റവും കൂടുതൽ മഴ ലഭിക്കുന്ന പ്രദേശം ഏതാണ്?',
+  options:['ചിന്നക്കനാൽ','ഇടുക്കി','വയനാട്','പത്തനംതിട്ട'], answer:1,
+  explanation:'ഇടുക്കിയാണ് കേരളത്തിൽ ഏറ്റവും കൂടുതൽ മഴ ലഭിക്കുന്ന ജില്ല.',
+  optionNotes:[
+    'ചിന്നക്കനാൽ — ഏറ്റവും കുറവ് മഴ.',
+    'ഇടുക്കി — ഏറ്റവും കൂടുതൽ മഴ (ശരിയായ ഉത്തരം).',
+    'വയനാട് — രണ്ടാം സ്ഥാനം.',
+    'പത്തനംതിട്ട — സാധാരണയായി കൂടുതൽ മഴയുള്ളതല്ല.']
+},
+{
+  id:16, subject:'Geography', topic:'GIS & RS', category:'883', difficulty:'Medium', type:'Concept',
+  question:'GIS-ന്റെ പൂർണ്ണരൂപം എന്താണ്?',
+  options:['Geographic Information System','Global Information Source','Geological Institute of Survey','General Information Service'], answer:0,
+  explanation:'GIS = Geographic Information System.',
+  optionNotes:[
+    'Geographic Information System — ശരി (ശരിയായ ഉത്തരം).',
+    'Global Information Source — തെറ്റ്.',
+    'Geological Institute of Survey — തെറ്റ്.',
+    'General Information Service — തെറ്റ്.']
+},
+{
+  id:17, subject:'Geography', topic:'GIS & RS', category:'883', difficulty:'Medium', type:'Concept',
+  question:'ഭൗതിക സമ്പർക്കമില്ലാതെ ഭൂമിയെ നിരീക്ഷിക്കുന്ന സാങ്കേതികവിദ്യ ഏതാണ്?',
+  options:['GIS','Remote Sensing','GPS','Cartography'], answer:1,
+  explanation:'Remote Sensing — ഉപഗ്രഹങ്ങളിലൂടെയോ വിമാനങ്ങളിലൂടെയോ ഭൗതിക സമ്പർക്കമില്ലാതെ നിരീക്ഷിക്കൽ.',
+  optionNotes:[
+    'GIS — വിവരങ്ങൾ സംഭരിക്കൽ/വിശകലനം.',
+    'Remote Sensing — നിരീക്ഷണ സാങ്കേതികവിദ്യ (ശരിയായ ഉത്തരം).',
+    'GPS — സ്ഥാന നിർണ്ണയം.',
+    'Cartography — ഭൂപട നിർമ്മാണം.']
+},
+{
+  id:18, subject:'Geography', topic:'GIS & RS', category:'883', difficulty:'Hard', type:'Concept',
+  question:'ഇന്ത്യയുടെ സ്വന്തം ഉപഗ്രഹ അധിഷ്ഠിത നാവിഗേഷൻ സംവിധാനം ഏതാണ്?',
+  options:['GPS','GLONASS','Galileo','NavIC (IRNSS)'], answer:3,
+  explanation:'NavIC (IRNSS) — ഇന്ത്യയുടെ സ്വന്തം ഉപഗ്രഹ നാവിഗേഷൻ സംവിധാനം.',
+  optionNotes:[
+    'GPS — യു.എസ്.',
+    'GLONASS — റഷ്യ.',
+    'Galileo — യൂറോപ്യൻ യൂണിയൻ.',
+    'NavIC — ഇന്ത്യ (ശരിയായ ഉത്തരം).']
+},
+{
+  id:19, subject:'Geography', topic:'ഭൂമിയുടെ ഘടന', category:'BOTH', difficulty:'Medium', type:'Concept',
+  question:'ഭൂമിയുടെ കാന്തികക്ഷേത്രത്തിന് (Magnetic Field) കാരണമാകുന്ന പാളി ഏതാണ്?',
+  options:['ഭൂപടലം','മാന്റിൽ','ബാഹ്യ കാമ്പ് (Outer Core)','ആന്തരിക കാമ്പ് (Inner Core)'], answer:2,
+  explanation:'ബാഹ്യ കാമ്പിലെ ദ്രവ ലോഹങ്ങളുടെ ചലനം ഭൂമിയുടെ കാന്തികക്ഷേത്രത്തിന് കാരണമാകുന്നു.',
+  optionNotes:[
+    'ഭൂപടലം — കാന്തികക്ഷേത്രവുമായി നേരിട്ട് ബന്ധമില്ല.',
+    'മാന്റിൽ — അർദ്ധ ദ്രവം; കാന്തികക്ഷേത്രത്തിന് നേരിട്ട് കാരണമല്ല.',
+    'ബാഹ്യ കാമ്പ് — കാന്തികക്ഷേത്രത്തിന്റെ സ്രോതസ്സ് (ശരിയായ ഉത്തരം).',
+    'ആന്തരിക കാമ്പ് — ഖരം; നേരിട്ട് കാരണമല്ല.']
+},
+{
+  id:20, subject:'Geography', topic:'ഇന്ത്യൻ ഭൂമിശാസ്ത്രം', category:'BOTH', difficulty:'Medium', type:'Place-Feature',
+  question:'ഇന്ത്യയുടെ ആകെ കടൽത്തീരത്തിന്റെ നീളം എത്രയാണ്?',
+  options:['5,200 km','6,100 km','7,516.6 km','8,000 km'], answer:2,
+  explanation:'ഇന്ത്യയുടെ ആകെ കടൽത്തീരം 7,516.6 km.',
+  optionNotes:[
+    '5,200 km — ഇന്ത്യയുടെ ഭൂമിശാസ്ത്രപരമായ അതിർത്തിയല്ല.',
+    '6,100 km — തെറ്റ്.',
+    '7,516.6 km — ശരി (ശരിയായ ഉത്തരം).',
+    '8,000 km — തെറ്റ്.']
+}
+];
+</script>
+<script src="assets/engine.js"></script>
+</body>
+</html>

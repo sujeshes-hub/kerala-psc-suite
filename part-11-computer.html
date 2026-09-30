@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kerala PSC — Computer &amp; IT (Part 10)</title>
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">🎯 Kerala PSC — Computer &amp; IT (Part 10)</div>
+  <nav class="tabs" id="tabs">
+    <button data-view="notes" class="active">📚 Study Notes</button>
+    <button data-view="test">📝 Mock Test</button>
+    <button data-view="revision">🔁 Revision</button>
+    <button data-view="bookmarks">⭐ Bookmarks</button>
+    <button data-view="result">📊 Result</button>
+    <button data-view="search">🔎 Search</button>
+  </nav>
+</header>
+
+<div class="scorebar" id="scorebar">
+  <div class="sbitem"><span>Score</span><b id="sbScore">0 / 0</b></div>
+  <div class="sbitem"><span>Attempted</span><b id="sbAtt">0</b></div>
+  <div class="sbitem"><span>Correct</span><b id="sbCor">0</b></div>
+  <div class="sbitem"><span>Wrong</span><b id="sbWr">0</b></div>
+  <div class="sbitem"><span>Remaining</span><b id="sbRem">0</b></div>
+  <div class="sbitem"><span>Accuracy</span><b id="sbAcc">0%</b></div>
+</div>
+<div class="progresswrap"><div class="progressbar" id="progressbar"></div></div>
+
+<main>
+
+<!-- ================= STUDY NOTES ================= -->
+<section id="view-notes" class="view active">
+
+  <div class="viewhead">
+    <h2>📚 COMPUTER &amp; IT — Part 10</h2>
+    <p class="hint">
+      <b>Marks: 5</b> &nbsp;|&nbsp; <span class="tag both">BOTH (573 &amp; 883)</span><br>
+      Hardware · Software · Networks · Internet · IT Act 2000 · Cyber crimes · E-Governance · Kerala IT
+    </p>
+    <button class="btn primary" id="startMcqBtn">📝 Start MCQ Test (25 Questions)</button>
+  </div>
+
+  <div class="howto">
+    <h3>📖 How to use these notes</h3>
+    <ul>
+      <li><b>Diagrams</b> are inline SVG — work fully offline.</li>
+      <li><b>Trap boxes</b> ⚠️ highlight commonly confused facts.</li>
+      <li><b>Memory tricks</b> 🧠 appear at point of use.</li>
+      <li>Every topic has interactive MCQs in the <b>📝 Mock Test</b> tab.</li>
+    </ul>
+  </div>
+
+  <div class="toc">
+    <h3>🔖 Jump to a topic</h3>
+    <a href="#topic-10-1">10.1 കമ്പ്യൂട്ടർ അടിസ്ഥാനം</a>
+    <a href="#topic-10-2">10.2 Input/Output Devices</a>
+    <a href="#topic-10-3">10.3 മെമ്മറി &amp; സ്റ്റോറേജ്</a>
+    <a href="#topic-10-4">10.4 ഓപ്പറേറ്റിംഗ് സിസ്റ്റം</a>
+    <a href="#topic-10-5">10.5 നെറ്റ്വർക്ക് &amp; ഇന്റർനെറ്റ്</a>
+    <a href="#topic-10-6">10.6 IT Act 2000 &amp; സൈബർ കുറ്റകൃത്യങ്ങൾ</a>
+    <a href="#topic-10-7">10.7 E-Governance</a>
+    <a href="#topic-10-8">10.8 കേരള IT</a>
+  </div>
+
+  <details class="subject" open>
+    <summary>💻 PART 10 — COMPUTER &amp; IT <span class="tag both">BOTH</span></summary>
+
+    <!-- 10.1 Computer Basics -->
+    <details class="note-block" id="topic-10-1" data-title="കമ്പ്യൂട്ടർ അടിസ്ഥാനം">
+      <summary>10.1 കമ്പ്യൂട്ടർ അടിസ്ഥാനം (Computer Basics)</summary>
+      <div class="note-body">
+
+        <div class="svgwrap wide">
+          <div class="figtitle">🖼 Fig. 1 — കമ്പ്യൂട്ടറിന്റെ അടിസ്ഥാന ഘടന</div>
+          <svg viewBox="0 0 760 260" role="img" aria-label="Basic computer organization">
+            <rect width="760" height="260" fill="#fbfdff"/>
+
+            <!-- CPU box -->
+            <rect x="280" y="40" width="200" height="80" rx="12" fill="#0b5d63"/>
+            <text x="380" y="70" font-size="14" font-weight="bold" fill="#fff" text-anchor="middle">CPU (Processor)</text>
+            <text x="380" y="90" font-size="10" fill="#dff3f4" text-anchor="middle">ALU + CU + Registers</text>
+            <text x="380" y="108" font-size="9" fill="#dff3f4" text-anchor="middle">"Brain of Computer"</text>
+
+            <!-- Input -->
+            <rect x="30" y="160" width="180" height="70" rx="10" fill="#e3f0ff" stroke="#0b4a8a" stroke-width="1.5"/>
+            <text x="120" y="185" font-size="12" font-weight="bold" fill="#0b4a8a" text-anchor="middle">INPUT Devices</text>
+            <text x="120" y="205" font-size="10" fill="#16223a" text-anchor="middle">Keyboard, Mouse, Scanner</text>
+            <text x="120" y="220" font-size="9" fill="#5b6b85" text-anchor="middle">Microphone, Webcam</text>
+
+            <!-- Output -->
+            <rect x="550" y="160" width="180" height="70" rx="10" fill="#e6f6ec" stroke="#177a3d" stroke-width="1.5"/>
+            <text x="640" y="185" font-size="12" font-weight="bold" fill="#177a3d" text-anchor="middle">OUTPUT Devices</text>
+            <text x="640" y="205" font-size="10" fill="#16223a" text-anchor="middle">Monitor, Printer</text>
+            <text x="640" y="220" font-size="9" fill="#5b6b85" text-anchor="middle">Speaker, Projector</text>
+
+            <!-- Memory -->
+            <rect x="280" y="160" width="200" height="70" rx="10" fill="#ffe9d6" stroke="#8a4a00" stroke-width="1.5"/>
+            <text x="380" y="185" font-size="12" font-weight="bold" fill="#8a4a00" text-anchor="middle">MEMORY</text>
+            <text x="380" y="205" font-size="10" fill="#16223a" text-anchor="middle">Primary + Secondary</text>
+            <text x="380" y="220" font-size="9" fill="#5b6b85" text-anchor="middle">RAM, ROM, HDD, SSD</text>
+
+            <!-- Arrows -->
+            <path d="M 210,195 L 275,160" stroke="#8a94a6" stroke-width="2" fill="none" marker-end="url(#ar1)"/>
+            <path d="M 480,160 L 545,195" stroke="#8a94a6" stroke-width="2" fill="none" marker-end="url(#ar2)"/>
+            <path d="M 380,155 L 380,120" stroke="#8a94a6" stroke-width="2" fill="none"/>
+            <path d="M 380,120 L 380,155" stroke="#8a94a6" stroke-width="2" fill="none"/>
+            <defs>
+              <marker id="ar1" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+                <path d="M 0,0 L 8,4 L 0,8 Z" fill="#8a94a6"/>
+              </marker>
+              <marker id="ar2" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+                <path d="M 0,0 L 8,4 L 0,8 Z" fill="#8a94a6"/>
+              </marker>
+            </defs>
+
+            <text x="380" y="25" font-size="13" font-weight="bold" fill="#1a4a6a" text-anchor="middle">Basic Computer Organization</text>
+          </svg>
+          <div class="svgcap">Input → CPU → Output; Memory stores data. CPU = ALU + CU + Registers.</div>
+        </div>
+
+        <h4>കമ്പ്യൂട്ടറിന്റെ തലമുറകൾ (Generations)</h4>
+        <table>
+          <tr><th>തലമുറ</th><th>കാലഘട്ടം</th><th>സാങ്കേതികവിദ്യ</th></tr>
+          <tr><td>ഒന്നാം തലമുറ</td><td>1940–56</td><td>വാക്വം ട്യൂബ് (ENIAC, UNIVAC)</td></tr>
+          <tr><td>രണ്ടാം തലമുറ</td><td>1956–63</td><td>ട്രാൻസിസ്റ്റർ</td></tr>
+          <tr><td>മൂന്നാം തലമുറ</td><td>1964–71</td><td>IC (Integrated Circuit)</td></tr>
+          <tr><td>നാലാം തലമുറ</td><td>1971–80</td><td>മൈക്രോപ്രൊസസർ (VLSI)</td></tr>
+          <tr><td>അഞ്ചാം തലമുറ</td><td>1980–ഇന്ന്</td><td>AI, ULSI</td></tr>
+        </table>
+
+        <h4>ഹാർഡ്‌വെയർ vs സോഫ്റ്റ്‌വെയർ</h4>
+        <table>
+          <tr><th>ഹാർഡ്‌വെയർ</th><th>സോഫ്റ്റ്‌വെയർ</th></tr>
+          <tr><td>ഭൗതിക ഭാഗങ്ങൾ</td><td>പ്രോഗ്രാമുകൾ, നിർദ്ദേശങ്ങൾ</td></tr>
+          <tr><td>കാണാനും തൊടാനും കഴിയും</td><td>കാണാനും തൊടാനും കഴിയില്ല</td></tr>
+          <tr><td>ഉദാ: CPU, RAM, Monitor</td><td>ഉദാ: Windows, MS Word, Excel</td></tr>
+        </table>
+
+        <h4>സോഫ്റ്റ്‌വെയർ വിഭാഗങ്ങൾ</h4>
+        <ul>
+          <li><b>System Software:</b> OS, Device Drivers, Utilities.</li>
+          <li><b>Application Software:</b> MS Office, Browser, Games.</li>
+          <li><b>Utility Software:</b> Antivirus, Disk Cleanup, Backup.</li>
+        </ul>
+
+        <h4>പ്രധാന കമ്പ്യൂട്ടർ പിതാക്കന്മാർ</h4>
+        <table>
+          <tr><th>വ്യക്തി</th><th>സംഭാവന</th></tr>
+          <tr><td>ചാൾസ് ബാബേജ്</td><td>കമ്പ്യൂട്ടറിന്റെ പിതാവ്; Analytical Engine</td></tr>
+          <tr><td>അഡ ലവ്‌ലേസ്</td><td>ആദ്യ പ്രോഗ്രാമർ</td></tr>
+          <tr><td>അലൻ ട്യൂറിംഗ്</td><td>ട്യൂറിംഗ് മെഷീൻ; AI പിതാവ്</td></tr>
+          <tr><td>ജോൺ വോൺ ന്യൂമാൻ</td><td>Stored Program Concept</td></tr>
+          <tr><td>ബിൽ ഗേറ്റ്സ്</td><td>Microsoft സ്ഥാപകൻ</td></tr>
+          <tr><td>സ്റ്റീവ് ജോബ്സ്</td><td>Apple സ്ഥാപകൻ</td></tr>
+          <tr><td>ചാൾസ് ബാബേജ്</td><td>Difference Engine</td></tr>
+        </table>
+
+        <div class="mnem"><b>🧠 "Babbage-Lovelace-Turing-Neumann"</b> — കമ്പ്യൂട്ടർ പിതാവ്, ആദ്യ പ്രോഗ്രാമർ, AI പിതാവ്, Stored Program.</div>
+      </div>
+    </details>
+
+    <!-- 10.2 Input/Output Devices -->
+    <details class="note-block" id="topic-10-2" data-title="Input/Output Devices">
+      <summary>10.2 Input/Output Devices</summary>
+      <div class="note-body">
+
+        <h4>Input Devices (ഇൻപുട്ട് ഉപകരണങ്ങൾ)</h4>
+        <table>
+          <tr><th>ഉപകരണം</th><th>പ്രവർത്തനം</th></tr>
+          <tr><td>Keyboard</td><td>അക്ഷരങ്ങളും അക്കങ്ങളും ടൈപ്പ് ചെയ്യൽ — 104 കീകൾ</td></tr>
+          <tr><td>Mouse</td><td>പോയിന്റിംഗ് ഉപകരണം — ഡഗ്ലസ് ഏംഗൽബാർട്ട്</td></tr>
+          <tr><td>Scanner</td><td>അച്ചടിച്ച രേഖകൾ ഡിജിറ്റലാക്കൽ</td></tr>
+          <tr><td>OMR</td><td>Optical Mark Recognition — പരീക്ഷാ ഉത്തരക്കടലാസ്</td></tr>
+          <tr><td>OCR</td><td>Optical Character Recognition — അച്ചടിച്ച അക്ഷരങ്ങൾ വായിക്കൽ</td></tr>
+          <tr><td>MICR</td><td>Magnetic Ink Character Recognition — ചെക്ക് വായിക്കൽ</td></tr>
+          <tr><td>Barcode Reader</td><td>ബാർകോഡ് വായിക്കൽ</td></tr>
+          <tr><td>Joystick</td><td>ഗെയിമിംഗ് ഉപകരണം</td></tr>
+          <tr><td>Touch Screen</td><td>സ്പർശനത്തിലൂടെ ഇൻപുട്ട്</td></tr>
+          <tr><td>Webcam / Microphone</td><td>വീഡിയോ, ഓഡിയോ ഇൻപുട്ട്</td></tr>
+        </table>
+
+        <h4>Output Devices (ഔട്ട്പുട്ട് ഉപകരണങ്ങൾ)</h4>
+        <table>
+          <tr><th>ഉപകരണം</th><th>പ്രവർത്തനം</th></tr>
+          <tr><td>Monitor</td><td>ദൃശ്യ ഔട്ട്പുട്ട്</td></tr>
+          <tr><td>Printer</td><td>അച്ചടി — Inkjet, Laser, Dot Matrix</td></tr>
+          <tr><td>Plotter</td><td>വലിയ ഡ്രോയിംഗുകൾ അച്ചടിക്കൽ</td></tr>
+          <tr><td>Speaker</td><td>ശബ്ദ ഔട്ട്പുട്ട്</td></tr>
+          <tr><td>Projector</td><td>വലിയ സ്ക്രീനിൽ പ്രദർശിപ്പിക്കൽ</td></tr>
+          <tr><td>Headphone</td><td>വ്യക്തിഗത ശബ്ദം</td></tr>
+        </table>
+
+        <h4>പ്രധാന വസ്തുതകൾ</h4>
+        <ul>
+          <li><b>Printer — Dot Matrix:</b> ഏറ്റവും പഴയ തരം; കാർബൺ കോപ്പി സാധ്യം.</li>
+          <li><b>Laser Printer:</b> ഏറ്റവും വേഗതയേറിയത്, ഉയർന്ന നിലവാരം.</li>
+          <li><b>Inkjet Printer:</b> നിറം കൂടുതൽ, വില കുറവ്.</li>
+          <li><b>3D Printer:</b> ത്രിമാന വസ്തുക്കൾ സൃഷ്ടിക്കൽ.</li>
+        </ul>
+
+        <div class="trap"><b>⚠️ PSC Trap</b><br>
+          <b>OMR</b> = Optical Mark Recognition — പരീക്ഷാ ഉത്തരക്കടലാസ് വായിക്കാൻ.<br>
+          <b>OCR</b> = Optical Character Recognition — അച്ചടിച്ച അക്ഷരങ്ങൾ ഡിജിറ്റലാക്കാൻ.<br>
+          <b>MICR</b> = Magnetic Ink Character Recognition — ബാങ്ക് ചെക്ക് വായിക്കാൻ.
+        </div>
+      </div>
+    </details>
+
+    <!-- 10.3 Memory & Storage -->
+    <details class="note-block" id="topic-10-3" data-title="മെമ്മറി &amp; സ്റ്റോറേജ്">
+      <summary>10.3 മെമ്മറി &amp; സ്റ്റോറേജ് (Memory &amp; Storage)</summary>
+      <div class="note-body">
+
+        <div class="svgwrap wide">
+          <div class="figtitle">🖼 Fig. 2 — കമ്പ്യൂട്ടർ മെമ്മറി ഘടന</div>
+          <svg viewBox="0 0 760 240" role="img" aria-label="Computer memory hierarchy">
+            <rect width="760" height="240" fill="#fbfdff"/>
+
+            <!-- Primary -->
+            <rect x="30" y="40" width="330" height="180" rx="12" fill="#e3f0ff" stroke="#0b4a8a" stroke-width="1.5"/>
+            <text x="195" y="65" font-size="13" font-weight="bold" fill="#0b4a8a" text-anchor="middle">PRIMARY MEMORY</text>
+            <text x="195" y="85" font-size="10" fill="#16223a" text-anchor="middle">(Main Memory / Internal)</text>
+
+            <rect x="55" y="105" width="130" height="55" rx="8" fill="#fff" stroke="#0b4a8a" stroke-width="1"/>
+            <text x="120" y="128" font-size="11" font-weight="bold" fill="#0b4a8a" text-anchor="middle">RAM</text>
+            <text x="120" y="145" font-size="9" fill="#5b6b85" text-anchor="middle">Volatile (temp)</text>
+
+            <rect x="205" y="105" width="130" height="55" rx="8" fill="#fff" stroke="#0b4a8a" stroke-width="1"/>
+            <text x="270" y="128" font-size="11" font-weight="bold" fill="#0b4a8a" text-anchor="middle">ROM</text>
+            <text x="270" y="145" font-size="9" fill="#5b6b85" text-anchor="middle">Non-volatile</text>
+
+            <text x="195" y="185" font-size="9" fill="#5b6b85" text-anchor="middle">Cache Memory — fastest, smallest</text>
+            <text x="195" y="200" font-size="9" fill="#5b6b85" text-anchor="middle">Registers — inside CPU</text>
+
+            <!-- Secondary -->
+            <rect x="400" y="40" width="330" height="180" rx="12" fill="#ffe9d6" stroke="#8a4a00" stroke-width="1.5"/>
+            <text x="565" y="65" font-size="13" font-weight="bold" fill="#8a4a00" text-anchor="middle">SECONDARY MEMORY</text>
+            <text x="565" y="85" font-size="10" fill="#16223a" text-anchor="middle">(External / Permanent)</text>
+
+            <rect x="425" y="105" width="130" height="55" rx="8" fill="#fff" stroke="#8a4a00" stroke-width="1"/>
+            <text x="490" y="128" font-size="11" font-weight="bold" fill="#8a4a00" text-anchor="middle">HDD</text>
+            <text x="490" y="145" font-size="9" fill="#5b6b85" text-anchor="middle">Magnetic</text>
+
+            <rect x="575" y="105" width="130" height="55" rx="8" fill="#fff" stroke="#8a4a00" stroke-width="1"/>
+            <text x="640" y="128" font-size="11" font-weight="bold" fill="#8a4a00" text-anchor="middle">SSD</text>
+            <text x="640" y="145" font-size="9" fill="#5b6b85" text-anchor="middle">Flash</text>
+
+            <text x="565" y="185" font-size="9" fill="#5b6b85" text-anchor="middle">Pen Drive, DVD, Blu-ray, Memory Card</text>
+            <text x="565" y="200" font-size="9" fill="#5b6b85" text-anchor="middle">Cloud Storage — Google Drive, Dropbox</text>
+
+            <text x="380" y="25" font-size="13" font-weight="bold" fill="#1a4a6a" text-anchor="middle">Memory Hierarchy</text>
+          </svg>
+          <div class="svgcap">Primary (RAM, ROM, Cache, Registers) · Secondary (HDD, SSD, Pen Drive, Cloud).</div>
+        </div>
+
+        <h4>Primary Memory</h4>
+        <table>
+          <tr><th>തരം</th><th>സ്വഭാവം</th></tr>
+          <tr><td>RAM (Random Access Memory)</td><td>Volatile — കറന്റ് പോയാൽ ഡാറ്റ നഷ്ടം</td></tr>
+          <tr><td>SRAM (Static RAM)</td><td>വേഗത കൂടിയത്, Cache-ൽ ഉപയോഗം</td></tr>
+          <tr><td>DRAM (Dynamic RAM)</td><td>മെയിൻ മെമ്മറി</td></tr>
+          <tr><td>ROM (Read Only Memory)</td><td>Non-volatile — BIOS, Firmware</td></tr>
+          <tr><td>PROM</td><td>Programmable ROM</td></tr>
+          <tr><td>EPROM</td><td>Erasable PROM — UV കിരണങ്ങളാൽ മായ്ക്കാം</td></tr>
+          <tr><td>EEPROM</td><td>Electrically Erasable PROM</td></tr>
+          <tr><td>Cache</td><td>ഏറ്റവും വേഗതയുള്ളത്; CPU-യ്ക്ക് അടുത്ത്</td></tr>
+        </table>
+
+        <h4>Memory Units (മെമ്മറി യൂണിറ്റുകൾ)</h4>
+        <table>
+          <tr><th>യൂണിറ്റ്</th><th>മൂല്യം</th></tr>
+          <tr><td>1 Nibble</td><td>4 Bits</td></tr>
+          <tr><td>1 Byte</td><td>8 Bits</td></tr>
+          <tr><td>1 Kilobyte (KB)</td><td>1,024 Bytes</td></tr>
+          <tr><td>1 Megabyte (MB)</td><td>1,024 KB</td></tr>
+          <tr><td>1 Gigabyte (GB)</td><td>1,024 MB</td></tr>
+          <tr><td>1 Terabyte (TB)</td><td>1,024 GB</td></tr>
+          <tr><td>1 Petabyte (PB)</td><td>1,024 TB</td></tr>
+        </table>
+
+        <div class="mnem"><b>🧠 "Nibble-Byte-KB-MB-GB-TB-PB"</b> — "Nayan Bet KB Me GB To PB."</div>
+
+        <div class="trap"><b>⚠️ PSC Trap</b><br>
+          <b>1 Byte = 8 bits</b> (7 അല്ല!).<br>
+          <b>1 KB = 1024 bytes</b> (1000 അല്ല!).<br>
+          <b>RAM</b> Volatile; <b>ROM</b> Non-volatile.
+        </div>
+      </div>
+    </details>
+
+    <!-- 10.4 Operating Systems -->
+    <details class="note-block" id="topic-10-4" data-title="ഓപ്പറേറ്റിംഗ് സിസ്റ്റം">
+      <summary>10.4 ഓപ്പറേറ്റിംഗ് സിസ്റ്റം (Operating Systems)</summary>
+      <div class="note-body">
+
+        <h4>പ്രധാന ഓപ്പറേറ്റിംഗ് സിസ്റ്റങ്ങൾ</h4>
+        <table>
+          <tr><th>OS</th><th>വികസിപ്പിച്ചത്</th><th>പ്രത്യേകത</th></tr>
+          <tr><td>MS-DOS</td><td>Microsoft (1981)</td><td>ആദ്യ കമാൻഡ് ലൈൻ OS</td></tr>
+          <tr><td>Windows</td><td>Microsoft (1985)</td><td>ഏറ്റവും ജനപ്രിയം</td></tr>
+          <tr><td>Linux</td><td>ലിനസ് ടോർവാൾഡ്സ് (1991)</td><td>ഓപ്പൺ സോഴ്സ്</td></tr>
+          <tr><td>macOS</td><td>Apple</td><td>Mac കമ്പ്യൂട്ടറുകൾക്ക്</td></tr>
+          <tr><td>Android</td><td>Google</td><td>മൊബൈൽ OS</td></tr>
+          <tr><td>iOS</td><td>Apple</td><td>iPhone, iPad</td></tr>
+          <tr><td>UNIX</td><td>Ken Thompson (1969)</td><td>Multi-user, Multi-tasking</td></tr>
+        </table>
+
+        <h4>പ്രധാന വസ്തുതകൾ</h4>
+        <ul>
+          <li><b>ആദ്യ OS:</b> GM-NAA I/O (1956) — ജനറൽ മോട്ടോഴ്സ്.</li>
+          <li><b>ആദ്യ PC OS:</b> CP/M (1974) — Gary Kildall.</li>
+          <li><b>ആദ്യ GUI OS:</b> Xerox Alto (1973) — പിന്നീട് Macintosh (1984).</li>
+          <li><b>Windows 95:</b> Start Button അവതരിപ്പിച്ചു.</li>
+          <li><b>ഏറ്റവും കൂടുതൽ ഉപയോഗിക്കുന്ന OS:</b> Windows (Desktop); Android (Mobile).</li>
+        </ul>
+
+        <h4>OS-ന്റെ പ്രധാന ധർമ്മങ്ങൾ</h4>
+        <ul>
+          <li>Process Management (പ്രോസസ് മാനേജ്മെന്റ്)</li>
+          <li>Memory Management (മെമ്മറി മാനേജ്മെന്റ്)</li>
+          <li>File Management (ഫയൽ മാനേജ്മെന്റ്)</li>
+          <li>Device Management (ഉപകരണ മാനേജ്മെന്റ്)</li>
+          <li>Security Management (സുരക്ഷ)</li>
+        </ul>
+
+        <h4>പ്രധാന ഫയൽ എക്സ്റ്റൻഷനുകൾ</h4>
+        <table>
+          <tr><th>എക്സ്റ്റൻഷൻ</th><th>ഫയൽ തരം</th></tr>
+          <tr><td>.docx / .doc</td><td>MS Word</td></tr>
+          <tr><td>.xlsx / .xls</td><td>MS Excel</td></tr>
+          <tr><td>.pptx / .ppt</td><td>PowerPoint</td></tr>
+          <tr><td>.pdf</td><td>Portable Document Format (Adobe)</td></tr>
+          <tr><td>.jpg / .png</td><td>ചിത്രങ്ങൾ</td></tr>
+          <tr><td>.mp4 / .avi</td><td>വീഡിയോ</td></tr>
+          <tr><td>.mp3</td><td>ഓഡിയോ</td></tr>
+          <tr><td>.exe</td><td>Executable File</td></tr>
+          <tr><td>.html</td><td>വെബ് പേജ്</td></tr>
+        </table>
+      </div>
+    </details>
+
+    <!-- 10.5 Networks & Internet -->
+    <details class="note-block" id="topic-10-5" data-title="നെറ്റ്വർക്ക് &amp; ഇന്റർനെറ്റ്">
+      <summary>10.5 നെറ്റ്വർക്ക് &amp; ഇന്റർനെറ്റ് (Networks &amp; Internet)</summary>
+      <div class="note-body">
+
+        <div class="svgwrap wide">
+          <div class="figtitle">🖼 Fig. 3 — നെറ്റ്വർക്ക് തരങ്ങൾ</div>
+          <svg viewBox="0 0 760 260" role="img" aria-label="Types of networks">
+            <rect width="760" height="260" fill="#fbfdff"/>
+
+            <rect x="20" y="40" width="170" height="190" rx="10" fill="#e3f0ff" stroke="#0b4a8a" stroke-width="1.5"/>
+            <text x="105" y="65" font-size="13" font-weight="bold" fill="#0b4a8a" text-anchor="middle">PAN</text>
+            <text x="105" y="85" font-size="10" fill="#16223a" text-anchor="middle">Personal Area Network</text>
+            <text x="105" y="110" font-size="10" fill="#5b6b85" text-anchor="middle">~10 m</text>
+            <text x="105" y="135" font-size="9" fill="#16223a" text-anchor="middle">Bluetooth, USB</text>
+            <text x="105" y="160" font-size="9" fill="#16223a" text-anchor="middle">1 വ്യക്തിയുടെ</text>
+            <text x="105" y="180" font-size="9" fill="#16223a" text-anchor="middle">ഉപകരണങ്ങൾ</text>
+
+            <rect x="200" y="40" width="170" height="190" rx="10" fill="#ffe9d6" stroke="#8a4a00" stroke-width="1.5"/>
+            <text x="285" y="65" font-size="13" font-weight="bold" fill="#8a4a00" text-anchor="middle">LAN</text>
+            <text x="285" y="85" font-size="10" fill="#16223a" text-anchor="middle">Local Area Network</text>
+            <text x="285" y="110" font-size="10" fill="#5b6b85" text-anchor="middle">~1 km</text>
+            <text x="285" y="135" font-size="9" fill="#16223a" text-anchor="middle">ഒരു കെട്ടിടം</text>
+            <text x="285" y="160" font-size="9" fill="#16223a" text-anchor="middle">Wi-Fi, Ethernet</text>
+
+            <rect x="380" y="40" width="170" height="190" rx="10" fill="#e6f6ec" stroke="#177a3d" stroke-width="1.5"/>
+            <text x="465" y="65" font-size="13" font-weight="bold" fill="#177a3d" text-anchor="middle">MAN</text>
+            <text x="465" y="85" font-size="10" fill="#16223a" text-anchor="middle">Metropolitan Area Network</text>
+            <text x="465" y="110" font-size="10" fill="#5b6b85" text-anchor="middle">~10–100 km</text>
+            <text x="465" y="135" font-size="9" fill="#16223a" text-anchor="middle">ഒരു നഗരം</text>
+            <text x="465" y="160" font-size="9" fill="#16223a" text-anchor="middle">Cable TV, DSL</text>
+
+            <rect x="560" y="40" width="180" height="190" rx="10" fill="#e8e3ff" stroke="#4a2d9c" stroke-width="1.5"/>
+            <text x="650" y="65" font-size="13" font-weight="bold" fill="#4a2d9c" text-anchor="middle">WAN</text>
+            <text x="650" y="85" font-size="10" fill="#16223a" text-anchor="middle">Wide Area Network</text>
+            <text x="650" y="110" font-size="10" fill="#5b6b85" text-anchor="middle">>100 km</text>
+            <text x="650" y="135" font-size="9" fill="#16223a" text-anchor="middle">രാജ്യങ്ങൾ</text>
+            <text x="650" y="160" font-size="9" fill="#16223a" text-anchor="middle">ഇന്റർനെറ്റ്</text>
+
+            <text x="380" y="25" font-size="13" font-weight="bold" fill="#1a4a6a" text-anchor="middle">Network Types</text>
+          </svg>
+          <div class="svgcap">PAN (10m) · LAN (1km) · MAN (100km) · WAN (Country/World).</div>
+        </div>
+
+        <h4>ഇന്റർനെറ്റ് — പ്രധാന വസ്തുതകൾ</h4>
+        <table>
+          <tr><th>വിഷയം</th><th>വിവരം</th></tr>
+          <tr><td>ഇന്റർനെറ്റിന്റെ പിതാവ്</td><td>വിന്റൺ സെർഫ് (Vint Cerf)</td></tr>
+          <tr><td>WWW-യുടെ പിതാവ്</td><td>ടിം ബെർണേഴ്സ്-ലീ (1989)</td></tr>
+          <tr><td>ആദ്യ വെബ് ബ്രൗസർ</td><td>Mosaic (1993)</td></tr>
+          <tr><td>ഇന്ത്യയിൽ ഇന്റർനെറ്റ്</td><td>1995 ഓഗസ്റ്റ് 15 (VSNL)</td></tr>
+          <tr><td>ആദ്യ ഇന്ത്യൻ ഇന്റർനെറ്റ് സേവനം</td><td>ERNET (1986)</td></tr>
+          <tr><td>ഇന്ത്യയിലെ ആദ്യ വെബ്സൈറ്റ്</td><td>www.india.com (1996)</td></tr>
+        </table>
+
+        <h4>പ്രധാന പ്രോട്ടോക്കോളുകൾ</h4>
+        <table>
+          <tr><th>പ്രോട്ടോക്കോൾ</th><th>ഉപയോഗം</th></tr>
+          <tr><td>HTTP / HTTPS</td><td>വെബ് പേജുകൾ (HTTPS = സുരക്ഷിതം)</td></tr>
+          <tr><td>FTP</td><td>ഫയൽ കൈമാറ്റം</td></tr>
+          <tr><td>SMTP</td><td>ഇമെയിൽ അയയ്ക്കൽ</td></tr>
+          <tr><td>POP3 / IMAP</td><td>ഇമെയിൽ സ്വീകരണം</td></tr>
+          <tr><td>TCP/IP</td><td>ഇന്റർനെറ്റ് അടിസ്ഥാന പ്രോട്ടോക്കോൾ</td></tr>
+          <tr><td>VoIP</td><td>ഇന്റർനെറ്റ് വഴി വോയ്സ് കോൾ</td></tr>
+        </table>
+
+        <h4>ഡൊമെയ്ൻ വിപുലീകരണങ്ങൾ</h4>
+        <ul>
+          <li><b>.com</b> — Commercial</li>
+          <li><b>.org</b> — Organization</li>
+          <li><b>.net</b> — Network</li>
+          <li><b>.gov</b> — Government</li>
+          <li><b>.edu</b> — Education</li>
+          <li><b>.in</b> — India</li>
+          <li><b>.uk</b> — United Kingdom</li>
+        </ul>
+
+        <div class="trap"><b>⚠️ PSC Trap</b><br>
+          <b>ഇന്റർനെറ്റിന്റെ പിതാവ്</b> — വിന്റൺ സെർഫ്.<br>
+          <b>WWW-യുടെ പിതാവ്</b> — ടിം ബെർണേഴ്സ്-ലീ.<br>
+          ഇവ രണ്ടും കൂട്ടിക്കുഴയ്ക്കരുത്.
+        </div>
+      </div>
+    </details>
+
+    <!-- 10.6 IT Act & Cyber Crimes -->
+    <details class="note-block" id="topic-10-6" data-title="IT Act 2000 &amp; സൈബർ കുറ്റകൃത്യങ്ങൾ">
+      <summary>10.6 IT Act 2000 &amp; സൈബർ കുറ്റകൃത്യങ്ങൾ (IT Act &amp; Cyber Crimes)</summary>
+      <div class="note-body">
+
+        <h4>Information Technology Act, 2000</h4>
+        <table>
+          <tr><th>വിഷയം</th><th>വിവരം</th></tr>
+          <tr><td>നിലവിൽ വന്നത്</td><td>2000 ഒക്ടോബർ 17</td></tr>
+          <tr><td>ഭേദഗതി</td><td>2008 (IT Amendment Act) — 2009 ഒക്ടോബർ 27 മുതൽ</td></tr>
+          <tr><td>ലക്ഷ്യം</td><td>ഇ-കൊമേഴ്സ്, ഡിജിറ്റൽ സിഗ്നേച്ചർ, സൈബർ കുറ്റകൃത്യങ്ങൾ</td></tr>
+          <tr><td>മാതൃക</td><td>UNCITRAL (United Nations Commission on International Trade Law)</td></tr>
+          <tr><td>ആകെ സെക്ഷനുകൾ</td><td>94 (യഥാർത്ഥ); 2008-നു ശേഷം പുതിയ സെക്ഷനുകൾ</td></tr>
+        </table>
+
+        <h4>IT Act — പ്രധാന സെക്ഷനുകൾ</h4>
+        <table>
+          <tr><th>സെക്ഷൻ</th><th>വിഷയം</th></tr>
+          <tr><td>Section 43</td><td>കമ്പ്യൂട്ടർ ഡാറ്റ കേടുവരുത്തൽ</td></tr>
+          <tr><td>Section 65</td><td>സോഴ്സ് കോഡ് കൃത്രിമം</td></tr>
+          <tr><td>Section 66</td><td>ഹാക്കിംഗ് (Computer-related offences)</td></tr>
+          <tr><td>Section 66C</td><td>Identity Theft (ഐഡന്റിറ്റി മോഷണം)</td></tr>
+          <tr><td>Section 66D</td><td>Cheating by Personation (വ്യക്തിമോഷണം)</td></tr>
+          <tr><td>Section 66E</td><td>Privacy violation (സ്വകാര്യത ലംഘനം)</td></tr>
+          <tr><td>Section 67</td><td>അശ്ലീല വെബ്സൈറ്റ് പ്രസിദ്ധീകരണം</td></tr>
+          <tr><td>Section 69</td><td>സർക്കാരിന് ഡാറ്റ തടഞ്ഞുവയ്ക്കൽ അധികാരം</td></tr>
+          <tr><td>Section 72</td><td>വിശ്വാസ ലംഘനം</td></tr>
+        </table>
+
+        <h4>സൈബർ കുറ്റകൃത്യങ്ങൾ (Cyber Crimes)</h4>
+        <table>
+          <tr><th>കുറ്റകൃത്യം</th><th>വിവരണം</th></tr>
+          <tr><td>Hacking</td><td>അനുവാദമില്ലാതെ കമ്പ്യൂട്ടർ സിസ്റ്റത്തിൽ പ്രവേശിക്കൽ</td></tr>
+          <tr><td>Phishing</td><td>വ്യാജ ഇമെയിൽ വഴി ബാങ്ക് വിവരങ്ങൾ മോഷ്ടിക്കൽ</td></tr>
+          <tr><td>Identity Theft</td><td>മറ്റൊരാളുടെ ഐഡന്റിറ്റി മോഷണം</td></tr>
+          <tr><td>Cyber Stalking</td><td>ഓൺലൈൻ പിന്തുടരൽ/ഭീഷണി</td></tr>
+          <tr><td>Cyber Bullying</td><td>ഓൺലൈൻ ഉപദ്രവം</td></tr>
+          <tr><td>Malware</td><td>കേടുവരുത്തുന്ന സോഫ്റ്റ്‌വെയർ (വൈറസ്, വേം, ട്രോജൻ)</td></tr>
+          <tr><td>Ransomware</td><td>ഡാറ്റ തടഞ്ഞുവച്ച് പണം ആവശ്യപ്പെടൽ</td></tr>
+          <tr><td>Spam</td><td>അ unwanted ഇമെയിൽ</td></tr>
+          <tr><td>Denial of Service (DoS)</td><td>സേവനം തടസ്സപ്പെടുത്തൽ</td></tr>
+        </table>
+
+        <h4>സൈബർ സുരക്ഷാ സ്ഥാപനങ്ങൾ</h4>
+        <ul>
+          <li><b>CERT-In (Indian Computer Emergency Response Team):</b> 2004 — സൈബർ സുരക്ഷാ കേന്ദ്രം.</li>
+          <li><b>NCIIPC:</b> National Critical Information Infrastructure Protection Centre.</li>
+          <li><b>Kerala Police Cyber Cell:</b> കേരളത്തിലെ സൈബർ കുറ്റകൃത്യ അന്വേഷണം.</li>
+        </ul>
+
+        <div class="mnem"><b>🧠 "Phishing-Trojan-Malware"</b> — P-T-M. "Phishing uses emails, Trojan uses files, Malware uses code."</div>
+
+        <div class="trap"><b>⚠️ PSC Trap</b><br>
+          <b>IT Act 2000</b> — 2000 ഒക്ടോബർ 17-ന് നിലവിൽ വന്നു.<br>
+          <b>2008-ലെ ഭേദഗതി</b> — 2009 ഒക്ടോബർ 27 മുതൽ പ്രാബല്യത്തിൽ.<br>
+          <b>Section 66C</b> — Identity Theft; <b>Section 66D</b> — Cheating by Personation.
+        </div>
+      </div>
+    </details>
+
+    <!-- 10.7 E-Governance -->
+    <details class="note-block" id="topic-10-7" data-title="E-Governance">
+      <summary>10.7 E-Governance (ഇ-ഗവേണൻസ്)</summary>
+      <div class="note-body">
+
+        <h4>പ്രധാന ദേശീയ പദ്ധതികൾ</h4>
+        <table>
+          <tr><th>പദ്ധതി</th><th>വർഷം</th><th>ഉദ്ദേശ്യം</th></tr>
+          <tr><td>Digital India</td><td>2015</td><td>ഡിജിറ്റൽ അധികാര ശാക്തീകരണം</td></tr>
+          <tr><td>MyGov</td><td>2014</td><td>പൗര പങ്കാളിത്ത പോർട്ടൽ</td></tr>
+          <tr><td>e-Kranti</td><td>2015</td><td>ഇ-ഗവേണൻസ് പദ്ധതി</td></tr>
+          <tr><td>UPI</td><td>2016</td><td>ഏകീകൃത പേയ്‌മെന്റ് ഇന്റർഫേസ്</td></tr>
+          <tr><td>Aadhaar</td><td>2009</td><td>അദ്വിതീയ തിരിച്ചറിയൽ</td></tr>
+          <tr><td>DigiLocker</td><td>2015</td><td>ഡിജിറ്റൽ ഡോക്യുമെന്റ് സംഭരണം</td></tr>
+          <tr><td>e-NAM</td><td>2016</td><td>കാർഷിക ഓൺലൈൻ വിപണി</td></tr>
+          <tr><td>Common Service Centre (CSC)</td><td>2006</td><td>ഗ്രാമീണ ഇ-സേവന കേന്ദ്രങ്ങൾ</td></tr>
+        </table>
+
+        <h4>കേരളത്തിലെ ഇ-ഗവേണൻസ് പദ്ധതികൾ</h4>
+        <ul>
+          <li><b>FRIENDS (2000):</b> Fast, Reliable, Instant, Efficient Network for Disbursement of Services — സർക്കാർ സേവനങ്ങൾ ഒരു കേന്ദ്രത്തിൽ.</li>
+          <li><b>AKSHAYA (2002):</b> ഗ്രാമീണ ഇ-സേവന കേന്ദ്രങ്ങൾ.</li>
+          <li><b>e-District (2010):</b> ജില്ലാ തല സേവനങ്ങൾ ഓൺലൈൻ.</li>
+          <li><b>SPARK (2010):</b> സർക്കാർ ജീവനക്കാരുടെ ശമ്പളം.</li>
+          <li><b>e-Office:</b> ഫയൽ ഓഫീസ് ഓട്ടോമേഷൻ.</li>
+          <li><b>Kerala Solutions (2014):</b> എല്ലാ സേവനങ്ങളും ഒരു പ്ലാറ്റ്ഫോമിൽ.</li>
+          <li><b>PRISM:</b> പഞ്ചായത്ത് രാജ് ഇൻസ്റ്റിറ്റ്യൂഷൻ സോഫ്റ്റ്വെയർ.</li>
+          <li><b>SAANKHYA:</b> പ്ലാനിംഗ് സോഫ്റ്റ്വെയർ.</li>
+        </ul>
+
+        <h4>E-Governance — 4 Types</h4>
+        <table>
+          <tr><th>തരം</th><th>പൂർണ്ണരൂപം</th></tr>
+          <tr><td>G2C</td><td>Government to Citizen</td></tr>
+          <tr><td>G2B</td><td>Government to Business</td></tr>
+          <tr><td>G2G</td><td>Government to Government</td></tr>
+          <tr><td>G2E</td><td>Government to Employee</td></tr>
+        </table>
+
+        <div class="mnem"><b>🧠 "G2C-B-G-E"</b> — "G to C-B-G-E." "Citizen, Business, Government, Employee."</div>
+      </div>
+    </details>
+
+    <!-- 10.8 Kerala IT -->
+    <details class="note-block" id="topic-10-8" data-title="കേരള IT">
+      <summary>10.8 കേരള IT (Kerala Information Technology)</summary>
+      <div class="note-body">
+
+        <h4>പ്രധാന IT പാർക്കുകൾ</h4>
+        <table>
+          <tr><th>പാർക്ക്</th><th>സ്ഥലം</th><th>വർഷം</th></tr>
+          <tr><td>Technopark</td><td>തിരുവനന്തപുരം</td><td>1990</td></tr>
+          <tr><td>Infopark</td><td>കാക്കനാട്, എറണാകുളം</td><td>2004</td></tr>
+          <tr><td>Cyberpark</td><td>കോഴിക്കോട്</td><td>2009</td></tr>
+          <tr><td>Kinfra Hi-Tech Park</td><td>കളമശ്ശേരി</td><td>—</td></tr>
+          <tr><td>Technopark Phase III</td><td>തിരുവനന്തപുരം</td><td>—</td></tr>
+        </table>
+
+        <h4>പ്രധാന വസ്തുതകൾ</h4>
+        <ul>
+          <li><b>Technopark:</b> ഇന്ത്യയിലെ ആദ്യ IT പാർക്ക് (1990) — തിരുവനന്തപുരം.</li>
+          <li><b>കേരളത്തിന്റെ IT രാഷ്ട്രീയം:</b> "God's Own Country" എന്ന ബ്രാൻഡിംഗ്.</li>
+          <li><b>Keltron:</b> കേരളത്തിന്റെ പൊതുമേഖലാ ഇലക്ട്രോണിക്സ് കമ്പനി — 1973.</li>
+          <li><b>KSITIL:</b> Kerala State Information Technology Infrastructure Ltd.</li>
+          <li><b>ഇന്ത്യയിലെ ആദ്യ ഇ-ലിറ്ററസി പദ്ധതി:</b> AKSHAYA (2002).</li>
+        </ul>
+
+        <h4>പ്രധാന IT കമ്പനികൾ (കേരളത്തിൽ)</h4>
+        <ul>
+          <li><b>Infosys</b> — Technopark, Infopark</li>
+          <li><b>TCS</b> — Technopark, Infopark</li>
+          <li><b>Wipro</b> — Technopark, Infopark</li>
+          <li><b>UST Global</b> — Technopark, Infopark</li>
+          <li><b>IBS Software</b> — Technopark</li>
+          <li><b>Toonz Animation</b> — Technopark</li>
+        </ul>
+
+        <div class="trap"><b>⚠️ PSC Trap</b><br>
+          <b>Technopark</b> — ഇന്ത്യയിലെ ആദ്യ IT പാർക്ക്; സ്ഥാപിതം 1990; സ്ഥലം തിരുവനന്തപുരം.<br>
+          <b>Infopark</b> — കാക്കനാട്, എറണാകുളം (2004).<br>
+          <b>Cyberpark</b> — കോഴിക്കോട് (2009).
+        </div>
+      </div>
+    </details>
+  </details>
+
+  <!-- PSC TRAPS -->
+  <details class="subject">
+    <summary>⚠️ PSC TRAPS — Computer &amp; IT</summary>
+    <div class="note-body">
+      <table>
+        <tr><th>Trap</th><th>ശരിയായ വസ്തുത</th></tr>
+        <tr><td>കമ്പ്യൂട്ടറിന്റെ പിതാവ്</td><td>ചാൾസ് ബാബേജ്</td></tr>
+        <tr><td>ആദ്യ പ്രോഗ്രാമർ</td><td>അഡ ലവ്‌ലേസ്</td></tr>
+        <tr><td>AI-യുടെ പിതാവ്</td><td>അലൻ ട്യൂറിംഗ്</td></tr>
+        <tr><td>1 Byte</td><td>8 bits</td></tr>
+        <tr><td>1 KB</td><td>1,024 bytes</td></tr>
+        <tr><td>RAM vs ROM</td><td>RAM: Volatile; ROM: Non-volatile</td></tr>
+        <tr><td>ഇന്റർനെറ്റിന്റെ പിതാവ്</td><td>വിന്റൺ സെർഫ്</td></tr>
+        <tr><td>WWW-യുടെ പിതാവ്</td><td>ടിം ബെർണേഴ്സ്-ലീ</td></tr>
+        <tr><td>IT Act നിലവിൽ വന്നത്</td><td>2000 ഒക്ടോബർ 17</td></tr>
+        <tr><td>Section 66C vs 66D</td><td>66C: Identity Theft; 66D: Cheating by Personation</td></tr>
+        <tr><td>OMR vs OCR vs MICR</td><td>OMR: പരീക്ഷ; OCR: അച്ചടി; MICR: ചെക്ക്</td></tr>
+        <tr><td>ആദ്യ IT പാർക്ക് (ഇന്ത്യ)</td><td>Technopark, തിരുവനന്തപുരം (1990)</td></tr>
+      </table>
+    </div>
+  </details>
+
+  <!-- 1-Minute Revision -->
+  <details class="subject">
+    <summary>⚡ 1-Minute Revision — Computer &amp; IT</summary>
+    <div class="note-body">
+      <table>
+        <tr><th>ചോദ്യം</th><th>ഉത്തരം</th></tr>
+        <tr><td>കമ്പ്യൂട്ടറിന്റെ പിതാവ്</td><td>ചാൾസ് ബാബേജ്</td></tr>
+        <tr><td>ആദ്യ പ്രോഗ്രാമർ</td><td>അഡ ലവ്‌ലേസ്</td></tr>
+        <tr><td>AI-യുടെ പിതാവ്</td><td>അലൻ ട്യൂറിംഗ്</td></tr>
+        <tr><td>Stored Program Concept</td><td>ജോൺ വോൺ ന്യൂമാൻ</td></tr>
+        <tr><td>1 Byte</td><td>8 bits</td></tr>
+        <tr><td>1 KB</td><td>1,024 bytes</td></tr>
+        <tr><td>Volatile Memory</td><td>RAM</td></tr>
+        <tr><td>Non-volatile Memory</td><td>ROM</td></tr>
+        <tr><td>ഏറ്റവും വേഗതയേറിയ Memory</td><td>Cache / Registers</td></tr>
+        <tr><td>ആദ്യ OS</td><td>GM-NAA I/O (1956)</td></tr>
+        <tr><td>Linux സ്ഥാപകൻ</td><td>ലിനസ് ടോർവാൾഡ്സ് (1991)</td></tr>
+        <tr><td>ഇന്റർനെറ്റിന്റെ പിതാവ്</td><td>വിന്റൺ സെർഫ്</td></tr>
+        <tr><td>WWW-യുടെ പിതാവ്</td><td>ടിം ബെർണേഴ്സ്-ലീ (1989)</td></tr>
+        <tr><td>ഇന്ത്യയിൽ ഇന്റർനെറ്റ്</td><td>1995 ഓഗസ്റ്റ് 15 (VSNL)</td></tr>
+        <tr><td>IT Act</td><td>2000 ഒക്ടോബർ 17</td></tr>
+        <tr><td>Section 66C</td><td>Identity Theft</td></tr>
+        <tr><td>Section 66D</td><td>Cheating by Personation</td></tr>
+        <tr><td>CERT-In</td><td>2004</td></tr>
+        <tr><td>Digital India</td><td>2015 ജൂലൈ 1</td></tr>
+        <tr><td>Technopark</td><td>തിരുവനന്തപുരം (1990)</td></tr>
+        <tr><td>Infopark</td><td>കാക്കനാട് (2004)</td></tr>
+        <tr><td>Cyberpark</td><td>കോഴിക്കോട് (2009)</td></tr>
+        <tr><td>FRIENDS പദ്ധതി</td><td>2000</td></tr>
+        <tr><td>AKSHAYA</td><td>2002</td></tr>
+        <tr><td>Keltron</td><td>1973</td></tr>
+      </table>
+    </div>
+  </details>
+
+  <p class="hint" style="margin-top:1rem">
+    <b>Coverage:</b> Part 10 (Computer &amp; IT) — 25 MCQs.
+  </p>
+</section>
+
+<!-- ================= MOCK TEST ================= -->
+<section id="view-test" class="view">
+  <div class="toolbar">
+    <div class="filters">
+      <span class="flabel">Exam:</span>
+      <button class="chip active" data-cat="ALL">ALL</button>
+      <button class="chip" data-cat="573">573</button>
+      <button class="chip" data-cat="883">883</button>
+      <button class="chip" data-cat="BOTH">BOTH</button>
+      <select id="topicFilter" aria-label="Filter by topic"><option value="ALL">All Topics</option></select>
+      <select id="diffFilter" aria-label="Filter by difficulty">
+        <option value="ALL">All Difficulty</option>
+        <option value="Easy">🟢 Easy</option>
+        <option value="Medium">🟡 Medium</option>
+        <option value="Hard">🟠 Hard</option>
+        <option value="Very Hard">🔴 Very Hard</option>
+      </select>
+    </div>
+    <div class="tools">
+      <label class="flabel">Negative:
+        <input type="number" id="negInput" value="0.33" step="0.01" min="0" style="width:74px" aria-label="Negative mark value">
+      </label>
+      <button class="btn ghost" id="resetBtn">Reset Progress</button>
+      <button class="btn primary" id="finishBtn">Finish Test</button>
+    </div>
+  </div>
+  <div id="setInfo" class="hint" style="margin-bottom:.6rem"></div>
+  <div class="navwrap">
+    <h4>Questions</h4>
+    <div class="navgrid" id="navgrid"></div>
+  </div>
+  <div class="qcard" id="qcard"></div>
+</section>
+
+<!-- ================= REVISION ================= -->
+<section id="view-revision" class="view">
+  <div class="viewhead">
+    <h2>🔁 REVISION MODE</h2>
+    <p class="hint">Practise only the questions you need. Choosing a set replaces the current test set.</p>
+  </div>
+  <div class="revpanel">
+    <div class="setgrid" id="setgrid"></div>
+    <div style="margin-top:.8rem; display:flex; gap:.5rem; flex-wrap:wrap">
+      <button class="btn primary" data-set="all">📚 Practise All Questions</button>
+      <button class="btn ghost" data-set="reset">↺ Clear Revision Filter</button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BOOKMARKS ================= -->
+<section id="view-bookmarks" class="view">
+  <div class="viewhead">
+    <h2>⭐ BOOKMARKS</h2>
+    <p class="hint">Bookmarks are stored in your browser and remain after you close or refresh the file.</p>
+  </div>
+  <div id="bookmarkList"></div>
+</section>
+
+<!-- ================= RESULT ================= -->
+<section id="view-result" class="view">
+  <div id="resultHost"></div>
+</section>
+
+<!-- ================= SEARCH ================= -->
+<section id="view-search" class="view">
+  <div class="viewhead">
+    <h2>🔎 SEARCH</h2>
+    <p class="hint">Search notes and questions — persons, places, articles, acts, sections, dates, terms.</p>
+  </div>
+  <div class="searchbox">
+    <input type="search" id="searchInput" placeholder="Type at least 2 characters…" aria-label="Search notes and questions">
+    <button class="btn ghost" id="clearSearch">Clear</button>
+  </div>
+  <div id="searchResults"></div>
+</section>
+
+</main>
+
+<!-- ================= PART 10 QUESTIONS + ENGINE ================= -->
+<script>
+window.PART_KEY   = 'computer';
+window.PART_TITLE = 'Computer & IT';
+
+window.QUESTIONS = [
+{
+  id:1, subject:'Computer', topic:'അടിസ്ഥാനം', category:'BOTH', difficulty:'Easy', type:'Person-Contribution',
+  question:'"കമ്പ്യൂട്ടറിന്റെ പിതാവ്" എന്നറിയപ്പെടുന്നത് ആരാണ്?',
+  options:['അലൻ ട്യൂറിംഗ്','ചാൾസ് ബാബേജ്','ജോൺ വോൺ ന്യൂമാൻ','ബിൽ ഗേറ്റ്സ്'], answer:1,
+  explanation:'ചാൾസ് ബാബേജ് — കമ്പ്യൂട്ടറിന്റെ പിതാവ്; Analytical Engine രൂപകൽപ്പന ചെയ്തു.',
+  optionNotes:[
+    'ട്യൂറിംഗ് — AI-യുടെ പിതാവ്.',
+    'ബാബേജ് — കമ്പ്യൂട്ടറിന്റെ പിതാവ് (ശരിയായ ഉത്തരം).',
+    'ന്യൂമാൻ — Stored Program Concept.',
+    'ഗേറ്റ്സ് — Microsoft സ്ഥാപകൻ.']
+},
+{
+  id:2, subject:'Computer', topic:'അടിസ്ഥാനം', category:'BOTH', difficulty:'Easy', type:'Person-Contribution',
+  question:'"ആദ്യ പ്രോഗ്രാമർ" എന്നറിയപ്പെടുന്നത് ആരാണ്?',
+  options:['അഡ ലവ്‌ലേസ്','ചാൾസ് ബാബേജ്','അലൻ ട്യൂറിംഗ്','ഗ്രേസ് ഹോപ്പർ'], answer:0,
+  explanation:'അഡ ലവ്‌ലേസ് — ആദ്യ പ്രോഗ്രാമർ; ചാൾസ് ബാബേജിന്റെ സഹപ്രവർത്തക.',
+  optionNotes:[
+    'ലവ്‌ലേസ് — ആദ്യ പ്രോഗ്രാമർ (ശരിയായ ഉത്തരം).',
+    'ബാബേജ് — കമ്പ്യൂട്ടറിന്റെ പിതാവ്.',
+    'ട്യൂറിംഗ് — AI പിതാവ്.',
+    'ഹോപ്പർ — COBOL വികസിപ്പിച്ചു.']
+},
+{
+  id:3, subject:'Computer', topic:'അടിസ്ഥാനം', category:'BOTH', difficulty:'Easy', type:'Person-Contribution',
+  question:'"AI-യുടെ പിതാവ്" എന്നറിയപ്പെടുന്നത് ആരാണ്?',
+  options:['അലൻ ട്യൂറിംഗ്','ജോൺ മക്കാർത്തി','മാർവിൻ മിൻസ്കി','ചാൾസ് ബാബേജ്'], answer:0,
+  explanation:'അലൻ ട്യൂറിംഗ് — "AI-യുടെ പിതാവ്"; Turing Test ആവിഷ്കരിച്ചു.',
+  optionNotes:[
+    'ട്യൂറിംഗ് — AI പിതാവ് (ശരിയായ ഉത്തരം).',
+    'മക്കാർത്തി — AI എന്ന പദം ആവിഷ്കരിച്ചു.',
+    'മിൻസ്കി — AI പയനിയർ.',
+    'ബാബേജ് — കമ്പ്യൂട്ടറിന്റെ പിതാവ്.']
+},
+{
+  id:4, subject:'Computer', topic:'തലമുറകൾ', category:'BOTH', difficulty:'Medium', type:'Concept',
+  question:'ഒന്നാം തലമുറ കമ്പ്യൂട്ടറുകളിൽ ഉപയോഗിച്ച സാങ്കേതികവിദ്യ ഏതാണ്?',
+  options:['ട്രാൻസിസ്റ്റർ','വാക്വം ട്യൂബ്','IC','മൈക്രോപ്രൊസസർ'], answer:1,
+  explanation:'ഒന്നാം തലമുറ (1940–56) കമ്പ്യൂട്ടറുകളിൽ വാക്വം ട്യൂബ് ഉപയോഗിച്ചു — ENIAC, UNIVAC.',
+  optionNotes:[
+    'ട്രാൻസിസ്റ്റർ — രണ്ടാം തലമുറ.',
+    'വാക്വം ട്യൂബ് — ഒന്നാം തലമുറ (ശരിയായ ഉത്തരം).',
+    'IC — മൂന്നാം തലമുറ.',
+    'മൈക്രോപ്രൊസസർ — നാലാം തലമുറ.']
+},
+{
+  id:5, subject:'Computer', topic:'അടിസ്ഥാനം', category:'BOTH', difficulty:'Medium', type:'Concept',
+  question:'CPU-യുടെ ഭാഗങ്ങൾ ഏതൊക്കെയാണ്?',
+  options:['RAM, ROM','ALU, CU, Registers','HDD, SSD','Monitor, Keyboard'], answer:1,
+  explanation:'CPU = ALU (Arithmetic Logic Unit) + CU (Control Unit) + Registers.',
+  optionNotes:[
+    'RAM, ROM — Memory.',
+    'ALU, CU, Registers — CPU (ശരിയായ ഉത്തരം).',
+    'HDD, SSD — Storage.',
+    'Monitor, Keyboard — I/O devices.']
+},
+{
+  id:6, subject:'Computer', topic:'I/O Devices', category:'BOTH', difficulty:'Medium', type:'Concept',
+  question:'OMR-ന്റെ പൂർണ്ണരൂപം എന്താണ്?',
+  options:['Optical Mark Recognition','Optical Memory Reader','Optical Machine Reader','Output Memory Register'], answer:0,
+  explanation:'OMR = Optical Mark Recognition — പരീക്ഷാ ഉത്തരക്കടലാസ് വായിക്കാൻ.',
+  optionNotes:[
+    'Optical Mark Recognition — ശരി (ശരിയായ ഉത്തരം).',
+    'Optical Memory Reader — തെറ്റ്.',
+    'Optical Machine Reader — തെറ്റ്.',
+    'Output Memory Register — തെറ്റ്.']
+},
+{
+  id:7, subject:'Computer', topic:'I/O Devices', category:'BOTH', difficulty:'Medium', type:'Concept',
+  question:'ബാങ്ക് ചെക്ക് വായിക്കാൻ ഉപയോഗിക്കുന്ന സാങ്കേതികവിദ്യ ഏതാണ്?',
+  options:['OMR','OCR','MICR','Barcode'], answer:2,
+  explanation:'MICR (Magnetic Ink Character Recognition) — ബാങ്ക് ചെക്ക് വായിക്കാൻ ഉപയോഗിക്കുന്നു.',
+  optionNotes:[
+    'OMR — പരീക്ഷാ ഉത്തരക്കടലാസ്.',
+    'OCR — അച്ചടിച്ച അക്ഷരങ്ങൾ.',
+    'MICR — ചെക്ക് (ശരിയായ ഉത്തരം).',
+    'Barcode — ബാർകോഡ്.']
+},
+{
+  id:8, subject:'Computer', topic:'Memory', category:'BOTH', difficulty:'Easy', type:'Concept',
+  question:'1 Byte-ൽ എത്ര bits ഉണ്ട്?',
+  options:['4','8','16','32'], answer:1,
+  explanation:'1 Byte = 8 bits.',
+  optionNotes:[
+    '4 — Nibble.',
+    '8 — Byte (ശരിയായ ഉത്തരം).',
+    '16 — Word.',
+    '32 — Double Word.']
+},
+{
+  id:9, subject:'Computer', topic:'Memory', category:'BOTH', difficulty:'Easy', type:'Concept',
+  question:'1 Kilobyte (KB)-ൽ എത്ര bytes ഉണ്ട്?',
+  options:['1000','1024','512','2048'], answer:1,
+  explanation:'1 KB = 1,024 bytes.',
+  optionNotes:[
+    '1000 — ഏകദേശം, കൃത്യമല്ല.',
+    '1024 — ശരി (ശരിയായ ഉത്തരം).',
+    '512 — പകുതി KB.',
+    '2048 — 2 KB.']
+},
+{
+  id:10, subject:'Computer', topic:'Memory', category:'BOTH', difficulty:'Medium', type:'Concept',
+  question:'Volatile memory ഏതാണ്?',
+  options:['ROM','RAM','HDD','SSD'], answer:1,
+  explanation:'RAM Volatile memory ആണ് — കറന്റ് പോയാൽ ഡാറ്റ നഷ്ടപ്പെടും.',
+  optionNotes:[
+    'ROM — Non-volatile.',
+    'RAM — Volatile (ശരിയായ ഉത്തരം).',
+    'HDD — Non-volatile.',
+    'SSD — Non-volatile.']
+},
+{
+  id:11, subject:'Computer', topic:'Memory', category:'BOTH', difficulty:'Medium', type:'Concept',
+  question:'ഏറ്റവും വേഗതയേറിയ Memory ഏതാണ്?',
+  options:['RAM','Cache','HDD','Pen Drive'], answer:1,
+  explanation:'Cache Memory ആണ് ഏറ്റവും വേഗതയേറിയത് — CPU-യ്ക്ക് അടുത്ത്.',
+  optionNotes:[
+    'RAM — Cache-നേക്കാൾ മന്ദഗതി.',
+    'Cache — ഏറ്റവും വേഗത (ശരിയായ ഉത്തരം).',
+    'HDD — മന്ദഗതി.',
+    'Pen Drive — മന്ദഗതി.']
+},
+{
+  id:12, subject:'Computer', topic:'OS', category:'BOTH', difficulty:'Medium', type:'Person-Contribution',
+  question:'Linux OS വികസിപ്പിച്ചത് ആരാണ്?',
+  options:['ബിൽ ഗേറ്റ്സ്','ലിനസ് ടോർവാൾഡ്സ്','സ്റ്റീവ് ജോബ്സ്','ഡെന്നിസ് റിച്ചി'], answer:1,
+  explanation:'ലിനസ് ടോർവാൾഡ്സ് (1991) — Linux OS വികസിപ്പിച്ചു; ഓപ്പൺ സോഴ്സ്.',
+  optionNotes:[
+    'ഗേറ്റ്സ് — Microsoft.',
+    'ടോർവാൾഡ്സ് — Linux (ശരിയായ ഉത്തരം).',
+    'ജോബ്സ് — Apple.',
+    'റിച്ചി — C ഭാഷ, UNIX.']
+},
+{
+  id:13, subject:'Computer', topic:'OS', category:'BOTH', difficulty:'Medium', type:'Concept',
+  question:'ആദ്യത്തെ OS ഏതാണ്?',
+  options:['MS-DOS','UNIX','GM-NAA I/O','Windows'], answer:2,
+  explanation:'GM-NAA I/O (1956) — ആദ്യ OS, General Motors-നായി വികസിപ്പിച്ചു.',
+  optionNotes:[
+    'MS-DOS — 1981.',
+    'UNIX — 1969.',
+    'GM-NAA I/O — ആദ്യ OS (ശരിയായ ഉത്തരം).',
+    'Windows — 1985.']
+},
+{
+  id:14, subject:'Computer', topic:'Networks', category:'BOTH', difficulty:'Easy', type:'Concept',
+  question:'LAN-ന്റെ പൂർണ്ണരൂപം എന്താണ്?',
+  options:['Local Area Network','Large Area Network','Long Area Network','Linked Area Network'], answer:0,
+  explanation:'LAN = Local Area Network — ഒരു കെട്ടിടത്തിനുള്ളിലെ നെറ്റ്വർക്ക് (~1 km).',
+  optionNotes:[
+    'Local Area Network — ശരി (ശരിയായ ഉത്തരം).',
+    'Large Area Network — തെറ്റ്.',
+    'Long Area Network — തെറ്റ്.',
+    'Linked Area Network — തെറ്റ്.']
+},
+{
+  id:15, subject:'Computer', topic:'Internet', category:'BOTH', difficulty:'Easy', type:'Person-Contribution',
+  question:'"ഇന്റർനെറ്റിന്റെ പിതാവ്" എന്നറിയപ്പെടുന്നത് ആരാണ്?',
+  options:['ടിം ബെർണേഴ്സ്-ലീ','വിന്റൺ സെർഫ്','ബിൽ ഗേറ്റ്സ്','സ്റ്റീവ് ജോബ്സ്'], answer:1,
+  explanation:'വിന്റൺ സെർഫ് — "ഇന്റർനെറ്റിന്റെ പിതാവ്"; TCP/IP പ്രോട്ടോക്കോൾ വികസിപ്പിച്ചു.',
+  optionNotes:[
+    'ബെർണേഴ്സ്-ലീ — WWW-യുടെ പിതാവ്.',
+    'സെർഫ് — ഇന്റർനെറ്റിന്റെ പിതാവ് (ശരിയായ ഉത്തരം).',
+    'ഗേറ്റ്സ് — Microsoft.',
+    'ജോബ്സ് — Apple.']
+},
+{
+  id:16, subject:'Computer', topic:'Internet', category:'BOTH', difficulty:'Medium', type:'Person-Contribution',
+  question:'WWW (World Wide Web)-യുടെ പിതാവ് ആരാണ്?',
+  options:['വിന്റൺ സെർഫ്','ടിം ബെർണേഴ്സ്-ലീ','മാർക്ക് ആന്ദ്രേസൻ','ജോൺ പോസ്റ്റൽ'], answer:1,
+  explanation:'ടിം ബെർണേഴ്സ്-ലീ (1989) — WWW-യുടെ പിതാവ്; CERN-ൽ ജോലി ചെയ്തു.',
+  optionNotes:[
+    'സെർഫ് — ഇന്റർനെറ്റിന്റെ പിതാവ്.',
+    'ബെർണേഴ്സ്-ലീ — WWW (ശരിയായ ഉത്തരം).',
+    'ആന്ദ്രേസൻ — Mosaic ബ്രൗസർ.',
+    'പോസ്റ്റൽ — ഇന്റർനെറ്റ് പയനിയർ.']
+},
+{
+  id:17, subject:'Computer', topic:'Internet', category:'BOTH', difficulty:'Medium', type:'Year-Event',
+  question:'ഇന്ത്യയിൽ ഇന്റർനെറ്റ് സേവനം ആരംഭിച്ചത് ഏത് വർഷമാണ്?',
+  options:['1986','1991','1995','2000'], answer:2,
+  explanation:'ഇന്ത്യയിൽ ഇന്റർനെറ്റ് സേവനം 1995 ഓഗസ്റ്റ് 15-ന് VSNL ആരംഭിച്ചു.',
+  optionNotes:[
+    '1986 — ERNET ആരംഭിച്ചു.',
+    '1991 — തെറ്റ്.',
+    '1995 — VSNL (ശരിയായ ഉത്തരം).',
+    '2000 — തെറ്റ്.']
+},
+{
+  id:18, subject:'Computer', topic:'Internet', category:'BOTH', difficulty:'Medium', type:'Concept',
+  question:'HTTP-യുടെ പൂർണ്ണരൂപം എന്താണ്?',
+  options:['HyperText Transfer Protocol','High Transfer Text Protocol','HyperText Translation Protocol','Home Tool Transfer Protocol'], answer:0,
+  explanation:'HTTP = HyperText Transfer Protocol — വെബ് പേജുകൾ കൈമാറ്റം ചെയ്യാൻ.',
+  optionNotes:[
+    'HyperText Transfer Protocol — ശരി (ശരിയായ ഉത്തരം).',
+    'High Transfer Text Protocol — തെറ്റ്.',
+    'HyperText Translation Protocol — തെറ്റ്.',
+    'Home Tool Transfer Protocol — തെറ്റ്.']
+},
+{
+  id:19, subject:'Computer', topic:'IT Act', category:'BOTH', difficulty:'Medium', type:'Year-Event',
+  question:'IT Act 2000 നിലവിൽ വന്നത് ഏത് തീയതിയാണ്?',
+  options:['2000 ജനുവരി 1','2000 ഒക്ടോബർ 17','2000 ഡിസംബർ 31','2001 ജനുവരി 1'], answer:1,
+  explanation:'IT Act 2000 ഒക്ടോബർ 17-ന് നിലവിൽ വന്നു.',
+  optionNotes:[
+    '2000 ജനുവരി 1 — തെറ്റ്.',
+    '2000 ഒക്ടോബർ 17 — ശരി (ശരിയായ ഉത്തരം).',
+    '2000 ഡിസംബർ 31 — തെറ്റ്.',
+    '2001 ജനുവരി 1 — തെറ്റ്.']
+},
+{
+  id:20, subject:'Computer', topic:'IT Act', category:'BOTH', difficulty:'Medium', type:'Concept',
+  question:'IT Act-ലെ Section 66C എന്തുമായി ബന്ധപ്പെട്ടതാണ്?',
+  options:['Hacking','Identity Theft','Cheating by Personation','Privacy violation'], answer:1,
+  explanation:'Section 66C — Identity Theft (ഐഡന്റിറ്റി മോഷണം).',
+  optionNotes:[
+    'Hacking — Section 66.',
+    'Identity Theft — 66C (ശരിയായ ഉത്തരം).',
+    'Cheating by Personation — 66D.',
+    'Privacy — 66E.']
+},
+{
+  id:21, subject:'Computer', topic:'Cyber Crimes', category:'BOTH', difficulty:'Medium', type:'Concept',
+  question:'"Phishing" എന്താണ്?',
+  options:['ഒരു തരം വൈറസ്','വ്യാജ ഇമെയിൽ വഴി വിവരങ്ങൾ മോഷ്ടിക്കൽ','ഹാർഡ്‌വെയർ കേടുപാട്','ഇന്റർനെറ്റ് വേഗത കുറയ്ക്കൽ'], answer:1,
+  explanation:'Phishing — വ്യാജ ഇമെയിൽ/വെബ്സൈറ്റ് വഴി ബാങ്ക് വിവരങ്ങൾ മോഷ്ടിക്കൽ.',
+  optionNotes:[
+    'വൈറസ് — Malware.',
+    'വ്യാജ ഇമെയിൽ — Phishing (ശരിയായ ഉത്തരം).',
+    'ഹാർഡ്‌വെയർ കേടുപാട് — തെറ്റ്.',
+    'ഇന്റർനെറ്റ് വേഗത — തെറ്റ്.']
+},
+{
+  id:22, subject:'Computer', topic:'Cyber Security', category:'883', difficulty:'Medium', type:'Concept',
+  question:'CERT-In എന്തുമായി ബന്ധപ്പെട്ടതാണ്?',
+  options:['വിദ്യാഭ്യാസം','സൈബർ സുരക്ഷ','കൃഷി','ആരോഗ്യം'], answer:1,
+  explanation:'CERT-In (Indian Computer Emergency Response Team) — 2004-ൽ സ്ഥാപിതം; സൈബർ സുരക്ഷാ കേന്ദ്രം.',
+  optionNotes:[
+    'വിദ്യാഭ്യാസം — തെറ്റ്.',
+    'സൈബർ സുരക്ഷ — CERT-In (ശരിയായ ഉത്തരം).',
+    'കൃഷി — തെറ്റ്.',
+    'ആരോഗ്യം — തെറ്റ്.']
+},
+{
+  id:23, subject:'Computer', topic:'E-Governance', category:'BOTH', difficulty:'Medium', type:'Year-Event',
+  question:'Digital India പദ്ധതി ആരംഭിച്ചത് ഏത് വർഷമാണ്?',
+  options:['2014','2015','2016','2017'], answer:1,
+  explanation:'Digital India പദ്ധതി 2015 ജൂലൈ 1-ന് ആരംഭിച്ചു.',
+  optionNotes:[
+    '2014 — MyGov ആരംഭിച്ചു.',
+    '2015 — Digital India (ശരിയായ ഉത്തരം).',
+    '2016 — UPI ആരംഭിച്ചു.',
+    '2017 — GST നിലവിൽ വന്നു.']
+},
+{
+  id:24, subject:'Computer', topic:'Kerala IT', category:'BOTH', difficulty:'Medium', type:'Place-Feature',
+  question:'ഇന്ത്യയിലെ ആദ്യ IT പാർക്ക് ഏതാണ്?',
+  options:['Infopark','Technopark','Cyberpark','Hitec City'], answer:1,
+  explanation:'Technopark (1990), തിരുവനന്തപുരം — ഇന്ത്യയിലെ ആദ്യ IT പാർക്ക്.',
+  optionNotes:[
+    'Infopark — കാക്കനാട് (2004).',
+    'Technopark — ആദ്യം (ശരിയായ ഉത്തരം).',
+    'Cyberpark — കോഴിക്കോട് (2009).',
+    'Hitec City — ഹൈദരാബാദ്.']
+},
+{
+  id:25, subject:'Computer', topic:'Kerala IT', category:'BOTH', difficulty:'Medium', type:'Year-Event',
+  question:'കേരള സർക്കാരിന്റെ FRIENDS പദ്ധതി ആരംഭിച്ചത് ഏത് വർഷമാണ്?',
+  options:['1995','1998','2000','2002'], answer:2,
+  explanation:'FRIENDS പദ്ധതി 2000-ൽ ആരംഭിച്ചു — സർക്കാർ സേവനങ്ങൾ ഒരു കേന്ദ്രത്തിൽ.',
+  optionNotes:[
+    '1995 — തെറ്റ്.',
+    '1998 — Kudumbashree.',
+    '2000 — FRIENDS (ശരിയായ ഉത്തരം).',
+    '2002 — AKSHAYA.']
+}
+];
+</script>
+<script src="assets/engine.js"></script>
+</body>
+</html>
